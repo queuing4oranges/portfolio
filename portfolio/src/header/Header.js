@@ -4,11 +4,11 @@ const Header = () => {
     
     
     return ( 
-        <div className="header__cont">
-            <div className="header__home">Home</div>
-            <div className="header__skills">Skills</div>
-            <div className="header__about">About</div>
-            <div className="header__contact">Contact</div>
+        <div className="navbar">
+            <div className="navbar__home"><a className="navbar__link" href="#">Home</a></div>
+            <div className="navbar__skills"><a className="navbar__link" href="#">Skills</a></div>
+            <div className="navbar__about"><a className="navbar__link" href="#">About</a></div>
+            <div className="navbar__contact"><a className="navbar__link" href="#">Contact</a></div>
         </div>
 
 
