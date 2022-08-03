@@ -26,10 +26,18 @@ $blackish: #021E20;
         justify-content: flex-end;
         flex-grow: 2;
     }
+    &__skills, 
+    &__about{
+        padding: 0 20px;
+    }
+}
+.navbar__contact{
+    padding-right: 100px;
+    padding-left: 20px;
 }
 
 .navbar__link{
     color:white;
     text-decoration: none;
-    padding-right: 100px;
+
 }
