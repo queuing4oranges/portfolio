@@ -1,0 +1,90 @@
+$darkblue: #005067;
+$lightblue: #048399;
+$rose: #FEB9C6;
+$darkrose: #B96B85;
+$blackish: #021E20;
+
+.hero__image{
+    background-image: url("../images/hero-banner/hero8.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.hero__text{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero__title{
+    font-size: 80px;
+    margin: 100px auto 5px;
+}
+
+.hero__par{
+    font-size: 40px;
+    margin: 10px auto 20px;
+}
+
+
+.button {
+    background-color: $darkblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 300px;
+    font-family: "Titillium Web",
+                Arial,
+                Helvetica,
+                sans-serif;
+    align-self: center;
+}
+
+
+.bouncy {
+    animation: bouncy 5s infinite linear;
+    position: relative;
+}
+
+@keyframes bouncy {
+    0% {
+        top: 0em
+    }
+
+    40% {
+        top: 0em
+    }
+
+    43% {
+        top: -0.9em
+    }
+
+    46% {
+        top: 0em
+    }
+
+    48% {
+        top: -0.4em
+    }
+
+    50% {
+        top: 0em
+    }
+
+    100% {
+        top: 0em;
+    }
+}
+
