@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
-function Modal({ setOpenModal }) {
+function Modal() {
+    const [openModal, setOpenModal] = useState(true);
+
   return (
     <div className="modalBackground">       
         <div className="modalContainer">

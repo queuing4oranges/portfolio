@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Project 1",
+      "tech": "Language1, Language2",
+      "description": "Lorem 1, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "screenshot": "img src",
+      "code": "img src"
+    },
+    {
+      "id": "2",
+      "title": "Project 2",
+      "tech": "Language1, Language2",
+      "description": "Lorem 2, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "screenshot": "img src",
+      "code": "img src"
+    },
+    {
+      "id": "3",
+      "title": "Project 3",
+      "tech": "Language1, Language2",
+      "description": "Lorem 3, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "screenshot": "img src",
+      "code": "img src"
+    }
+  ]
+}

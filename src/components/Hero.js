@@ -6,9 +6,6 @@ const Hero = () => {
 
     const handleClick = () =>{
         setOpenModal(true)
-        if (openModal === true){
-            console.log("hello") //if i click this button, i want to show the modal
-        }
     }
 
 
