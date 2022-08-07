@@ -2,27 +2,57 @@
   "projects": [
     {
       "id": "1",
-      "title": "Project 1",
+      "title": "Magic Memory",
       "tech": "Language1, Language2",
       "description": "Lorem 1, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
       "screenshot": "img src",
-      "code": "img src"
+      "code": "img src",
+      "github": "https://github.com/queuing4oranges/magic-memory"
     },
     {
       "id": "2",
-      "title": "Project 2",
+      "title": "Lesbotoc Website",
       "tech": "Language1, Language2",
       "description": "Lorem 2, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
       "screenshot": "img src",
-      "code": "img src"
+      "code": "img src",
+      "github": "git src2"
     },
     {
       "id": "3",
-      "title": "Project 3",
+      "title": "Vet Clinic Admin Panel",
       "tech": "Language1, Language2",
       "description": "Lorem 3, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
       "screenshot": "img src",
-      "code": "img src"
+      "code": "img src",
+      "github": "git src 3"
+    },
+    {
+      "id": "4",
+      "title": "Project 4",
+      "tech": "Language1, Language2",
+      "description": "Lorem 4, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "screenshot": "img src",
+      "code": "img src",
+      "github": "git src 4"
+    },
+    {
+      "id": "5",
+      "title": "Project 5",
+      "tech": "Language1, Language2",
+      "description": "Lorem 5, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "screenshot": "img src",
+      "code": "img src",
+      "github": "git src 5"
+    },
+    {
+      "id": "6",
+      "title": "Project 6",
+      "tech": "Language1, Language2",
+      "description": "Lorem 6, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "screenshot": "img src",
+      "code": "img src",
+      "github": "git src 6"
     }
   ]
 }

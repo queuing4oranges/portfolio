@@ -1,0 +1,81 @@
+.projects__container{
+    background: $lightblue;
+    margin: 0 auto;
+    color: white;
+    padding-left: 100px;
+    padding-right:100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.projects__title{
+    margin-top: 0;
+    margin-left: 20px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.cards__cont{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.cards__title{
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card{
+    width: 350px;
+    border: 2px solid rgb(198, 224, 235);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 2.5px;
+}
+
+.courses__cont{
+    padding: 20px;
+
+}
+
+.li__item{
+    list-style: none;
+}
+
+.github{
+    display: flex;
+    width: fit-content;
+    padding-top: 30px;
+
+}
+.git__logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.git__link{
+    padding-right: 20px;
+    word-break: break-word;
+
+    & a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.ul__item{
+    padding: 0;
+}
+
+.read{
+    font-weight: 600;
+}
+

@@ -14,7 +14,7 @@ const Hero = () => {
     <div className="hero__image">            {openModal &&
              <Modal hideModal={setOpenModal}/>}
         <div className="hero__text">
-            <h1 className="hero__title">I am <br/>Katja Zenker</h1>
+            <h1 className="hero__title">Hi, I am <br/>Katja Zenker</h1>
             <p className="hero__par">And I'm a Web Developer</p>
                     <button 
                         type="button"
