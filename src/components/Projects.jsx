@@ -10,7 +10,7 @@ function Projects() {
   return (
     <div className="projects__container">
 
-    <h2 className="projects__title">My projects</h2>
+    <h1 className="projects__title">My projects</h1>
 
       <div className="cards__cont">
         
@@ -41,7 +41,7 @@ function Projects() {
       </div>
 
       <div className="courses__cont">
-        <h2>Courses to continue learning:</h2>
+        <h2>Additional study material:</h2>
         <p>"Build Websites with React &#038; Firebase"</p>
         <p>"Complete Web Design: from Figma to Webflow"</p>
       </div>
