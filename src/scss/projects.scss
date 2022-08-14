@@ -39,7 +39,12 @@
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    box-shadow: 5px 2.5px;
+    box-shadow: 5px 2.5px $darkblue;
+    transition: all 0.3s ease; /*new*/
+}
+
+.card:hover {
+    transform: rotate(3deg); /*new*/
 }
 
 .courses__cont{
