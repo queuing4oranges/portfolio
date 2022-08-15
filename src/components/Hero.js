@@ -11,7 +11,7 @@ const Hero = () => {
 
     return ( 
 
-    <div className="hero__image">            {openModal &&
+    <div className="hero__image" id="home">            {openModal &&
              <Modal hideModal={setOpenModal}/>}
         <div className="hero__text">
             <h1 className="hero__title">Hi, I am <br/>Katja Zenker</h1>
