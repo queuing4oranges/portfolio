@@ -10,7 +10,7 @@ function Projects() {
   return (
     <div className="projects__container">
 
-    <h1 className="projects__title">My projects</h1>
+    <h1 className="projects__title">Projects</h1>
 
       <div className="cards__cont">
         

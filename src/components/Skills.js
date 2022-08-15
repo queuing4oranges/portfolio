@@ -6,11 +6,13 @@ const Skills = () => {
 
 
     return ( 
+    <>
+    <h1 className="skills__title-big">Skills</h1>
         <div className="skills__container">
             
 
             <div className="tech__container">
-                <h1 className="skills__title">Skills</h1>
+                <h2 className="skills__title">Tech Stack</h2>
                 <ProgressBar 
                 now={80} 
                 label="HTML"/> <br></br>
@@ -45,7 +47,7 @@ const Skills = () => {
             </div>
 
             <div className="language__container">
-                <h1 className="skills__title">Languages</h1>
+                <h2 className="skills__title">Languages</h2>
                 <ProgressBar 
                 className="language-en"
                 now={100} 
@@ -68,7 +70,7 @@ const Skills = () => {
             </div>
 
         </div>
-
+</>
      );
 }
  

@@ -11,10 +11,16 @@
 }
 
 .skills__title {
-    margin-top: 0;
-    margin-left: 0;
+    margin: 0;
     padding-top: 50px;
+    padding-bottom: 25px;
     padding-left: 0;
+    &-big{
+        margin: 0;
+        padding: 50px 100px 0px;
+        color: white;
+        background: #ffb814;
+    }
 }
 
 .tech__container {
@@ -26,9 +32,9 @@
 
 .language__container {
     width: 30%;
-        display: flex;
-            flex-direction: column;
-            align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
 }
 
