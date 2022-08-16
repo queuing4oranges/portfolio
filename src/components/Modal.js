@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { send } from 'emailjs-com';
 
 
 function Modal() {
     const [openModal, setOpenModal] = useState(true);
+    
 
   return (
     // <div className="modalBackground">       
         <div className="modalContainer">
-                <form className="contact__form">
+                <form onSubmit={onSubmit} className="contact__form">
                 <h2 className="form__title">Hello, there!</h2>
                 <label>
                     <span>I'm contacting you because</span>
