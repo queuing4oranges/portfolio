@@ -1,4 +1,6 @@
-import React, { useState } from 'react'; 
+
+
+import React, { useState } from 'react';
 import { send } from 'emailjs-com';
 
 
@@ -25,12 +27,16 @@ function Modal() {
         setToSend({...toSend, [e.target.name]: e.target.value})
     }
 
+
   return (
     // <div className="modalBackground">       
         <div className="modalContainer">
                 <form 
                 className="contact__form"
-                onSubmit={onSubmit}>
+                onSubmit={onSubmit}/>
+
+                <form onSubmit={onSubmit} className="contact__form">
+
                 <h2 className="form__title">Hello, there!</h2>
                 <label>
                     <span>My name is</span>
