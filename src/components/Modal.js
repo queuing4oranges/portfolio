@@ -31,9 +31,6 @@ function Modal() {
   return (
     // <div className="modalBackground">       
         <div className="modalContainer">
-                <form 
-                className="contact__form"
-                onSubmit={onSubmit}/>
 
                 <form onSubmit={onSubmit} className="contact__form">
 
