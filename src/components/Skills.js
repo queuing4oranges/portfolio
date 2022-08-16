@@ -7,8 +7,8 @@ const Skills = () => {
 
     return ( 
     <>
-    <h1 className="skills__title-big">Skills</h1>
-        <div className="skills__container" id="skills">
+    <h1 className="skills__title-big" id="skills">Skills</h1>
+        <div className="skills__container" >
             
 
             <div className="tech__container">

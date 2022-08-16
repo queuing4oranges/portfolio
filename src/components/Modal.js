@@ -5,7 +5,7 @@ function Modal() {
     const [openModal, setOpenModal] = useState(true);
 
   return (
-    <div className="modalBackground">       
+    // <div className="modalBackground">       
         <div className="modalContainer">
                 <form className="contact__form">
                 <h2 className="form__title">Hello, there!</h2>
@@ -30,7 +30,7 @@ function Modal() {
                 </div>
             </form>
         </div>
-    </div>
+    // </div>
   )
 }
 
