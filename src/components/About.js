@@ -22,7 +22,7 @@ const About = () => {
                 </div>
                 
                 <div className="hobby__container">
-                    <p className="text right">In my free time, I like to cultivate my friendships and go on little trips. If that is not an option, I love sewing and lifting in the Crossfit gym. As for my personal preferences, I like to be surrounded by people who share my sense of humor. 
+                    <p className="text right">In my free time, I like to cultivate my friendships and go on little trips. If that is not an option, I love sewing and lifting in the Crossfit gym. Besides that, I like to be surrounded by people who share my sense of humor. 
                     <br />
                     I'm afraid of snails.
                      </p>
