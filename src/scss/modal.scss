@@ -42,9 +42,10 @@ html {
     background-color: #ffbb11;
     border-radius: 10px;
     width: 500px;
-    height: 600px;
+    height: 650px;
     margin: auto;
-
+    border: 1px solid #d828b2;
+    padding: 10px;
 }
 
 .contact__button {
@@ -55,39 +56,26 @@ html {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    // display: inline-block;
     font-size: 16px;
-    width: 300px;
+    width: 200px;
     font-family: "Titillium Web",
         Arial,
         Helvetica,
         sans-serif;
+
 }
 
 .form__title{
     color: white;
-    padding: 20px 0 0 15px;
-}
-
-.contact__button {
-    color: white;
+    padding: 10px 0 0 15px;
 }
 
 .btn__cont {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
+    
 }
-
-// .modalBackground{
-//     position: relative;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     margin: auto;
-//     width: 100%;
-
-// }
 
 .modalContainer{
     position: fixed;
@@ -95,16 +83,6 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
-
-    
+  
 }
 
-
-// .modalBackground{
-//     position: relative;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     margin: auto;
-//     width: 100%;
-// }

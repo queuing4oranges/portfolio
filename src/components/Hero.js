@@ -1,27 +1,35 @@
 import Modal from "./Modal";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const Hero = () => {
     const [openModal, setOpenModal] = useState(false);
 
-    const handleClick = () =>{
+    const showModal = () => {
         setOpenModal(true)
     }
 
+    const hideModal = () => {
+        setOpenModal(false)
+
+    }
 
     return ( 
 
-    <div className="hero__image" id="home">            
-    
+    <div 
+    className="hero__image" id="home">            
+
     {openModal &&
-             <Modal hideModal={setOpenModal}/>}
+        <Modal 
+        hideModal={hideModal}/>}
+
         <div className="hero__text">
             <h1 className="hero__title">Hi, I am <br/>Katja Zenker</h1>
             <p className="hero__par">And I'm a Web Developer</p>
                     <button 
                         type="button"
                         className="button bouncy"
-                        onClick={() =>handleClick()}
+                        onClick={() =>showModal()}
                         >Get in touch</button>
 
 
