@@ -34,13 +34,6 @@
     width: 33.3%;
 }
 
-// .profil__container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     width: 70%;
-// }
-
 .hobby__container {
     width: 30%;
     display: flex;
@@ -63,14 +56,6 @@
     align-items: center;
 }
 
-.picture {
-    background-image: url("../images/katja_res.jpg");
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    border: solid white 1px;
-    margin-left: 20px;
-}
 
 .title__container {
     display: flex;
@@ -85,3 +70,35 @@
 .text {
     text-align: justify;
 }
+
+.picture {
+    background-image: url("../images/katja_res.jpg");
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: solid white 1px;
+    margin-left: 20px;
+
+}
+
+.animatePicture {
+    background-image: url("../images/katja_res.jpg");
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: solid white 1px;
+    margin-left: 20px;
+
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100px);
+    }
+}
+

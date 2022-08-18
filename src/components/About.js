@@ -1,4 +1,22 @@
+import { useRef, useEffect, useState } from "react";
+
+
 const About = () => {
+    const myRef = useRef();
+    const [picAnimation, setPicAnimation] = useState();
+    console.log('picAnimation', picAnimation)
+
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            setPicAnimation(entry.isIntersecting)
+        })
+
+        observer.observe(myRef.current);
+    }, [])
+
+
     return (
         <>
         <h1 id="about" className="about__title-big">About</h1>
@@ -18,7 +36,11 @@ const About = () => {
                 </p>
                 </div>
                 <div className="picture__container">
-                    <div className="picture"></div>
+                    <div 
+                    ref={myRef} 
+                    
+                    className={picAnimation ? 'animatePicture' : 'picture' }
+                    ></div>
                 </div>
                 
                 <div className="hobby__container">

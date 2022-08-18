@@ -1,6 +1,5 @@
 import Modal from "./Modal";
 import { useState } from "react";
-import { useEffect } from "react";
 
 const Hero = () => {
     const [openModal, setOpenModal] = useState(false);

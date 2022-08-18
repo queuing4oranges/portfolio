@@ -2,8 +2,6 @@ import React from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 const Skills = () => {
-    const now= 60;
-
 
     return ( 
     <>
@@ -55,7 +53,7 @@ const Skills = () => {
                 
                 <ProgressBar 
                 className="language-en"
-                now={95} 
+                now={97} 
                 label="English"/><br></br>
                 
                 <ProgressBar 
@@ -68,6 +66,21 @@ const Skills = () => {
                 now={10} 
                 label="French"/><br></br>
             </div>
+
+            <div className="courses__cont">
+                <h2 className="skills__title">Continuing studying:</h2>
+                <ProgressBar
+                className="courses"
+                now={100}
+                label='"Build Websites with React &#038; Firebase"'
+                /> <br />
+                <ProgressBar
+                className="courses"
+                now={100}
+                label='"Complete Web Design: from Figma to Webflow"'/> <br />
+               
+            </div>
+
 
         </div>
 </>

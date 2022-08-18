@@ -3,7 +3,7 @@ import { send } from 'emailjs-com';
 
 
 function Modal({ hideModal }) {
-    const [openModal, setOpenModal] = useState(true);
+    // const [openModal, setOpenModal] = useState(true);
     const [toSend, setToSend] = useState({
         namefrom: '',
         topic: '',

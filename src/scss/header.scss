@@ -39,7 +39,11 @@ $blackish: #021E20;
         height: 30px;
     }
 }
-.navbar__contact{
+.navbar__button:hover{
+    background-color: #ffb814;
+}
+
+.navbar__about{
     padding-right: 100px;
     padding-left: 20px;
 }

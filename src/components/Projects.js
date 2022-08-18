@@ -32,7 +32,7 @@ function Projects() {
                   <div className="github">
                     <div className="git__logo"><VscGithub className="git__logo"/></div>
                     
-                    <div className="git__link"><a href="https://github.com/queuing4oranges/magic-memory">{project.github}</a></div>
+                    <div className="git__link"><a rel="noopener" target="_blank" href={project.github}>{project.github}</a></div>
                   </div>
                 
                 </div>
@@ -40,16 +40,7 @@ function Projects() {
         }
       </div>
 
-      <div className="courses__cont">
-        <h2>Studying at the moment:</h2>
-        <p>"Build Websites with React &#038; Firebase"</p>
-        <p>"Complete Web Design: from Figma to Webflow"</p>
-      </div>
-
-
-
-
-        
+       
     </div>
   )
 }
