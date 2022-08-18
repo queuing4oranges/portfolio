@@ -14,14 +14,12 @@ const Hero = () => {
     }
 
     return ( 
-
-    <div 
-    className="hero__image" id="home">            
-
-    {openModal &&
+    <>{openModal &&
         <Modal 
         hideModal={hideModal}/>}
-
+    <div 
+    className={openModal ? "blurry" : "hero__image"} 
+    id="home">            
         <div className="hero__text">
             <h1 className="hero__title">Hi, I am <br/>Katja Zenker</h1>
             <p className="hero__par">And I'm a Web Developer</p>
@@ -29,22 +27,15 @@ const Hero = () => {
                         type="button"
                         className="button bouncy"
                         onClick={() =>showModal()}
-                        >Get in touch</button>
+                        >Get in touch
+                    </button>       
+        </div>
 
+        <form action="post"></form>
+    </div>
 
-
-            
-  </div>
-
-  <form action="post">
-
-  </form>
-</div>
-
-
-     );
+    </>
+    );
 }
  
 export default Hero;
-
-//hideModal - we're passing this on the function we already have (that's why it's setopenModal and not for example a new fct "setCloseModal" - after all it's just toggling true or false)
