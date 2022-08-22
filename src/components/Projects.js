@@ -28,7 +28,7 @@ function Projects() {
                   <ul className="ul__item">
                     <li className="li__item">{project.subtitle}</li> <br />
                     <li className="li__item">Tech Stack: {project.tech}</li> <br />
-                    <li className="li__item read">
+                    <li className="li__item">
                       <Link target="_blank" className="read" to={`/projects/${project.id}`}>Read more ...</Link>
                       </li>
                   </ul>
