@@ -2,54 +2,71 @@
   "projects": [
     {
       "id": "1",
+      "title": "Portfolio Landing Page",
+      "subtitle": "The website you are looking at right now.",
+      "tech": "JavsScript, React, HTML, SCSS",
+      "description": "Lorem 1, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "screenshot": "img src",
+      "code": "img src",
+      "github": "https://github.com/queuing4oranges/portfolio"
+    },
+    {
+      "id": "2",
+      "title": "Lesbotoč Website",
+      "subtitle": "Final Project of Web Development Bootcamp 2022",
+      "tech": "JavaScript, React, PHP, Laravel, SCSS",
+      "description": "Lorem 2, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "screenshot": "img src",
+      "code": "img src",
+      "github": "https://github.com/RuxCavescu/Lesbotoc"
+    },
+
+    {
+      "id": "3",
       "title": "Magic Memory",
-      "tech": "Language1, Language2",
-      "description": "Lorem 1, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "subtitle": "A memory game from the Net Ninja course \"Build Websites with React & Firebase\"",
+      "tech": "JavsScript, React, HTML, CSS",
+      "description": "This is the first project - a traditional memory game - work with different React concepts, such as components, how to use hooks, fetching Data and working with a database",
       "screenshot": "img src",
       "code": "img src",
       "github": "https://github.com/queuing4oranges/magic-memory"
     },
     {
-      "id": "2",
-      "title": "Lesbotoc Website",
-      "tech": "Language1, Language2",
-      "description": "Lorem 2, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
-      "screenshot": "img src",
-      "code": "img src",
-      "github": "git src2"
-    },
-    {
-      "id": "3",
+      "id": "4",
       "title": "Vet Clinic Admin Panel",
-      "tech": "Language1, Language2",
-      "description": "Lorem 3, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "subtitle": "A Hackathon group project for the Web Development Bootcamp",
+      "tech": "PHP, Laravel",
+      "description": "Lorem 3, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
       "screenshot": "img src",
       "code": "img src",
       "github": "https://github.com/queuing4oranges/vet-clinic-admin-panel"
     },
     {
-      "id": "4",
+      "id": "5",
       "title": "Project 4",
+      "subtitle": "A",
       "tech": "Language1, Language2",
-      "description": "Lorem 4, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "description": "Lorem 4, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
       "screenshot": "img src",
       "code": "img src",
       "github": "git src 4"
     },
     {
-      "id": "5",
+      "id": "6",
       "title": "Project 5",
+      "subtitle": "A",
       "tech": "Language1, Language2",
-      "description": "Lorem 5, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "description": "Lorem 5, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
       "screenshot": "img src",
       "code": "img src",
       "github": "git src 5"
     },
     {
-      "id": "6",
+      "id": "7",
       "title": "Project 6",
+      "subtitle": "A",
       "tech": "Language1, Language2",
-      "description": "Lorem 6, ipsum dolor sit amet consectetur adipisicing elit.      Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "description": "Lorem 6, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
       "screenshot": "img src",
       "code": "img src",
       "github": "git src 6"

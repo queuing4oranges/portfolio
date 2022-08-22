@@ -19,6 +19,7 @@
     "react-icons": "^4.4.0",
     "react-native-svg": "^12.4.4",
     "react-native-web": "^0.18.7",
+    "react-router-dom": "5.1",
     "react-scripts": "5.0.1",
     "sass": "^1.54.0",
     "scss": "^0.2.4",
