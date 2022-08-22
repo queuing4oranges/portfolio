@@ -4,40 +4,34 @@ import { useParams, useHistory } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch';
 
 export default function OneProject() {
-    const { id } = useParams()
-    const url = 'http://localhost:3001/projects'+id
-    const { data: project, isPending, error} = useFetch(url)
-    const history = useHistory()
 
-    useEffect(() =>{
-        if(error){
-            setTimeout(() => {history.push('/')}, 2000)     //useHistory to send user back in case of error
-        }
-    },[error, history])
+const { id } = useParams() 
+const url = 'http://localhost:3000/projects/'+id
+const { data: project, isPending, error } = useFetch(url)
 
 
-
-  return (
+return (
     <div>
-        {isPending &&
-            <div>Loading...</div>
+        {isPending && <div>Is loading...</div>}
+        {error && <div>{error}</div>}
+        {project && 
+            <div>
+                <h2>{project.title}</h2>
+            </div>
         }
-        {error && 
-            <p>{error}</p>
-        }
-        {project &&
-        (<div>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-            <img src="" alt="screenshot UI" />
-            <img src="" alt="screenshot code" />
-            <p>{project.github}</p>
-        
-        </div>)
-        }
-
-    <h1>this is one project</h1>
-
     </div>
-  )
+)
+
+
 }
+
+//     const history = useHistory()
+
+//     useEffect(() =>{
+//         if(error){
+//             setTimeout(() => {history.push('/')}, 2000)     //useHistory to send user back in case of error
+//         }
+//     },[error, history])
+
+
+

@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-// import OneProject from './components/OneProject';
+import OneProject from './components/OneProject';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -23,9 +23,9 @@ function App() {
           <Footer />
         </Route>
 
-        {/* <Route path="/projects/:id">
+        <Route exact path="/projects/:id">
           <OneProject />
-        </Route> */}
+        </Route>
 
 
       </Switch>
