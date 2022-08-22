@@ -54,6 +54,10 @@ $blackish: #021E20;
 
 }
 
+.navbar__link:hover{
+    cursor: default;
+}
+
 .sticky {
     position: fixed;
     top: 0;
