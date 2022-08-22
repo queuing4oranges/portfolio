@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-scroll";
 
 const Header = () => {
     
@@ -9,7 +10,7 @@ const Header = () => {
     return ( 
         <div className="navbar sticky">
             <div className="navbar__cont">
-                <div className="navbar__home"><a className="navbar__link" href="#home"><FontAwesomeIcon icon={faHouse} size="1x" color="white"/></a></div>
+                <div className="navbar__home navbar__link"><Link to="home" smooth={true} spy={true}><FontAwesomeIcon icon={faHouse} size="1x" color="white"/></Link></div>
             </div>
                 <div className="navbar__links">
                     
@@ -25,9 +26,9 @@ const Header = () => {
                     </button>
                 </div>
 
-                <div className="navbar__skills"><a className="navbar__link" href="#projects">Projects</a></div>
-                <div className="navbar__skills"><a className="navbar__link" href="#skills">Skills</a></div>
-                <div className="navbar__about"><a className="navbar__link" href="#about">About</a></div>
+                <div className="navbar__skills navbar__link"><Link to="projects" smooth={true} spy={true}>Projects</Link></div>
+                <div className="navbar__skills navbar__link"><Link to="skills" smooth={true} spy={true}>Skills</Link></div>
+                <div className="navbar__about navbar__link"><Link to="about" smooth={true} spy={true}>About</Link></div>
 
             </div>
         </div>
