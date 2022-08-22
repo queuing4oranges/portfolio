@@ -32,7 +32,7 @@ function Projects() {
                   <div className="github">
                     <div className="git__logo"><VscGithub className="git__logo"/></div>
                     
-                    <div className="git__link"><a rel="noopener" target="_blank" href={project.github}>{project.github}</a></div>
+                    <div className="git__link"><a rel="noreferrer" target="_blank" href={project.github}>{project.github}</a></div>
                   </div>
                 
                 </div>
