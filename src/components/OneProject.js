@@ -9,10 +9,24 @@ const { id } = useParams()
 const url = "http://localhost:3000/projects/"+id
 const { data: project, isPending, error } = useFetch(url)
 
-const openPic = () => {
-    var element = document.getElementById("picOne");
-    element.classList.toggle("pic-big")
+const openPicOne = () => {
+    var picOne = document.getElementById("picOne");
+    picOne.classList.toggle("pic-big");
+}
 
+const openPicTwo = () => {
+    var picOne = document.getElementById("picTwo");
+    picOne.classList.toggle("pic-big");  
+}
+
+const openPicThree = () => {
+    var picOne = document.getElementById("picThree");
+    picOne.classList.toggle("pic-big");  
+}
+
+const openPicFour = () => {
+    var picOne = document.getElementById("picFour");
+    picOne.classList.toggle("pic-big");  
 }
 
 
@@ -37,24 +51,44 @@ return (
 
                 <div className="images__cont">
                     <img 
-                    onClick={() =>openPic()} 
+                    onClick={() =>openPicOne()} 
                     className="image__screen" 
                     id="picOne"
                     src={project.screenshot_one} 
                     alt={project.screenshot_one} />
 
 
-                    <img className="image__screen" src={project.screenshot_two} alt={project.screenshot_two} />
-                    <img className="image__screen" src={project.code_one} alt={project.code_one} />
-                    <img className="image__screen" src={project.code_two} alt={project.code_two} />
+                    <img
+                    onClick={() =>openPicTwo()}  
+                    className="image__screen" 
+                    id="picTwo"
+                    src={project.screenshot_two} 
+                    alt={project.screenshot_two} />
+
+                    <img 
+                    onClick={() =>openPicThree()} 
+                    className="image__screen"
+                    id="picThree" 
+                    src={project.code_one} 
+                    alt={project.code_one} />
+
+                    <img 
+                    onClick={() =>openPicFour()} 
+                    className="image__screen" 
+                    id="picFour"
+                    src={project.code_two} 
+                    alt={project.code_two} />
                 </div>              
+            </div>
+            
+            <div className="live__cont">
+                <button className="navbar__button "><a className="navbar__link" rel="noreferrer" target="_blank" href={project.live}>Click to see live</a></button>
             </div>
 
 
-
-            <div className="github__container">
+            <div className="github">
                 <div className="git__logo"><VscGithub className="git__logo"/></div>
-                <div className="git__link"><a rel="noreferrer" target="_blank" href={project.github}>{project.github}</a></div>
+                <div className="git__link center"><a className="git__link center" rel="noreferrer" target="_blank" href={project.github}>{project.github}</a></div>
             </div>
         </div>  
         }

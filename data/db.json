@@ -6,6 +6,7 @@
       "subtitle": "The website you are looking at right now.",
       "tech": "JavsScript, React, HTML, SCSS",
       "description": "The Portfolio Landing Page is my work in progress. I want to use it to add more projects and to showcase my learning process (though one will never finish learning). It also displays the final project from the Web Development Bootcamp I joined in 2022, as well as projects I finished on my own, projects from video tutorials, or results from other resources of study. The biggest struggle was being able to dive into the work without guidance, though I would argue that having conquered that was also the biggest joy!",
+      "live": "www.queuing4oranges.com",
       "screenshot_one": "../assets/portfolio_screen1.PNG",
       "screenshot_two": "../assets/portfolio_screen2.PNG",
       "code_one": "../assets/portfolio_code1.PNG",
@@ -18,6 +19,7 @@
       "subtitle": "Final Project of Web Development Bootcamp 2022",
       "tech": "JavaScript, React, PHP, Laravel, SCSS",
       "description": "Lorem 2, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "live": "www.queuing4oranges.com",
       "screenshot": "img src",
       "code": "img src",
       "github": "https://github.com/RuxCavescu/Lesbotoc"
@@ -29,6 +31,7 @@
       "subtitle": "A memory game from the Net Ninja course \"Build Websites with React & Firebase\"",
       "tech": "JavsScript, React, HTML, CSS",
       "description": "This is the first project - a traditional memory game - work with different React concepts, such as components, how to use hooks, fetching Data and working with a database",
+      "live": "www.queuing4oranges.com",
       "screenshot": "img src",
       "code": "img src",
       "github": "https://github.com/queuing4oranges/magic-memory"
@@ -39,6 +42,7 @@
       "subtitle": "A Hackathon group project for the Web Development Bootcamp",
       "tech": "PHP, Laravel",
       "description": "Lorem 3, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "live": "www.queuing4oranges.com",
       "screenshot": "img src",
       "code": "img src",
       "github": "https://github.com/queuing4oranges/vet-clinic-admin-panel"
@@ -49,6 +53,7 @@
       "subtitle": "A",
       "tech": "Language1, Language2",
       "description": "Lorem 4, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "live": "www.queuing4oranges.com",
       "screenshot": "img src",
       "code": "img src",
       "github": "git src 4"
@@ -59,6 +64,7 @@
       "subtitle": "A",
       "tech": "Language1, Language2",
       "description": "Lorem 5, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "live": "www.queuing4oranges.com",
       "screenshot": "img src",
       "code": "img src",
       "github": "git src 5"
@@ -69,6 +75,7 @@
       "subtitle": "A",
       "tech": "Language1, Language2",
       "description": "Lorem 6, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "live": "www.queuing4oranges.com",
       "screenshot": "img src",
       "code": "img src",
       "github": "git src 6"

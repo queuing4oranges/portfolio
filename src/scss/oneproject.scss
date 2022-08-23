@@ -29,8 +29,8 @@ html {
 }
 
 .pic-big {
-    width: 1200px;
-    height: 701px;
+    width: 1152px;
+    height: 612px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -39,7 +39,7 @@ html {
 
 .data__container {
     width: 70%;
-    margin: 100px auto;
+    margin: 80px auto;
     border: 2px solid rgb(198, 224, 235);
     border-radius: 10px;
     padding: 30px;
@@ -65,8 +65,12 @@ html {
 .images__cont {
     width: 50%;
     display: grid;
-    grid-template-columns: 250px 200px;
+    grid-template-columns: 250px 250px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    align-content: flex-end;
+    align-self: end;
+}
+
+.center {
+    align-self: baseline;
 }

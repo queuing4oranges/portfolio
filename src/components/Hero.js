@@ -21,8 +21,8 @@ const Hero = () => {
     className={openModal ? "blurry" : "hero__image"} 
     id="home">            
         <div className="hero__text">
-            <h1 className="hero__title">Hi, I am <br/>Katja Zenker</h1>
-            <p className="hero__par">And I'm a Web Developer</p>
+            <h1 className="hero__title">Hi, I am <br/>Katja</h1>
+            <p className="hero__par">A Prague based Junior Web Developer</p>
                     <button 
                         type="button"
                         className="button bouncy"
