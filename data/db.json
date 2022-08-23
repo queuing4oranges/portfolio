@@ -5,7 +5,7 @@
       "title": "Portfolio Landing Page",
       "subtitle": "The website you are looking at right now.",
       "tech": "JavsScript, React, HTML, SCSS",
-      "description": "My Portfolio Landing Page is and will always be a work in progress. I want to use it to add more projects and to showcase my learning process (though one will never be finished learning). It displays the final project from the Web Development Bootcamp I joined in 2022, but also projects I finished on my own, projects from video tutorials or results from other resources of studying. The biggest struggle was being able to dive into the work without guidance or mentoring, though I would argue that having conquered that - it was also the biggest joy!",
+      "description": "The Portfolio Landing Page is my work in progress. I want to use it to add more projects and to showcase my learning process (though one will never finish learning). It also displays the final project from the Web Development Bootcamp I joined in 2022, as well as projects I finished on my own, projects from video tutorials, or results from other resources of study. The biggest struggle was being able to dive into the work without guidance, though I would argue that having conquered that was also the biggest joy!",
       "screenshot_one": "../assets/portfolio_screen1.PNG",
       "screenshot_two": "../assets/portfolio_screen2.PNG",
       "code_one": "../assets/portfolio_code1.PNG",

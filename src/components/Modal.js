@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
-import { send } from 'emailjs-com';
+import React, { useState } from "react";
+import { send } from "emailjs-com";
 
 
 function Modal({ hideModal }) {
     // const [openModal, setOpenModal] = useState(true);
     const [toSend, setToSend] = useState({
-        namefrom: '',
-        topic: '',
-        replyto: '',
-        message: ''
+        namefrom: "",
+        topic: "",
+        replyto: "",
+        message: ""
     })
 
     const handleSubmit = (e) => {
         e.preventDefault();
         send(
-            'service_hzahxgj', 
-            'template_ekj5muj', 
+            "service_hzahxgj", 
+            "template_ekj5muj", 
             toSend, 
-            'hGPQvp50oflM09nyO'
+            "hGPQvp50oflM09nyO"
         )
         hideModal();
     }
@@ -78,12 +78,12 @@ function Modal({ hideModal }) {
                 </label>
                 <div className="btn__cont">
                     <button
-                    type='submit'
+                    type="submit"
                     onClick={hideModal}
                     className="contact__button cancel">Cancel
                     </button>
                     <button 
-                    type='submit'
+                    type="submit"
                     className="contact__button">Send
                     </button>
                     

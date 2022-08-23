@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useFetch } from '../hooks/useFetch';
+import React from "react";
+import { Link } from "react-router-dom";
+import { useFetch } from "../hooks/useFetch";
 
 
 function Projects() {
@@ -9,7 +9,7 @@ function Projects() {
     const {data: projects, isPending, error} = useFetch(url)
 
   return (
-    <div className="projects__container" id='projects'>
+    <div className="projects__container" id="projects">
 
     <h1 className="projects__title">Projects</h1>
 
