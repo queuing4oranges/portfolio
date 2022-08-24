@@ -41,7 +41,6 @@ return (
         <div className="data__container">
             <div className="info__container">
                 <h2 className="oneprojects__title">{project.title}</h2>
-                {/* <h3 className="projects__subtitle">{project.subtitle}</h3> */}
                 <h4>Tech Stack: {project.tech}</h4>
             </div>
 

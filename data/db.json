@@ -18,22 +18,26 @@
       "title": "Lesbotoč Website",
       "subtitle": "Final Project of Web Development Bootcamp 2022",
       "tech": "JavaScript, React, PHP, Laravel, SCSS",
-      "description": "Lorem 2, ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio quidem maxime tempora voluptas atque quam nobis.",
+      "description": "The Lesbotoč Website project will go live as soon as finishing touches are made by the team and in cooperation with the organization, which is part of the LGBT+ community. The project was made by a team of three. All of us worked on backend and frontend, because everyone wanted to be involved in the whole process. That way, we all had a part in creating tables, modeling, and seeding data to the database. The project was planned and designed in Figma. The team worked agile with the help of Trello. My part of the backend was 'locations', including a form to add a new location to the database. My work on the frontend was the 'about-us' page, as well as the footer of the website.",
       "live": "www.queuing4oranges.com",
-      "screenshot": "img src",
-      "code": "img src",
+      "screenshot_one": "../assets/portfolio_screen3.PNG",
+      "screenshot_two": "../assets/portfolio_screen4.PNG",
+      "code_one": "../assets/portfolio_code3.PNG",
+      "code_two": "../assets/portfolio_code4.PNG",
       "github": "https://github.com/RuxCavescu/Lesbotoc"
     },
 
     {
       "id": "3",
       "title": "Magic Memory",
-      "subtitle": "A memory game from the Net Ninja course \"Build Websites with React & Firebase\"",
+      "subtitle": "A traditional memory game.",
       "tech": "JavsScript, React, HTML, CSS",
-      "description": "This is the first project - a traditional memory game - work with different React concepts, such as components, how to use hooks, fetching Data and working with a database",
+      "description": "This is a traditional memory game from the Net Ninja course \"Build Websites with React & Firebase\", which works with different React concepts, such as reusable components, how to use hooks, fetching Data and working with a database. I've chosen to follow the course to repeat and deepen the understanding of what I've learned in the Bootcamp and to continue learning and understanding the concepts of JavaScript.",
       "live": "www.queuing4oranges.com",
-      "screenshot": "img src",
-      "code": "img src",
+      "screenshot_one": "../assets/portfolio_screen5.PNG",
+      "screenshot_two": "../assets/portfolio_screen6.PNG",
+      "code_one": "../assets/portfolio_code5.PNG",
+      "code_two": "../assets/portfolio_code6.PNG",
       "github": "https://github.com/queuing4oranges/magic-memory"
     },
     {
