@@ -37,6 +37,7 @@ function Modal({ hideModal }) {
                 <label>
                     <span>My name is *</span>
                     <input 
+                    className="modal__input"
                     type="text"
                     name="namefrom"
                     value={toSend.namefrom}
@@ -46,6 +47,7 @@ function Modal({ hideModal }) {
                 <label>
                     <span>I'm contacting you because</span>
                     <input 
+                    className="modal__input"
                     type="text"
                     name="topic"
                     value={toSend.topic}
@@ -55,6 +57,7 @@ function Modal({ hideModal }) {
                 <label>
                     <span>You can reply to me at *</span>
                     <input 
+                    className="modal__input"
                     placeholder="your email" 
                     type="text"
                     name="replyto"

@@ -15,7 +15,8 @@ html {
     text-align: left;
     width: 100%;
     margin: auto;
-    padding: 10px;
+    padding: 5px;
+    border-radius: 5px;
     box-sizing: border-box;
     font-size: 1em;
     font-family: "Titillium Web",
@@ -41,8 +42,8 @@ html {
 .contact__form {
     background-color: #ffbb11;
     border-radius: 10px;
-    width: 500px;
-    height: 650px;
+    width: 100%;
+    height: 100%;
     margin: auto;
     border: 1px solid #d828b2;
     padding: 10px;
@@ -67,7 +68,8 @@ html {
 
 .form__title{
     color: white;
-    padding: 10px 0 0 15px;
+    padding: 10px 0 0 5px;
+    margin-top: -10px;
 }
 
 .btn__cont {
@@ -83,6 +85,12 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
-  
+    height: 500px;
+    width: 550px;
 }
 
+.modal__input {
+    height: 1.5em;
+    padding: 3px;
+    
+}
