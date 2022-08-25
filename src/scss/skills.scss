@@ -3,7 +3,6 @@
     padding: 0;
     color: white;
     margin: 0 auto;
-    color: white;
     padding-left: 100px;
     padding-right: 100px;
     display: flex;
@@ -29,6 +28,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
+    margin-right: 30px;
 }
 
 .language__container {
@@ -36,6 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-right: 30px;
 }
 
 .courses__cont {
@@ -48,13 +49,13 @@
 .progress-bar {
     border-radius: 10px;
     height: 40px;
-    width: 80%; 
+    width: 100%; 
 }
 
 .progress {
     background-color:$lightblue ;
     display: flex; 
-    font-size: 20px; 
+    font-size: 16px; 
       
     
 }
@@ -63,15 +64,17 @@
     background-color:#d828b2; 
     align-self: center;  
     padding: 4px;
-
 }
 
 .language-en {
-    width: 200px;
+    width: 100%;
 }
 
 .courses {
     width: 100%;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
 }
 
 // .courses {
