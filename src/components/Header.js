@@ -1,13 +1,26 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
-import { useState } from "react";
 
 const Header = () => {
 
     const dropDown = () => {
         document.getElementById("myDropdown").classList.toggle("show");
     }
+
+    // window.onclick = function(event) {
+    //     if (!event.target.matches("dropbtn")){
+    //         var drop = document.getElementsByClassName("dropdown-content");
+    //         var i;
+    //         for (i=0; i<drop.length; i++){
+    //             var openDropdown = drop[i];
+    //             if (openDropdown.classList.contains("show")){
+    //                 openDropdown.classList.remove("show")
+    //             }
+    //         }
+    //     }
+        
+    // }
    
     
     return ( 
