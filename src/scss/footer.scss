@@ -55,3 +55,34 @@
 .nav__link {
     font-size: 1em;
 }
+
+@media(max-width:600px){
+    .footer__container {
+        width: 100%;
+    }
+
+    .github__logo, 
+    .mail__logo,
+    .linkedin__logo {
+        display: none;
+    }
+
+    .footer__container {
+        height: 60%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .footer__content {
+        justify-content: space-between;
+        margin: 25px;
+        font-size: 0.8rem;
+        width: 50%;
+    }
+
+    .copy__text {
+        font-size: 0.8rem;
+        margin-top: 0px;
+        padding-bottom: 10%;
+    }
+}

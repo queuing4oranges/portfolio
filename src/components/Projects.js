@@ -13,7 +13,14 @@ function Projects() {
 
     <h1 className="projects__title">Projects</h1>
 
+        <div className="github__impro">
+          <p className="github__impro_text">Working on the backend right now. Please use this link to look at my projects.</p>
+          <button className="github__impro_btn"><a className="github__impro_a" href="https://github.com/queuing4oranges">Projects on Github</a></button>
+
+        </div>
       <div className="cards__cont">
+        
+
         
         
         {isPending && 

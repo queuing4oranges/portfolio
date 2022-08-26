@@ -1,6 +1,5 @@
 .skills__container{
     background: #ffb814;
-    padding: 0;
     color: white;
     margin: 0 auto;
     padding-left: 100px;
@@ -14,14 +13,19 @@
     margin: 0;
     padding-top: 50px;
     padding-bottom: 25px;
-    padding-left: 0;
-    &-big{
-        margin: 0;
-        padding: 50px 100px 0px;
-        color: white;
-        background: #ffb814;
-    }
+    margin: 0;
+    padding: 50px 100px 0px;
+    color: white;
+    background: #ffb814;
 }
+
+.skills__subtitle {
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        padding-left: 0;
+}
+
 
 .tech__container {
     display: flex;
@@ -93,3 +97,44 @@
 //         transform-origin: left;
 //     }
 // }
+
+@media(max-width:600px){
+    .skills__container {
+        width: 100%;
+        padding: 25px;
+        margin: 0 auto;
+        padding: 25px 25px;
+    }
+
+    .skills__title{
+        margin-top: -5%;
+        margin-bottom: -5%;
+        margin-left: 0;
+        padding-left: 25px;
+        font-size: 1.5em;
+  
+   
+    }
+    .skills__subtitle {
+        font-size: 1em;
+        margin-top: -10%;
+
+    }
+
+    .skills__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses__cont,
+    .language__container,
+    .tech__container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .progress, 
+    .progress-bar {
+        height: 40%;
+    }
+}

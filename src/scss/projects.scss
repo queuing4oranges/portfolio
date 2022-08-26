@@ -1,4 +1,4 @@
-.projects__container{
+.projects__container {
     background: $lightblue;
     margin: 0 auto;
     color: white;
@@ -9,7 +9,7 @@
 
 }
 
-.projects__title{
+.projects__title {
     margin-top: 0;
     margin-left: 0px;
     padding-top: 50px;
@@ -17,7 +17,7 @@
     padding-bottom: 50px;
 }
 
-.cards__cont{
+.cards__cont {
     padding-top: 0px;
     display: flex;
     flex-direction: row;
@@ -27,13 +27,13 @@
 
 
 }
-.cards__title{
+.cards__title {
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.card{
+.card {
     width: 300px;
     height: 250px;
     border: 2px solid rgb(198, 224, 235);
@@ -52,22 +52,26 @@
 
 }
 
-.li__item{
+.li__item {
     list-style: none;
 }
 
-.github{
+.github__impro {
+    display: none;
+}
+
+.github {
     display: flex;
     width: fit-content;
     padding-top: 30px;
 
 }
-.git__logo{
+.git__logo {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
-.git__link{
+.git__link {
     padding-right: 20px;
     word-break: break-word;
 
@@ -77,11 +81,11 @@
     }
 }
 
-.ul__item{
+.ul__item {
     padding: 0;
 }
 
-.read{
+.read {
     font-weight: 600;
     position: absolute;
     bottom: 30px;
@@ -89,4 +93,47 @@
     color: white;
     text-decoration: none;
 
+}
+
+@media(max-width:600px) {
+    .projects__container {
+        width: 100%;
+        padding: 25px;
+        // padding-left: 25px;
+        // padding-right: 25px;
+        padding-bottom: 75px;    
+    }
+    
+    .cards__cont {
+        display: none;
+    }
+
+    .projects__title {
+        margin-top: -5%;
+        margin-bottom: -5%;
+        font-size: 1.5em;
+    }
+
+    .github__impro {
+        display: flex;
+        flex-direction: column;
+
+        &_text {
+            text-align: justify;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        &_btn {
+            width: 50%;
+            margin: auto;
+            border-radius: 5px;
+            background-color: #ffb814;
+        }
+
+        &_a{
+            color: black;
+            text-decoration: none;
+        }
+    }
 }
