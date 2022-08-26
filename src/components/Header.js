@@ -12,6 +12,13 @@ const Header = () => {
             <div className="navbar__cont">
                 <div className="navbar__home navbar__link"><Link to="home" smooth={true} spy={true}><FontAwesomeIcon icon={faHouse} size="1x" color="white"/></Link></div>
             </div>
+
+            <a href="#" className="toggle-button">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </a>
+
                 <div className="navbar__links">
                     
                 <div className="navbar__pdf">

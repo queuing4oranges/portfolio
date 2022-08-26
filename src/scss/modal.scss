@@ -24,6 +24,10 @@ html {
         Helvetica,
         sans-serif;
     border-color: white;
+    @media(max-width: 600px){
+        width: 60%;
+        font-size: 1em;
+    }
 
 }
 
@@ -47,6 +51,10 @@ html {
     margin: auto;
     border: 1px solid #d828b2;
     padding: 10px;
+    @media(max-width: 600px){
+        width: 50%;
+        height: 100%;
+    }
 }
 
 .contact__button {
@@ -87,6 +95,14 @@ html {
     z-index: 99;
     height: 500px;
     width: 550px;
+    @media(max-width: 600px){
+      position: fixed; 
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index:99; 
+    }
+    
 }
 
 .modal__input {

@@ -7,7 +7,7 @@ $blackish: #021E20;
 
 .navbar{
     background-color: $lightblue;
-    height: 50px;
+    height: 10%;
     display: flex;
     flex-direction: row;
     font-size: 20px;
@@ -15,10 +15,19 @@ $blackish: #021E20;
     align-items: center;
     justify-content: flex-start;
     border-bottom: 1px white solid;
+    @media(max-width: 600px) {
+        max-width: 100%;
+        height: 5%;
+            }
     
+            /*make element with display:none and then media display block*/
+
     &__cont{
         padding-left: 100px;
         flex-grow: 1;
+        @media(max-width: 600px) {
+            padding-left: 25px;
+        }
     }
 
     &__links{
@@ -31,6 +40,9 @@ $blackish: #021E20;
     &__skills, 
     &__about{
         padding: 0 20px;
+        @media(max-width: 600px) {
+            display: none;
+        }
     }
     &__button{
         background-color: $darkblue;
@@ -63,8 +75,36 @@ $blackish: #021E20;
     top: 0;
     width: 100%;
     z-index: 10;
-    
-    
+        @media(max-width: 600px) {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+       
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    @media(max-width: 600px) {
+        display: flex;
+        margin-right: 25px;
+    }
+
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
 }
 
 
