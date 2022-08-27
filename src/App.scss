@@ -7,6 +7,7 @@
 @import "./scss/about.scss";
 @import "./scss/footer.scss";
 @import "./scss/oneproject.scss";
+@import "./scss/projectsalt.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;600;700;900&display=swap');
 
@@ -17,7 +18,12 @@ $rose: #FEB9C6;
 $darkrose: #B96B85;
 $blackish: #021E20;
 
-
+@media(max-width:600px){
+// .App {
+//     margin: 0;
+//     padding: 0;
+// }
+}
 
 .App{
     font-family: "Titillium Web", Arial, Helvetica, sans-serif;
@@ -31,6 +37,7 @@ $blackish: #021E20;
     width: 80%;
     margin:auto;
 }
+
 
 
 

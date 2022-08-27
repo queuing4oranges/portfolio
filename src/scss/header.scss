@@ -45,6 +45,7 @@ $blackish: #021E20;
 }
 .navbar__button:hover{
     background-color: #ffb814;
+    cursor: pointer;
 }
 
 .navbar__about{
@@ -58,7 +59,7 @@ $blackish: #021E20;
 }
 
 .navbar__link:hover{
-    cursor: default;
+    cursor: pointer;
 }
 
 .sticky {
@@ -76,23 +77,24 @@ $blackish: #021E20;
 @media (max-width: 600px){
 
     .navbar {
-        display: inline-block;
+        display: block;
         position: fixed;
         margin-top: 0px;
-        width: 100%;
+        max-width: 100%;
         height: 5%;
         flex-direction: column;
         align-items: flex-start;
    
     }
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
     .navbar__links {
         flex-direction: column;
         display: none;
-    }
-
-    .show {
-        display: block;
     }
 
     .navbar__cont {
@@ -124,11 +126,12 @@ $blackish: #021E20;
     }
 
     .show{
-        display: flex;
+        display: block;
         flex-direction: column;
     }
 
     .dropbtn {
+        margin-left: 0;
         margin-right: 25px;
         justify-self: center;
         background-color: #ffb814 ;

@@ -1,14 +1,10 @@
 .about__container {
     background: $lightblue;
-    padding: 0;
     color: white;
     margin: 0 auto;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 100px 50px 100px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 50px;
-
 }
 
 .about__title {
@@ -112,6 +108,7 @@
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 25px;
+        display: block;
     }
 
     .about__title {

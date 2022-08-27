@@ -31,7 +31,10 @@ const Header = () => {
             </div>
 
             <div className="dropdown">
+
                 <button onClick={()=>dropDown()} className="dropbtn">Menu</button>
+
+
                 <div className="dropdown-content" id="myDropdown">
                     <div className="navbar__homescreen navbar__link navbar__skills"><Link to="home" smooth={true} spy={true}>Home</Link></div>
                     <div className="navbar__skills navbar__link"><Link to="projects" smooth={true} spy={true}>Projects</Link></div>
