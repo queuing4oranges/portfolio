@@ -126,7 +126,7 @@ $blackish: #021E20;
         left: -5px;
         width: 50%;
         background-color: $lightblue;
-        min-width: 160px;
+        width: 100px;
         z-index: 10;
         display: none;
     }
@@ -157,7 +157,7 @@ $blackish: #021E20;
         &-skills, 
         &-about {
             border-bottom: 1px white solid;
-            padding: 0 20px;
+            padding: 5px 10px;
             color: white;
         } 
 
