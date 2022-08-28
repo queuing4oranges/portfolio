@@ -99,9 +99,13 @@
     transform: translate(-50%, -50%);
     z-index: 11;
     border: 1px solid white;
-
 }
 
+.live__button {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
 
 // .read {
 //     font-weight: 600;
@@ -171,5 +175,11 @@
     .button.white {
         width: 100%;
         margin-bottom: 50px;
+    }
+
+    .live__button {
+        margin-bottom: 30px;
+        align-self: center;
+        font-size: 0.8rem;
     }
 }

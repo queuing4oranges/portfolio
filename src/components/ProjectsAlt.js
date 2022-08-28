@@ -104,19 +104,20 @@ function Projects() {
                                 <li className="li__item">Tech Stack: JavaScript, React, HTML, CSS</li>
                                 <li className="li__item github__item"><a className="github__item" href="https://github.com/queuing4oranges/magic-memory">https://github.com/queuing4oranges/magic-memory</a></li>
                             </ul>
+                            <a className="live__button" href="https://memory.itisgoodtohave.me/"><button className="live__button">Click here to see live  </button></a>
                     </div>
 
                     <div className="pics__content">
                         <img
                         onClick={toggleClass} 
                         className="screenshots" 
-                        src="../assets/portfolio_screen5.PNG" 
+                        src="../assets/portfolio_screen7.PNG" 
                         alt="screenshot magic memory" />
 
                         <img
                         onClick={toggleClass} 
                         className="screenshots" 
-                        src="../assets/portfolio_screen6.PNG" 
+                        src="../assets/portfolio_screen8.PNG" 
                         alt="screenshot magic memory" />
 
                         <img
