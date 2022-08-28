@@ -29,10 +29,12 @@ $blackish: #021E20;
         flex-grow: 2;
     }
 
-    &__pdf,
-    &__skills, 
-    &__about{
+    &__link-pdf,
+    &__link-skills, 
+    &__link-about,
+    &__link-projects{
         padding: 0 20px;
+        color: white;
     }
 
     &__button{
@@ -42,13 +44,14 @@ $blackish: #021E20;
         height: 30px;
     }
 
+
 }
 .navbar__button:hover{
     background-color: #ffb814;
     cursor: pointer;
 }
 
-.navbar__about{
+.navbar__link-about{
     padding-right: 100px;
     padding-left: 20px;
 }
@@ -58,7 +61,10 @@ $blackish: #021E20;
     text-decoration: none;
 }
 
-.navbar__link:hover{
+.navbar__link-pdf:hover,
+.navbar__link-projects:hover,
+.navbar__link-skills:hover,
+.navbar__link-about:hover{
     cursor: pointer;
 }
 
@@ -86,12 +92,12 @@ $blackish: #021E20;
         align-items: flex-start;
    
     }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
+        .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
     .navbar__links {
         flex-direction: column;
         display: none;
@@ -132,7 +138,6 @@ $blackish: #021E20;
 
     .dropbtn {
         margin-left: 0;
-        margin-right: 25px;
         justify-self: center;
         background-color: #ffb814 ;
         border: 1px solid #ffb814;
@@ -145,4 +150,22 @@ $blackish: #021E20;
         border-bottom: 1px $darkblue solid;
         font-size: 1rem;
     }
+
+    .navbar__link {
+        &-home,
+        &-projects,
+        &-skills, 
+        &-about {
+            border-bottom: 1px white solid;
+            padding: 0 20px;
+            color: white;
+        } 
+
+    }
+
+    .dropdown-content {
+        margin-left: 10px;
+    }
+
+
 }

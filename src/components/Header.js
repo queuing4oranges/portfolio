@@ -35,11 +35,34 @@ const Header = () => {
                 <button onClick={()=>dropDown()} className="dropbtn">Menu</button>
 
 
-                <div className="dropdown-content" id="myDropdown">
-                    <div className="navbar__homescreen navbar__link navbar__skills"><Link to="home" smooth={true} spy={true}>Home</Link></div>
-                    <div className="navbar__skills navbar__link"><Link to="projects" smooth={true} spy={true}>Projects</Link></div>
-                    <div className="navbar__skills navbar__link"><Link to="skills" smooth={true} spy={true}>Skills</Link></div>
-                    <div className="navbar__about navbar__link"><Link to="about" smooth={true} spy={true}>About</Link></div>
+                <div className="dropdown-content" id="myDropdown">                   
+                    <div className="navbar__link-home">
+                        <Link 
+                        to="home" 
+                        smooth={true} 
+                        spy={true}>Home
+                        </Link></div>
+
+                    <div className="navbar__link-projects">
+                        <Link 
+                        to="projects" 
+                        smooth={true} 
+                        spy={true}>Projects
+                        </Link></div>
+
+                    <div className="navbar__link-skills">
+                        <Link 
+                        to="skills" 
+                        smooth={true} 
+                        spy={true}>Skills
+                        </Link></div>
+
+                    <div className="navbar__link-about">
+                        <Link 
+                        to="about" 
+                        smooth={true} 
+                        spy={true}>About
+                        </Link></div>
                 </div>
 
             </div>
@@ -47,7 +70,7 @@ const Header = () => {
 
                 <div className="navbar__links">
                     
-                <div className="navbar__pdf">
+                <div className="navbar__link-pdf">
                     <button className="navbar__button">
                         <a 
                             className="navbar__link" 
@@ -59,9 +82,9 @@ const Header = () => {
                     </button>
                 </div>
 
-                <div className="navbar__skills navbar__link"><Link to="projects" smooth={true} spy={true}>Projects</Link></div>
-                <div className="navbar__skills navbar__link"><Link to="skills" smooth={true} spy={true}>Skills</Link></div>
-                <div className="navbar__about navbar__link"><Link to="about" smooth={true} spy={true}>About</Link></div>
+                <div className="navbar__link-projects"><Link to="projects" smooth={true} spy={true}>Projects</Link></div>
+                <div className="navbar__link-skills"><Link to="skills" smooth={true} spy={true}>Skills</Link></div>
+                <div className="navbar__link-about"><Link to="about" smooth={true} spy={true}>About</Link></div>
 
             </div>
         </div>
