@@ -34,25 +34,25 @@ function Projects() {
                         onClick={toggleClass}
                         className="screenshots"
                         src="../assets/portfolio_screen1.PNG" 
-                        alt="screenshot magic memory" />
+                        alt="screenshot landing page" />
 
                         <img 
                         onClick={toggleClass}
                         className="screenshots" 
                         src="../assets/portfolio_screen2.PNG" 
-                        alt="screenshot magic memory" />
+                        alt="screenshot landing page" />
 
                         <img
                         onClick={toggleClass} 
                         className="screenshots"
                         src="../assets/portfolio_code1.PNG" 
-                        alt="screenshot magic memory" />
+                        alt="screenshot code for landing page" />
 
                         <img
                         onClick={toggleClass}
                         className="screenshots"
                         src="../assets/portfolio_code2.PNG" 
-                        alt="screenshot magic memory" />
+                        alt="screenshot code for landing page" />
                     </div>
                 </div>
 
@@ -73,32 +73,32 @@ function Projects() {
                         onClick={toggleClass} 
                         className="screenshots" 
                         src="../assets/portfolio_screen3.PNG" 
-                        alt="screenshot magic memory" />
+                        alt="screenshot lesbotoc" />
 
                         <img
                         onClick={toggleClass} 
                         className="screenshots" 
                         src="../assets/portfolio_screen4.PNG" 
-                        alt="screenshot magic memory" />
+                        alt="screenshot lesbotoc" />
 
                         <img
                         onClick={toggleClass} 
                         className="screenshots"
                         src="../assets/portfolio_code3.PNG" 
-                        alt="screenshot magic memory" />
+                        alt="screenshot code for lesbotoc" />
 
                         <img
                         onClick={toggleClass}
                         className="screenshots"
                         src="../assets/portfolio_code4.PNG" 
-                        alt="screenshot magic memory" />
+                        alt="screenshot code for lesbotoc" />
                     </div>
                 </div>
 
                 {/* card3 */}
                 <div className="card">
                     <div className="card__content">
-                            <h3 className="cards__title">Magic Memory</h3>
+                            <h3 className="cards__title">Memory</h3>
                             <ul className="ul__item">
                                 <li className="li__item">A traditional memory game.</li>
                                 <li className="li__item">Tech Stack: JavaScript, React, HTML, CSS</li>
@@ -123,13 +123,13 @@ function Projects() {
                         onClick={toggleClass} 
                         className="screenshots"
                         src="../assets/portfolio_code5.PNG" 
-                        alt="screenshot magic memory" />
+                        alt="screenshot code for memory" />
 
                         <img
                         onClick={toggleClass}
                         className="screenshots"
                         src="../assets/portfolio_code6.PNG" 
-                        alt="screenshot magic memory" />
+                        alt="screenshot code for memory" />
                     </div>
 
 
