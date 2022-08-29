@@ -111,13 +111,13 @@ function Projects() {
                         <img
                         onClick={toggleClass} 
                         className="screenshots" 
-                        src="../assets/portfolio_screen7.PNG" 
+                        src="../assets/portfolio_screen5.PNG" 
                         alt="screenshot magic memory" />
 
                         <img
                         onClick={toggleClass} 
                         className="screenshots" 
-                        src="../assets/portfolio_screen8.PNG" 
+                        src="../assets/portfolio_screen6.PNG" 
                         alt="screenshot magic memory" />
 
                         <img
