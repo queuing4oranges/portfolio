@@ -56,6 +56,7 @@
     font-size: 1em;
 }
 
+/*mobile phone*/
 @media(max-width:600px){
     .footer__container {
         width: 100%;
@@ -86,5 +87,35 @@
         margin: 0px auto;
         padding-bottom: 10%;
         text-align: center;
+    }
+}
+
+/*big external monitor*/
+@media screen and (min-width: 1900px){
+    .footer__container {
+        padding-bottom: 30px;
+        height: 350px;
+    }
+    .github__logo,
+    .mail__logo,
+    .linkedin__logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .github__cont, 
+    .mail__cont, 
+    .linked__cont {
+        padding: 30px;
+    }
+
+    .github__link, 
+    .mail__link,
+    .linked__link {
+        font-size: 24px;
+    } 
+
+    .copyright__content {
+        font-size: 24px;
     }
 }

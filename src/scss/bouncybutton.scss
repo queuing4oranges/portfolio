@@ -14,9 +14,7 @@
         Helvetica,
         sans-serif;
     align-self: center;
-    @media(max-width: 600px){
-        width: 150px;
-    }
+
 }
 
 
@@ -31,5 +29,19 @@
 
     100% {
         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+}
+
+/*mobile phone*/
+@media(max-width: 600px) {
+    .button {
+        width: 150px;
+    }
+}
+
+/*big external monitor*/
+@media screen and (min-width: 1900px){
+    .button{
+    font-size: 32px;
     }
 }

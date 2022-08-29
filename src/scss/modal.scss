@@ -94,6 +94,7 @@ html {
     
 }
 
+/*mobile phone*/
 @media(max-width: 600px) {
     .form__title {
         font-size: 1.5rem;
@@ -127,4 +128,44 @@ html {
   
 
     }
+}
+
+/*big external monitor*/
+@media screen and (min-width: 1900px){
+    .modalContainer {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+        height: 900px;
+        width: 1000px;
+    }
+
+    .contact__form label,
+    .contact__form input,
+    .contact__form .textarea {
+        padding: 30px;
+        font-size: 1.5em;
+    }
+    .contact__form input {
+        font-size: 24px;
+    }
+    .contact__form .textarea {
+        height: 140px;
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    .contact__button {
+        font-size: 24px;
+        width: 400px;
+        margin-bottom: 10px;
+    }
+
+    .form__title {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
 }

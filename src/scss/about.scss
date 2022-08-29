@@ -101,7 +101,7 @@
         transform: translateY(-100px);
     }
 }
-
+/*mobile phone*/
 @media(max-width:600px) {
 
     .about__container {
@@ -143,4 +143,30 @@
     .hobby__container {
         margin-top: -50px;
     }
+}
+
+/*big external monitor*/
+@media screen and (min-width: 1900px){
+    .about__title {
+        font-size: 3em;
+    }
+
+    .subtitle__timeoff,
+    .subtitle__about {
+        font-size: 2em;
+    }
+
+    .text__container, 
+    .hobby__container {
+        font-size: 24px;
+    }
+
+    .animatePicture {
+        width: 440px;
+        height: 440px;        
+        background-image: url("../images/katja_res.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 }

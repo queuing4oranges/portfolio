@@ -117,6 +117,7 @@
 
 // }
 
+/*mobile phone*/
 @media(max-width:600px) {
     .projects__container {
         width: 100%;
@@ -181,5 +182,45 @@
         margin-bottom: 30px;
         align-self: center;
         font-size: 0.8rem;
+    }
+}
+
+/*big external monitor*/
+@media screen and (min-width: 1900px){
+    .cards__content {
+        width: 30%;
+    }
+    .li__item,
+    .cards__title {
+        font-size: 1.5em;
+    }
+
+
+    .pics__content {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .screenshots {
+        width: 340px;
+        height: 200px;
+    }
+
+    .big {
+        width: 1920px;
+        height: 1000px;
+    }
+
+    .projects__title {
+        font-size: 3em;
+    }
+
+    .live__button {
+        width: 300px;
+        height: 60px;
+        font-size: 1em;
     }
 }

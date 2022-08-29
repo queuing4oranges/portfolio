@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import ProjectsAlt from './components/ProjectsAlt';
 // import OneProject from './components/OneProject';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Gallery from './image_gallery/Gallery'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Skills />
           <About />
           <Footer />
+          {/* <Gallery /> */}
         </Route>
 
         {/* <Route exact path="/projects/:id">

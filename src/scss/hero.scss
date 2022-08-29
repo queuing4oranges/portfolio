@@ -43,7 +43,7 @@
     margin: auto; 
     position: relative;
 }
-
+/*mobile phone*/
 @media(max-width: 600px) {
     .hero__image {
     background-size: cover;
@@ -60,6 +60,26 @@
     .hero__par {
         font-size: 20px;
         margin: 60px 100px;
+    }
+}
+
+/*big external monitor*/
+@media screen and (min-width: 1900px) {
+    .hero__image {
+        height: 1000px;
+        justify-content: center;
+    }
+
+    .hero__title {
+        font-size: 160px;
+    }
+
+    .hero__par {
+        font-size: 40px;
+    }
+
+    .blurry {
+        height: 1000px;
     }
 }
 

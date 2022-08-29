@@ -80,6 +80,7 @@ $blackish: #021E20;
 
 }
 
+/*mobile phone*/
 @media (max-width: 600px){
 
     .navbar {
@@ -166,6 +167,16 @@ $blackish: #021E20;
     .dropdown-content {
         margin-left: 10px;
     }
+}
+/*big screen*/
+@media screen and (min-width: 1900px) {
+    .navbar {
+    font-size: 40px;
 
-
+    &__button {
+        height: 50px;
+        width: 200px;
+        font-size: 1.5rem;
+    }
+    }
 }

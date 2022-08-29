@@ -98,6 +98,7 @@
 //     }
 // }
 
+/*mobile phone*/
 @media(max-width:600px){
     .skills__container {
         width: 100%;
@@ -125,8 +126,6 @@
 
     }
 
-    
-
     .courses__cont,
     .language__container,
     .tech__container {
@@ -137,5 +136,22 @@
     .progress, 
     .progress-bar {
         height: 40%;
+    }
+}
+
+/*big external monitor*/
+@media screen and (min-width: 1900px) {
+    .skills__title {
+        font-size: 3em;
+    }
+
+    .skills__subtitle {
+        font-size: 2em;
+    }
+
+    .progress, 
+    .progress-bar {
+        font-size: 24px;
+        height: 50px;
     }
 }
