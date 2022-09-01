@@ -152,25 +152,25 @@ function Projects() {
                         onClick={toggleClass} 
                         className="screenshots" 
                         src="../assets/portfolio_screen7.PNG" 
-                        alt="screenshot magic memory" />
+                        alt="screenshot clone website" />
 
                         <img
                         onClick={toggleClass} 
                         className="screenshots" 
                         src="../assets/portfolio_screen8.PNG" 
-                        alt="screenshot magic memory" />
+                        alt="screenshot clone website" />
 
                         <img
                         onClick={toggleClass} 
                         className="screenshots"
                         src="../assets/portfolio_code7.PNG" 
-                        alt="screenshot code for memory" />
+                        alt="screenshot code for clone website" />
 
                         <img
                         onClick={toggleClass}
                         className="screenshots"
                         src="../assets/portfolio_code8.PNG" 
-                        alt="screenshot code for memory" />
+                        alt="screenshot code for clone website" />
                     </div>
 
 
