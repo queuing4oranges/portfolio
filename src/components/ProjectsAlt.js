@@ -135,7 +135,46 @@ function Projects() {
 
 
                 </div>
+                {/* card4 */}
+                <div className="card">
+                    <div className="card__content">
+                            <h3 className="cards__title">Clone Website</h3>
+                            <ul className="ul__item">
+                                <li className="li__item">The copy of the landing page of an imaginary Web Developer.</li>
+                                <li className="li__item">Tech Stack: HTML, SCSS</li>
+                                <li className="li__item github__item"><a className="github__item" href="https://github.com/queuing4oranges/aneta_webbie">https://github.com/queuing4oranges/aneta_webbie</a></li>
+                            </ul>
+                            <a className="live__button" href="https://anetawebbie.itisgoodtohave.me/"><button className="live__button">Click here to see live  </button></a>
+                    </div>
 
+                    <div className="pics__content">
+                        <img
+                        onClick={toggleClass} 
+                        className="screenshots" 
+                        src="../assets/portfolio_screen7.PNG" 
+                        alt="screenshot magic memory" />
+
+                        <img
+                        onClick={toggleClass} 
+                        className="screenshots" 
+                        src="../assets/portfolio_screen8.PNG" 
+                        alt="screenshot magic memory" />
+
+                        <img
+                        onClick={toggleClass} 
+                        className="screenshots"
+                        src="../assets/portfolio_code7.PNG" 
+                        alt="screenshot code for memory" />
+
+                        <img
+                        onClick={toggleClass}
+                        className="screenshots"
+                        src="../assets/portfolio_code8.PNG" 
+                        alt="screenshot code for memory" />
+                    </div>
+
+
+                </div>
                 
         </div>
 
