@@ -3,12 +3,13 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
-// import Projects from './components/Projects';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
-import ProjectsAlt from './components/ProjectsAlt';
-// import OneProject from './components/OneProject';
+// import ProjectsAlt from './tryouts/ProjectsAlt';
+import OneProject from './components/OneProject';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Gallery from './image_gallery/Gallery'
+import ProjectsAccordion from "../src/components/accordion/ProjectsAccordion"
 
 function App() {
 
@@ -20,16 +21,17 @@ function App() {
           <Header />
           <Hero />
           {/* <Projects /> */}
-          <ProjectsAlt /> 
+          <ProjectsAccordion />
+          {/* <ProjectsAlt />  */}
           <Skills />
           <About />
           <Footer />
           {/* <Gallery /> */}
         </Route>
 
-        {/* <Route exact path="/projects/:id">
+        <Route exact path="/projects/:id">
           <OneProject />
-        </Route> */}
+        </Route>
 
 
       </Switch>
