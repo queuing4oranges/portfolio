@@ -9,7 +9,7 @@ import Skills from './components/Skills';
 import OneProject from './components/OneProject';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Gallery from './image_gallery/Gallery'
-import ProjectsAccordion from "../src/components/accordion/ProjectsAccordion"
+import ProjectsAccordion from "../src/components/accordion/ProjectsAccordion";
 
 function App() {
 
@@ -23,6 +23,7 @@ function App() {
           {/* <Projects /> */}
           <ProjectsAccordion />
           {/* <ProjectsAlt />  */}
+          {/* <NewSkills /> */}
           <Skills />
           <About />
           <Footer />
