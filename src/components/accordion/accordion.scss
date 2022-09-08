@@ -11,17 +11,13 @@
     margin: auto;
     background-color: $lightblue;
     padding: 0 100px 50px 100px;
-
-
 }
 .accordion {
     width: 100%;
-    // margin: 50px auto 100px;
     color: white;
 }
 
 .accordion__title {
-
     margin-top: 0;
     margin-bottom: 50px;
     padding: 50px 0 0px;
@@ -52,16 +48,13 @@
 .accordion__content {
     padding: 10px 20px;
     text-align: justify;
+    background-color: #39b9d2;
 }
 
+.acc__body {
+    margin-left: 5%;
+    margin-right: 5%;
 
-// .accordion__subtitle,
-// .accordion__content {
-//     padding: 1rem;
-// }
-
-.accordion__content {
-    background-color: #39b9d2;
 }
 
 @media screen and (max-width: 700px) {

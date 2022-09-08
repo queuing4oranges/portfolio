@@ -11,15 +11,15 @@ const Accordion = ({ id, title, tech, description, github, live }) => {
             onClick={() => setIsActive(!isActive)}>
                 <h2>{title}</h2>
                 <h2>{isActive ? "-" : "+" }</h2>
-            </div>
+            </div> 
 
             {isActive && 
             <div className="accordion__content" >
 
-                <p>{description}</p> <br />
-                <h3>Tech Stack: {tech}</h3> <br />
-                <p><strong>Source Code: </strong>{github}</p> <br />
-                <a href={live}><button className="live__button">Click here to see live  </button></a>
+                <p className="acc__body">{description}</p> <br />
+                <h3 className="acc__body">Tech Stack: {tech}</h3> <br />
+                <p className="acc__body"><strong>Source Code: </strong>{github}</p> <br />
+                <a className="acc__body" href={live}><button className="live__button">Click here to see live  </button></a>
     
                 
             </div>
