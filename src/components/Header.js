@@ -1,11 +1,21 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
+import {useState} from "react";
 
 const Header = () => {
+    const [isToggle, setIsToggle] = useState(false)
+
+    // const dropDown = () => {
+    //     setIsToggle(true)
+    //     if (isToggle === true){
+    //     document.getElementById("myDropdown").classList.toggle("show");}
+    //     else
+    //     setIsToggle(false);
+    // }
 
     const dropDown = () => {
-        document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("myDropdown").classList.toggle("show")
     }
 
     // window.onclick = function(event) {
@@ -40,6 +50,7 @@ const Header = () => {
                 <div className="dropdown-content" id="myDropdown">                   
                     <div className="navbar__link-home">
                         <Link 
+                        onClick={()=>dropDown()}
                         to="home" 
                         smooth={true} 
                         spy={true}>Home
@@ -47,20 +58,23 @@ const Header = () => {
 
                     <div className="navbar__link-projects">
                         <Link 
+                        onClick={()=>dropDown()}
                         to="projects" 
                         smooth={true} 
                         spy={true}>Projects
                         </Link></div>
 
                     <div className="navbar__link-skills">
-                        <Link 
+                        <Link
+                        onClick={()=>dropDown()} 
                         to="skills" 
                         smooth={true} 
                         spy={true}>Skills
                         </Link></div>
 
                     <div className="navbar__link-about">
-                        <Link 
+                        <Link
+                        onClick={()=>dropDown()} 
                         to="about" 
                         smooth={true} 
                         spy={true}>About

@@ -139,6 +139,11 @@ $blackish: #021E20;
         flex-direction: column;
     }
 
+    .hide {
+        display: none; 
+    }
+
+
     .dropbtn {     
         margin-left: 0;
         justify-self: center;
