@@ -1,6 +1,6 @@
 import React from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Skills = () => {
 
@@ -50,8 +50,7 @@ const Skills = () => {
             
         <div className="study__container">
 
-            <div className="courses__cont">
-                <h2 className="skills__subtitle">Courses taken</h2>
+            <h2 className="skills__subtitle">Courses taken</h2>
 
                 <h3>Coding Bootcamp Praha</h3>
                 <ul>
@@ -79,7 +78,7 @@ const Skills = () => {
                     <li className="li__item">Build Websites with React &#038; Firebase</li>
                 </ul>
 
-            </div>      
+          
         </div>
         </div>
 
@@ -88,9 +87,7 @@ const Skills = () => {
             <h2>Languages</h2>
             <ul>
                 <li className="li__item">German / native || English / C1 || Czech / B1 || French A1</li>
-                {/* <li className="li__item">English / C1</li>
-                <li className="li__item">Czech / B1</li>
-                <li className="li__item">French /A1</li> */}
+ 
             </ul>
             </div>
         </div>

@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
+    width: 100%;
 }
 
 .skills__title {
@@ -31,7 +32,7 @@
     width: 60%;
     margin-right: 40px;
     border: 1px white solid;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 2px 3px 0px 1px $lightblue;
     border-radius: 5px;
 }
@@ -40,24 +41,9 @@
     display: flex;
     flex-direction: column;
     border: 1px white solid;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 2px 3px 0px 1px $lightblue;
     border-radius: 5px;
-}
-
-.language__container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 30px;
-}
-
-.courses__cont {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
 }
 
 .progress, 
@@ -82,10 +68,6 @@
     padding: 4px;
 }
 
-.language-en {
-    width: 100%;
-}
-
 .courses {
     width: 100%;
     font-size: 12px;
@@ -108,7 +90,7 @@
     margin-top: 20px;
     margin-right: 40px;
     border: 1px white solid;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 2px 3px 0px 1px $lightblue;
     border-radius: 5px;
 }
@@ -118,41 +100,65 @@
 @media(max-width:600px){
     .skills__container {
         width: 100%;
-        padding: 25px;
-        // margin: 0 auto;
-        // padding: 25px 25px;
-        display: block;
-    //  flex-direction: column;
-    //  align-items: center;
-
+        margin: 0;
+        padding: 0;
+        display:flex;
+        flex-direction: column;
     }
 
-    .skills__title{
-        margin-top: -5%;
-        margin-bottom: -5%;
-        margin-left: 0;
-        padding-left: 25px;
+    .skills__title {
+        padding: 25px 25px;
         font-size: 1.5em;
-  
-   
     }
+
     .skills__subtitle {
-        font-size: 1em;
-        margin-top: -10%;
-
+        font-size: 1.5em;
     }
-
-    .courses__cont,
-    .language__container,
-    .tech__container {
+    .cont__bottom,
+    .cont__top {
+        display: flex;
+        flex-direction: column;
         width: 80%;
         margin: auto;
     }
 
-    .progress, 
-    .progress-bar {
-        height: 40%;
+    .study__container,
+    .tech__container, 
+    .lang__container {
+        width: 100%;
     }
+
+    .tech__container, 
+    .lang__container {
+        margin-bottom: 20px;
+    }
+
+    // .skills__title{
+    //     margin-top: -5%;
+    //     margin-bottom: -5%;
+    //     margin-left: 0;
+    //     padding-left: 25px;
+    //     font-size: 1.5em;
+  
+   
+    // }
+    // .skills__subtitle {
+    //     font-size: 1em;
+    //     margin-top: -10%;
+
+    // }
+
+    // .courses__cont,
+    // .language__container,
+    // .tech__container {
+    //     width: 80%;
+    //     margin: auto;
+    // }
+
+    // .progress, 
+    // .progress-bar {
+    //     height: 40%;
+    // }
 }
 
 /*big external monitor*/
