@@ -119,8 +119,8 @@ $blackish: #021E20;
         width: 100%;
         display: inline-block;
         position: relative;
-        top: -2px;
-        left: 5px;
+        top: 0px;
+        left: 0px;
     }
 
     .dropdown-content {
@@ -139,14 +139,15 @@ $blackish: #021E20;
         flex-direction: column;
     }
 
-    .dropbtn {
+    .dropbtn {     
         margin-left: 0;
         justify-self: center;
-        background-color: #ffb814 ;
-        border: 1px solid #ffb814;
-        border-radius: 3px;
- 
-
+        // background-color: #ffb814 ;
+        // border: 1px solid #ffb814;
+        // border-radius: 3px;
+        background-color: $lightblue;
+        border: none;
+        margin-left: 5px;
     }
 
     .dropdown-content .navbar__link{
@@ -169,6 +170,14 @@ $blackish: #021E20;
     .dropdown-content {
         margin-left: 10px;
     }
+
+    .hamburger__menu {
+        width: 20px;
+        background-color: $lightblue;
+        color: white;
+
+    }
+
 }
 /*big screen*/
 @media screen and (min-width: 1900px) {

@@ -32,7 +32,9 @@ const Header = () => {
 
             <div className="dropdown">
 
-                <button onClick={()=>dropDown()} className="dropbtn">Menu</button>
+                <button onClick={()=>dropDown()} className="dropbtn">
+                    <img className="hamburger__menu" src="../assets/hamburger_menu.png" alt="hamburger menu" />
+                </button>
 
 
                 <div className="dropdown-content" id="myDropdown">                   
