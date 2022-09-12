@@ -30,12 +30,12 @@ export const accordionData = [
     description: "The cloning of an imaginary website was more or less a study object and repetition of what I have learned so far. It was a great practice in copying a design and helped repeating and trying out new things in styling.", 
     github: "https://github.com/queuing4oranges/aneta_webbie", 
     live: "https://anetawebbie.itisgoodtohave.me/"
+  },
+  {
+    title: "Procrastination Page (REST API)",
+    tech: "HTML, SCSS, JavaScript, React, REST API",
+    description: "The mini project is an attempt to better understanding on how APIs can be used, how their data can be consumed and displayed including search queries.", 
+    github: "https://github.com/queuing4oranges/rest-api-website",
+    live: "https://procrastinate.itisgoodtohave.me/"
   }
-  // {
-  //   title: "Vet Clinic Admin Panel",
-  //   tech: "PHP, Laravel",
-  //   description: "The project is the result of a Hackathon in the Web Development Bootcamp. We worked in a team of three and had 8 hours until the presentation of the final product.", 
-  //   github: "https://github.com/queuing4oranges/vet-clinic-admin-panel"
-  //   // live: 
-  // }
 ]

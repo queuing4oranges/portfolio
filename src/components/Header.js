@@ -1,18 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
-import {useState} from "react";
 
 const Header = () => {
-    const [isToggle, setIsToggle] = useState(false)
-
-    // const dropDown = () => {
-    //     setIsToggle(true)
-    //     if (isToggle === true){
-    //     document.getElementById("myDropdown").classList.toggle("show");}
-    //     else
-    //     setIsToggle(false);
-    // }
 
     const dropDown = () => {
         document.getElementById("myDropdown").classList.toggle("show")
