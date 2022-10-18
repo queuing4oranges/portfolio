@@ -9,8 +9,9 @@ const Accordion = ({ id, title, tech, description, github, live }) => {
         <div className="accordion__item">
             <div className="accordion__subtitle"
             onClick={() => setIsActive(!isActive)}>
-                <h2>{title}</h2>
-                <h2>{isActive ? "-" : "+" }</h2>
+                <h2 className="acc__subtitle">{title}</h2>
+                <h4 className="tech__title">{tech}</h4>
+                <h2 className="acc__plus">{isActive ? "-" : "+" }</h2>
             </div> 
 
             {isActive && 
