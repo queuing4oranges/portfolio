@@ -18,11 +18,11 @@ const Accordion = ({ id, title, tech, description, github, live }) => {
             <div className="accordion__content" >
 
                 <p className="acc__body">{description}</p> <br />
-                <p className="acc__body tech"><strong>Tech Stack: </strong>
-                 {tech}</p> <br />
+                <br />
                 <a className="acc__link" href={github}><p className="acc__body source"><strong>Source Code: </strong>{github}</p></a>
                  <br />
-                <a className="acc__body" href={live}><button className="live__button">Click here to see live  </button></a>
+                {live &&
+                <a className="acc__body" href={live}><button className="live__button">Click here to see live  </button></a>}
     
                 
             </div>
