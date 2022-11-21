@@ -9,6 +9,15 @@ export const accordionData = [
   },
 
   {
+    id:"8", 
+    title: "Admin Panel (work in progress)",
+    tech: "PHP | JavaScript | ReactJS | SCSS | Bootstrap | Postman", 
+    description: "The Admin Panel is the first part of the website. The API was made with PHP. Later on, a frontend part will follow that will enable the user to see events and learn about the organization", 
+    github: "https://github.com/queuing4oranges/lesbotoc-website",
+    live: "https://lesbotoc.itisgoodtohave.me/"
+  },
+
+  {
     id:"7", 
     title: "CRUD Product Catalogue",
     tech: "PHP | JavaScript | CSS", 
