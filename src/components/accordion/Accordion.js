@@ -19,7 +19,8 @@ const Accordion = ({ id, title, tech, description, github, live }) => {
 
                 <p className="acc__body">{description}</p> <br />
                 <br />
-                <a className="acc__link" href={github}><p className="acc__body source"><strong>Source Code: </strong>{github}</p></a>
+                {github && 
+                <a className="acc__link" href={github}><p className="acc__body source"><strong>Source Code: </strong>{github}</p></a>}
                  <br />
                 {live &&
                 <a className="acc__body" href={live}><button className="live__button">Click here to see live  </button></a>}

@@ -70,5 +70,16 @@ export const accordionData = [
     description: "This project is a clone of the Imgur Website design including some of its functionalities", 
     github: "https://github.com/queuing4oranges/brilo.team-test", 
     live: "https://imgur-clone.itisgoodtohave.me/"
+  }, 
+
+    {
+    id: "9",
+    title: "Web Design Samples",
+    tech: "HTML | SCSS | Gulp", 
+    description: "A collection of finished assignments for the Udemy course \"Complete Web Design: from Figma to Webflow to Freelancing\". The project is build with the help of the Gulp toolkit and written in HTML.", 
+    //github
+    live: "https://designsamples.itisgoodtohave.me/"
   }
+
+
 ]
