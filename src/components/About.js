@@ -32,8 +32,10 @@ const About = () => {
                 
             <div className="text__container">
                 <h4 className="hidden__subtitle">About me</h4>
-                <p className="text left">My name is Katja. I am a junior full-stack web developer. I am working and living in Prague. I feel passionate about coding and love learning. I just finished a three-month Web Development Bootcamp and am looking for work to kick-start my career.
-                As a former educator, I describe myself as highly self-organized, a great team player, who is used to working within tight deadlines, and a person with a can-do attitude. <br />
+                <p className="text left">I'm a junior frontend web developer, who is working and living in Prague. In 2022, I finished a three-month Web Development Bootcamp. Since then, I havent stopped coding and learning. 
+                I am currently looking for work to kick-start my career. 
+                <br /> <br />
+                As a former educator, I am bringing a good set of soft-skills along with great organizational skills and the ability to work in and learn from any team. <br />
 
                 </p>
                 </div>
@@ -47,8 +49,12 @@ const About = () => {
                 
                 <div className="hobby__container">
                     <h4 className="hidden__subtitle">My time off</h4>
-                    <p className="text right">In my free time, I like to cultivate my friendships and go on little trips. If that is not an option, I love sewing or lifting in the Crossfit gym. Besides that, I like to be surrounded by people who share my sense of humor. 
-                    I"m working on my fear of snails.
+                    <p className="text right">In my free time, I enjoy being outdoors and the company of my friends and family. I like creating things and learning new skills. I'm interested in analogue and digital fotography. 
+                    <br /> <br />
+                    In contrast to that and to keep physically healthy, I lift weights in the gym. 
+                    <br /> <br />
+                    My friends value my empathy and sense of humour.
+
                      </p>
                 </div>
             </div>

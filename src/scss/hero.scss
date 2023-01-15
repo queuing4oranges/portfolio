@@ -1,5 +1,5 @@
 .hero__image {
-  background-image: url("../images/hero8.png");
+  background-image: url("../images/hero_starry.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 700px;
@@ -13,23 +13,27 @@
 .hero__text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  color: white;
+  color: $beige;
 }
 
 .hero__title {
-  font-size: 80px;
+  font-family: "Lora", serif, Arial, Helvetica, sans-serif;
+  font-size: 64px;
   margin: 20% auto 5px;
+  line-height: 75px;
+  margin-top: 230px;
 }
 
 .hero__par {
-  font-size: 40px;
-  margin: 10px auto 20px;
+  font-weight: 275;
+  font-size: 24px;
+  padding: 6% 0;
+  line-height: 54px;
+  margin: 10px auto 60px;
 }
 
 .blurry {
-  background-image: url("../images/hero8.png");
+  background-image: url("../images/hero_starry.png");
   background-size: cover;
   background-repeat: no-repeat;
   /**/
@@ -54,13 +58,13 @@
   }
 
   .hero__title {
-    font-size: 60px;
+    font-size: 40px;
     margin-top: 150px;
   }
 
   .hero__par {
     font-size: 20px;
-    margin: 60px 100px;
+    margin: 60px 20vw;
   }
 }
 

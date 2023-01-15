@@ -8,26 +8,13 @@ const Header = () => {
         document.getElementById("myDropdown").classList.toggle("show")
     }
 
-    // window.onclick = function(event) {
-    //     if (!event.target.matches("dropbtn")){
-    //         var drop = document.getElementsByClassName("dropdown-content");
-    //         var i;
-    //         for (i=0; i<drop.length; i++){
-    //             var openDropdown = drop[i];
-    //             if (openDropdown.classList.contains("show")){
-    //                 openDropdown.classList.remove("show")
-    //             }
-    //         }
-    //     }
-        
-    // }
-   
+  
     
     return ( 
         <div className="navbar sticky">
 
             <div className="navbar__cont">
-                <div className="navbar__home navbar__link"><Link to="home" smooth={true} spy={true}><FontAwesomeIcon icon={faHouse} size="1x" color="white"/></Link></div>
+                <div className="navbar__home navbar__link"><Link to="home" smooth={true} spy={true}><FontAwesomeIcon icon={faHouse} size="1x" color="#efc5a8"/></Link></div>
             </div>
 
             <div className="dropdown">
@@ -40,6 +27,7 @@ const Header = () => {
                 <div className="dropdown-content" id="myDropdown">                   
                     <div className="navbar__link-home">
                         <Link 
+                        activeClass="active"
                         onClick={()=>dropDown()}
                         to="home" 
                         smooth={true} 
@@ -48,6 +36,7 @@ const Header = () => {
 
                     <div className="navbar__link-projects">
                         <Link 
+                        activeClass="active"
                         onClick={()=>dropDown()}
                         to="projects" 
                         smooth={true} 
@@ -56,14 +45,16 @@ const Header = () => {
 
                     <div className="navbar__link-skills">
                         <Link
+                        activeClass="active"
                         onClick={()=>dropDown()} 
                         to="skills" 
-                        smooth={true} 
+                        smooth={true}
                         spy={true}>Skills
                         </Link></div>
 
                     <div className="navbar__link-about">
                         <Link
+                        activeClass="active"
                         onClick={()=>dropDown()} 
                         to="about" 
                         smooth={true} 

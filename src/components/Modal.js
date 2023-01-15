@@ -58,7 +58,7 @@ function Modal({ hideModal }) {
                     <span>You can reply to me at *</span>
                     <input 
                     className="modal__input"
-                    placeholder="your email" 
+                    placeholder="your@email.cz" 
                     type="text"
                     name="replyto"
                     value={toSend.replyto}
@@ -69,7 +69,8 @@ function Modal({ hideModal }) {
                 <label>
                     <span>My message to you *</span>
                     <textarea 
-                    className="textarea" 
+                    className="textarea"
+                    type="text"
                     id="" 
                     cols="30" 
                     rows="10"

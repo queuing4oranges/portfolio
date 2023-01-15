@@ -1,196 +1,205 @@
 /* Color Palette #4523*/
-$darkblue: #005067;
+$dark-blue: #005067;
 $lightblue: #048399;
-$rose: #FEB9C6;
-$darkrose: #B96B85;
-$blackish: #021E20;
+$rose: #feb9c6;
+$darkrose: #b96b85;
+$blackish: #021e20;
 
-.navbar{
-    background-color: $lightblue;
-    height: 8%;
+/*image colours*/
+$darkblue: #01101d;
+$grey: #8b8d93;
+$beige: #efc5a8;
+$olive: #9d9659;
+$yellow: #fdff32;
+
+.navbar {
+  background-color: $darkblue;
+  height: 8%;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0px 1px 5px 0px rgba(239, 197, 168, 0.75);
+
+  &__cont {
+    padding-left: 100px;
+    flex-grow: 1;
+  }
+
+  &__links {
     display: flex;
     flex-direction: row;
-    font-size: 20px;
-    width: 100%;
+    justify-content: flex-end;
+    flex-grow: 2;
+  }
+
+  &__link-pdf,
+  &__link-skills,
+  &__link-about,
+  &__link-projects {
+    padding: 0 20px;
+    color: $beige;
+    font-size: 0.7em;
+    align-self: center;
+  }
+
+  &__button {
+    background-color: $darkblue;
+    border: $beige 1px solid;
+    border-radius: 3px;
+    height: 30px;
     align-items: center;
-    justify-content: flex-start;
-    border-bottom: 1px white solid;
-
-
-    &__cont{
-        padding-left: 100px;
-        flex-grow: 1;
-    }
-
-    &__links{
-        display:flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-grow: 2;
-    }
-
-    &__link-pdf,
-    &__link-skills, 
-    &__link-about,
-    &__link-projects{
-        padding: 0 20px;
-        color: white;
-    }
-
-    &__button{
-        background-color: $darkblue;
-        border: white 1px solid;
-        border-radius: 3px;
-        height: 30px;
-        align-items: center;
-        padding: 4px;
-    }
-
-
+    padding: 4px;
+  }
 }
-.navbar__button:hover{
-    background-color: #ffb814;
-    cursor: pointer;
+.navbar__button:hover {
+  background-color: $yellow;
+  color: black;
+  cursor: pointer;
 }
 
-.navbar__link-about{
-    padding-right: 100px;
-    padding-left: 20px;
+.navbar__button a:hover {
+  color: $darkblue;
 }
 
-.navbar__link{
-    color:white;
-    text-decoration: none;
+.navbar__link-about {
+  padding-right: 100px;
+  padding-left: 20px;
+}
+
+.navbar__link {
+  color: $beige;
+  text-decoration: none;
 }
 
 .navbar__link-pdf:hover,
 .navbar__link-projects:hover,
 .navbar__link-skills:hover,
-.navbar__link-about:hover{
-    cursor: pointer;
+.navbar__link-about:hover,
+.navbar__home:hover {
+  cursor: pointer;
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;       
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .dropdown {
-    display: none;
-
+  display: none;
 }
 
+// .active {
+//   background-color: #8b8d93;
+// }
+
 /*mobile phone*/
-@media (max-width: 600px){
+@media (max-width: 600px) {
+  .navbar {
+    display: block;
+    position: fixed;
+    margin-top: 0px;
+    max-width: 100%;
+    height: 5vh;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  .navbar__links {
+    flex-direction: column;
+    display: none;
+  }
 
-    .navbar {
-        display: block;
-        position: fixed;
-        margin-top: 0px;
-        max-width: 100%;
-        height: 5%;
-        flex-direction: column;
-        align-items: flex-start;
-   
+  .navbar__cont {
+    display: none;
+  }
+
+  .navbar__pdf {
+    display: none;
+  }
+
+  .dropdown {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  .dropdown-content {
+    position: relative;
+    top: 0px;
+    left: -5px;
+    width: 50%;
+    background-color: $lightblue;
+    width: 100px;
+    z-index: 10;
+    display: none;
+  }
+
+  .show {
+    display: block;
+    flex-direction: column;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .dropbtn {
+    margin-left: 0;
+    justify-self: center;
+    background-color: $darkblue;
+    border: none;
+    margin-left: 5px;
+  }
+
+  .dropdown-content .navbar__link {
+    border-bottom: 1px $darkblue solid;
+    font-size: 1rem;
+  }
+
+  .navbar__link {
+    &-home,
+    &-projects,
+    &-skills,
+    &-about {
+      background-color: $darkblue;
+      border-bottom: 1px solid $beige;
+      padding: 5px 10px;
+      color: $beige;
     }
-        .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-    }
-    .navbar__links {
-        flex-direction: column;
-        display: none;
-    }
+  }
 
-    .navbar__cont {
-        display: none;
-        
-    }
+  .dropdown-content {
+    margin-left: 10px;
+  }
 
-    .navbar__pdf {
-        display: none;
-    }
-
-    .dropdown {
-        width: 100%;
-        display: inline-block;
-        position: relative;
-        top: 0px;
-        left: 0px;
-    }
-
-    .dropdown-content {
-        position: relative;
-        top: 0px;
-        left: -5px;
-        width: 50%;
-        background-color: $lightblue;
-        width: 100px;
-        z-index: 10;
-        display: none;
-    }
-
-    .show{
-        display: block;
-        flex-direction: column;
-    }
-
-    .hide {
-        display: none; 
-    }
-
-
-    .dropbtn {     
-        margin-left: 0;
-        justify-self: center;
-        background-color: $lightblue;
-        border: none;
-        margin-left: 5px;
-    }
-
-    .dropdown-content .navbar__link{
-        border-bottom: 1px $darkblue solid;
-        font-size: 1rem;
-    }
-
-    .navbar__link {
-        &-home,
-        &-projects,
-        &-skills, 
-        &-about {
-            border-bottom: 1px white solid;
-            padding: 5px 10px;
-            color: white;
-        } 
-
-    }
-
-    .dropdown-content {
-        margin-left: 10px;
-    }
-
-    .hamburger__menu {
-        width: 20px;
-        background-color: $lightblue;
-        color: white;
-
-    }
-
+  .hamburger__menu {
+    width: 20px;
+    background-color: $darkblue;
+    color: $beige;
+  }
 }
 /*big screen*/
 @media screen and (min-width: 1900px) {
-    .navbar {
+  .navbar {
     font-size: 40px;
     height: 10%;
 
     &__button {
-        height: 50px;
-        width: 200px;
-        font-size: 1.5rem;
+      height: 50px;
+      width: 200px;
+      font-size: 1.5rem;
     }
-    }
+  }
 }

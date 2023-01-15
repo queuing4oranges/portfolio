@@ -9,7 +9,7 @@
 .accordion__container {
   width: 100%;
   margin: auto;
-  background-color: $lightblue;
+  background-color: $darkblue;
   padding: 0 100px 50px 100px;
 }
 .accordion {
@@ -21,7 +21,8 @@
   margin-top: 0;
   margin-bottom: 50px;
   padding: 50px 0 0px;
-  color: white;
+  color: $beige;
+  font-weight: 300;
 }
 
 .live__button {
@@ -29,7 +30,12 @@
   height: 30px;
   border-radius: 5px;
   margin-bottom: 10px;
-  border: 1px white solid;
+  background-color: $beige;
+  border: none;
+}
+
+.live__button:hover {
+  background-color: $yellow;
 }
 
 .accordion__subtitle {
@@ -39,21 +45,30 @@
   grid-column-gap: 15px;
   grid-row-gap: 0px;
   cursor: pointer;
-  background-color: $darkblue;
-  border-bottom: 1px white solid;
+  background-color: $beige;
+  color: $darkblue;
+  border-bottom: 1px $darkblue solid;
   padding: 5px 20px;
   align-items: center;
+
+  & h2 {
+    font-weight: 400;
+  }
+
+  & h4 {
+    font-weight: 300;
+  }
 }
 
 .accordion__subtitle:hover {
-  background-color: #ffb814;
-  color: #d828b2;
+  background-color: $yellow;
 }
 
 .accordion__content {
   padding: 10px 20px;
   text-align: justify;
-  background-color: #39b9d2;
+  background-color: $lightblue;
+  color: $darkblue;
 }
 
 .acc__body {
@@ -63,7 +78,7 @@
 
 .acc__link {
   text-decoration: none;
-  color: white;
+  color: $beige;
 }
 .acc__plus {
   display: flex;
@@ -94,7 +109,7 @@
     grid-template-rows: 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 0px;
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .tech {

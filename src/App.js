@@ -3,10 +3,11 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Skills from './components/Skills';
+// import Skills from './components/Skills';
 import OneProject from './components/OneProject';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ProjectsAccordion from "../src/components/accordion/ProjectsAccordion";
+import NewSkills from './components/NewSkills';
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
           <Header />
           <Hero />
           <ProjectsAccordion />
-          <Skills />
+          {/* <Skills /> */}
+          <NewSkills />
           <About />
           <Footer />
         </Route>

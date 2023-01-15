@@ -1,0 +1,130 @@
+.newskills-container {
+  margin: auto;
+  border: 1px solid white;
+  background-color: $beige;
+}
+
+.newskills__title {
+  color: $darkblue;
+  margin-top: 0;
+  padding: 50px 0 0 100px;
+  color: $darkblue;
+  font-weight: 300;
+}
+
+.skills-subtitle {
+  font-weight: 400;
+  margin-bottom: 30px;
+  background-color: $darkblue;
+  color: $beige;
+}
+
+.courses-cont,
+.tech-cont,
+.languages-cont {
+  width: 100%;
+  padding: 30px 100px;
+  margin: auto;
+}
+
+.skills-tech-icon-cont {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 020px;
+  grid-row-gap: 20px;
+  align-content: space-between;
+}
+
+.tech-icon-cont {
+  width: 110px;
+  height: 150px;
+  background-color: rgb(247, 232, 232);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-cont svg {
+  width: 70px;
+  height: 70px;
+}
+
+.courses-cont {
+  color: $darkblue;
+}
+
+.skills-courses-subtitle {
+  font-weight: 500;
+}
+
+.li__item {
+  list-style: none;
+}
+
+.bootcamp-item svg {
+  width: 50px;
+}
+
+.course-title-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & svg {
+    width: 30px;
+    margin-right: 10px;
+  }
+}
+
+/*for mobiles*/
+@media (max-width: 600px) {
+  .newskills-container {
+    margin: 0;
+    padding: 0 0 30px 0;
+  }
+  .newskills__title {
+    padding: 25px 0 0 25px;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+
+  .skills-tech-icon-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-content: space-between;
+    justify-content: center;
+  }
+
+  .tech-icon-cont {
+    width: 80px;
+    height: 100px;
+    font-size: 0.7em;
+  }
+
+  .logo-cont svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .courses-cont,
+  .tech-cont,
+  .languages-cont {
+    width: 100%;
+    padding: 25px;
+    margin: auto;
+  }
+
+  .skills-subtitle {
+    padding-left: 3px;
+    font-size: 1.3em;
+    background-color: $darkblue;
+    color: $beige;
+  }
+}
