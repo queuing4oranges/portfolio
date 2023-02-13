@@ -8,7 +8,7 @@ $blackish: #021e20;
 /*image colours*/
 $darkblue: #01101d;
 $grey: #8b8d93;
-$beige: #efc5a8;
+$beige: #ebd2c1;
 $olive: #9d9659;
 $yellow: #fdff32;
 
@@ -55,8 +55,8 @@ $yellow: #fdff32;
   }
 }
 .navbar__button:hover {
-  background-color: $yellow;
-  color: black;
+  background-color: $beige;
+  color: $darkblue;
   cursor: pointer;
 }
 
@@ -193,13 +193,13 @@ $yellow: #fdff32;
 /*big screen*/
 @media screen and (min-width: 1900px) {
   .navbar {
-    font-size: 40px;
+    font-size: 30px;
     height: 10%;
 
     &__button {
-      height: 50px;
-      width: 200px;
-      font-size: 1.5rem;
+      height: 40px;
+      width: 150px;
+      font-size: 1rem;
     }
   }
 }

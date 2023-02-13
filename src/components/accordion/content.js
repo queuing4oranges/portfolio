@@ -14,7 +14,7 @@ export const accordionData = [
     title: "Admin Panel",
     tech: "PHP | JavaScript | ReactJS | SCSS | Bootstrap | Postman",
     description:
-      "The Admin Panel is the first part of the website. The API was made with PHP. Later on, a frontend part will follow that will enable the user to see events and learn about the organization",
+      "The Admin Panel is the first part of the website for an event organization. The API endpoints are written in PHP and tested with Postman. The CMS is written in ReactJS with Bootstrap, SASS. The admin will be able to execute CRUD operations with contacts and events and upload images for a user image gallery.",
     github: "https://github.com/queuing4oranges/lesbotoc-website",
     live: "https://lesbotoc.itisgoodtohave.me/",
   },
@@ -81,11 +81,11 @@ export const accordionData = [
 
   {
     id: "9",
-    title: "Web Design Samples",
-    tech: "HTML | SCSS | Gulp",
+    title: "Web Design Sample",
+    tech: "Figma | Webflow",
     description:
-      'A collection of finished assignments for the Udemy course "Complete Web Design: from Figma to Webflow to Freelancing". The project is build with the help of the Gulp toolkit and written in HTML.',
+      'The finished project of Vako Shvili\'s course "Complete Web Design: from Figma to Webflow to Freelancing"',
     //github
-    live: "https://designsamples.itisgoodtohave.me/",
+    live: "https://chat-app-homepage-c4e90f.webflow.io/",
   },
 ];

@@ -35,6 +35,7 @@
   grid-column-gap: 020px;
   grid-row-gap: 20px;
   align-content: space-between;
+  justify-content: center;
 }
 
 .tech-icon-cont {
@@ -46,6 +47,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-self: center;
 }
 
 .logo-cont svg {
@@ -114,18 +116,32 @@
     height: 50px;
   }
 
-  .courses-cont,
-  .tech-cont,
-  .languages-cont {
-    width: 100%;
-    padding: 25px;
-    margin: auto;
-  }
-
   .skills-subtitle {
     padding-left: 3px;
     font-size: 1.3em;
     background-color: $darkblue;
     color: $beige;
+  }
+
+  .courses-cont,
+  .languages-cont,
+  .tech-cont {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/*big external monitor*/
+@media screen and (min-width: 1900px) {
+  .courses-cont,
+  .languages-cont,
+  .tech-cont {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  .newskills__title {
+    padding-left: 300px;
+    padding-right: 300px;
   }
 }

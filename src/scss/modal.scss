@@ -95,7 +95,7 @@ textarea[type="text"]:focus {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
-  height: 500px;
+  height: 450px;
   width: 550px;
 }
 
@@ -146,8 +146,8 @@ textarea[type="text"]:focus {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
-    height: 900px;
-    width: 1000px;
+    height: 800px;
+    width: 900px;
   }
 
   .contact__form label,
@@ -167,12 +167,16 @@ textarea[type="text"]:focus {
 
   .contact__button {
     font-size: 24px;
-    width: 400px;
+    width: 300px;
     margin-bottom: 10px;
   }
 
   .form__title {
     font-size: 30px;
     margin-left: 20px;
+  }
+
+  .btn__cont {
+    justify-content: space-around;
   }
 }

@@ -15,7 +15,7 @@
 }
 
 .button:hover {
-  background-color: $yellow;
+  background-color: $beige;
   color: $darkblue;
 }
 
@@ -30,6 +30,7 @@
 /*big external monitor*/
 @media screen and (min-width: 1900px) {
   .button {
-    font-size: 32px;
+    font-size: 18px;
+    width: 250px;
   }
 }

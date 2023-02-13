@@ -35,7 +35,8 @@
 }
 
 .live__button:hover {
-  background-color: $yellow;
+  background-color: $darkblue;
+  color: $beige;
 }
 
 .accordion__subtitle {
@@ -61,7 +62,9 @@
 }
 
 .accordion__subtitle:hover {
-  background-color: $yellow;
+  background-color: $darkblue;
+  color: $beige;
+  border: 1px $beige solid;
 }
 
 .accordion__content {
@@ -127,5 +130,13 @@
 
   .tech__title {
     font-size: 1rem;
+  }
+}
+
+/*big external monitor*/
+@media screen and (min-width: 1900px) {
+  .accordion__container {
+    padding-left: 300px;
+    padding-right: 300px;
   }
 }
