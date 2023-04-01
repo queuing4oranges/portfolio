@@ -93,17 +93,17 @@ const Header = () => {
         </div>
 
         <div className="navbar__link-projects">
-          <Link to="projects" smooth={true} spy={true}>
+          <Link to="projects" smooth={true} spy={true} activeClass="active">
             Projects
           </Link>
         </div>
         <div className="navbar__link-skills">
-          <Link to="skills" smooth={true} spy={true}>
+          <Link to="skills" smooth={true} spy={true} activeClass="active">
             Skills
           </Link>
         </div>
         <div className="navbar__link-about">
-          <Link to="about" smooth={true} spy={true}>
+          <Link to="about" smooth={true} spy={true} activeClass="active">
             About
           </Link>
         </div>

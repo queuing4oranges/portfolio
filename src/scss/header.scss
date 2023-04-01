@@ -93,9 +93,16 @@ $yellow: #fdff32;
   display: none;
 }
 
-// .active {
-//   background-color: #8b8d93;
-// }
+.active {
+  color: $yellow;
+}
+
+.navbar__link-projects:hover,
+.navbar__link-skills:hover,
+.navbar__link-about:hover,
+.navbar__home:hover {
+  opacity: 0.5;
+}
 
 /*mobile phone*/
 @media (max-width: 600px) {

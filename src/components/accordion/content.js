@@ -8,9 +8,17 @@ export const accordionData = [
     github: "https://github.com/queuing4oranges/portfolio",
     live: "https://www.itisgoodtohave.me/",
   },
-
   {
-    id: "8",
+    id: "2",
+    title: "www.altira.cz",
+    tech: "ReactJS | SCSS | Figma | Slick Carousel | AOS",
+    description:
+      "The project is the landing page for a start-up in logistics. The design and wireframing was done in Figma. My client asked me to also design a new logo. The CTA section includes a contact form which will be send to the company with the help of EmailJS. It is also responsive.",
+    github: "https://github.com/queuing4oranges/altira-website",
+    live: "http://www.altira.cz/",
+  },
+  {
+    id: "3",
     title: "Admin Panel",
     tech: "PHP | JavaScript | ReactJS | SCSS | Bootstrap | Postman",
     description:
@@ -20,7 +28,7 @@ export const accordionData = [
   },
 
   {
-    id: "7",
+    id: "4",
     title: "CRUD Product Catalogue",
     tech: "PHP | JavaScript | CSS",
     description:
@@ -30,7 +38,7 @@ export const accordionData = [
   },
 
   {
-    id: "2",
+    id: "5",
     title: "LGBT+ Organization Page",
     tech: "ReactJS | Laravel | JavaScript | PHP | SCSS",
     description:
@@ -40,7 +48,7 @@ export const accordionData = [
   },
 
   {
-    id: "3",
+    id: "6",
     title: "Memory Game",
     tech: "ReactJS | JavaScript | HTML | CSS",
     description:
@@ -50,7 +58,7 @@ export const accordionData = [
   },
 
   {
-    id: "4",
+    id: "7",
     title: "Portfolio Clone",
     tech: "HTML | SCSS",
     description:
@@ -60,7 +68,7 @@ export const accordionData = [
   },
 
   {
-    id: "5",
+    id: "8",
     title: "APIs",
     tech: "ReactJS | REST API | JavaScript | HTML | SCSS",
     description:
@@ -70,7 +78,7 @@ export const accordionData = [
   },
 
   {
-    id: "6",
+    id: "9",
     title: "Imgur Clone",
     tech: "HTML | SCSS | JavaScript | REST API",
     description:
@@ -80,7 +88,7 @@ export const accordionData = [
   },
 
   {
-    id: "9",
+    id: "10",
     title: "Web Design Sample",
     tech: "Figma | Webflow",
     description:
