@@ -10,7 +10,7 @@ export const accordionData = [
   },
   {
     id: "2",
-    title: "www.altira.cz",
+    title: "Altira s.r.o",
     tech: "ReactJS | SCSS | Figma | Slick Carousel | AOS",
     description:
       "The project is the landing page for a start-up in logistics. The design and wireframing was done in Figma. My client asked me to also design a new logo. The CTA section includes a contact form which will be send to the company with the help of EmailJS. It is also responsive.",
@@ -22,13 +22,31 @@ export const accordionData = [
     title: "Admin Panel",
     tech: "PHP | JavaScript | ReactJS | SCSS | Bootstrap | Postman",
     description:
-      "The Admin Panel is the first part of the website for an event organization. The API endpoints are written in PHP and tested with Postman. The CMS is written in ReactJS with Bootstrap, SASS. The admin will be able to execute CRUD operations with contacts and events and upload images for a user image gallery.",
+      "The Admin Panel is the first part of the website for the Lesbotoč event organization. The API endpoints are written in PHP and tested with Postman. The CMS is written in ReactJS with Bootstrap, SASS. The admin will be able to execute CRUD operations with contacts and events and upload images for a user image gallery.",
     github: "https://github.com/queuing4oranges/lesbotoc-website",
     live: "https://lesbotoc.itisgoodtohave.me/",
   },
-
   {
     id: "4",
+    title: "Color Generator",
+    tech: "ReactJS | JavaScript | CSS | Values.js | React Toastify",
+    description:
+      'The Color Generator is an exercise from the course  "React 18 Tutorial and Projects Course (2023)". The user can choose a color with the help of the color input or the typed in hex code. The generator then produces a palette of tints and shades of that color.',
+    github: "https://github.com/queuing4oranges/react2023-color-generator",
+    live: "https://color.itisgoodtohave.me/",
+  },
+  {
+    id: "5",
+    title: "Lorem Ipsum Generator",
+    tech: "ReactJS | JavaScript | CSS ",
+    description:
+      'The Lorem Ipsum Generator is an exercise from the course "React 18 Tutorial and Projects Course (2023)". The user can use the tool to generate paragraphs of dummy text.',
+    github: "https://github.com/queuing4oranges/react2023-lorem-ipsum",
+    live: "https://lorem.itisgoodtohave.me/",
+  },
+
+  {
+    id: "6",
     title: "CRUD Product Catalogue",
     tech: "PHP | JavaScript | CSS",
     description:
@@ -38,17 +56,17 @@ export const accordionData = [
   },
 
   {
-    id: "5",
+    id: "7",
     title: "LGBT+ Organization Page",
     tech: "ReactJS | Laravel | JavaScript | PHP | SCSS",
     description:
-      "The Lesbotoč Website is a project that will go live as soon as finishing touches are made by the team and in cooperation with the organization (mainly translations/content). The project was made by a team of three. All of us worked on backend and frontend, because everyone wanted to be involved in the whole process. That way, we all had a part in creating tables, modelling, and seeding data to the database. The project was planned and designed in Figma. The team worked agile with the help of Trello. My part of the backend was 'locations', including a form to add a new location to the database. My work on the frontend was the 'about-us' page, as well as the footer of the website.",
+      "The Lesbotoč Website is the first draft and final project of the Prague Coding Bootcamp. The project was made by a team of three. All of us worked on backend and frontend, because everyone wanted to be involved in the whole process. That way, we all had a part in creating tables, modelling, and seeding data to the database. The project was planned and designed in Figma. The team worked agile with the help of Trello. My part of the backend was 'locations', including a form to add a new location to the database. My work on the frontend was the 'about-us' page, as well as the footer of the website.",
     github: "https://github.com/RuxCavescu/Lesbotoc",
     // live:
   },
 
   {
-    id: "6",
+    id: "8",
     title: "Memory Game",
     tech: "ReactJS | JavaScript | HTML | CSS",
     description:
@@ -58,7 +76,7 @@ export const accordionData = [
   },
 
   {
-    id: "7",
+    id: "9",
     title: "Portfolio Clone",
     tech: "HTML | SCSS",
     description:
@@ -68,7 +86,7 @@ export const accordionData = [
   },
 
   {
-    id: "8",
+    id: "10",
     title: "APIs",
     tech: "ReactJS | REST API | JavaScript | HTML | SCSS",
     description:
@@ -78,7 +96,7 @@ export const accordionData = [
   },
 
   {
-    id: "9",
+    id: "11",
     title: "Imgur Clone",
     tech: "HTML | SCSS | JavaScript | REST API",
     description:
@@ -88,7 +106,7 @@ export const accordionData = [
   },
 
   {
-    id: "10",
+    id: "12",
     title: "Web Design Sample",
     tech: "Figma | Webflow",
     description:
@@ -96,4 +114,13 @@ export const accordionData = [
     //github
     live: "https://chat-app-homepage-c4e90f.webflow.io/",
   },
+
+  // {
+  //   id: "",
+  //   title: "",
+  //   tech: "",
+  //   description: "",
+  //   github: "",
+  //   live: "",
+  // },
 ];

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 
-const Header = () => {
+const Navbar = () => {
   const dropDown = () => {
     document.getElementById("myDropdown").classList.toggle("show");
   };
@@ -112,4 +112,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

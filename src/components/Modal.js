@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { send } from "emailjs-com";
 
 function Modal({ hideModal }) {
-  // const [openModal, setOpenModal] = useState(true);
   const [toSend, setToSend] = useState({
     namefrom: "",
     topic: "",
@@ -21,7 +20,6 @@ function Modal({ hideModal }) {
   };
 
   return (
-    // <div className="modalBackground">
     <div className="modalContainer">
       <form onSubmit={handleSubmit} className="contact__form">
         <h2 className="form__title">Hello, there!</h2>
@@ -36,15 +34,6 @@ function Modal({ hideModal }) {
             required
           />
         </label>
-        {/* <label>
-                    <span>I'm contacting you because</span>
-                    <input 
-                    className="modal__input"
-                    type="text"
-                    name="topic"
-                    value={toSend.topic}
-                    onChange={handleChange} />
-                </label> */}
 
         <label>
           <span>You can reply to me at *</span>
@@ -87,11 +76,7 @@ function Modal({ hideModal }) {
         </div>
       </form>
     </div>
-    // </div>
   );
 }
 
 export default Modal;
-
-//modalBackground will be the blurry backdrop
-//modalContainer should contain everything concerning the modal
