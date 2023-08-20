@@ -16,6 +16,7 @@ import {
   ReactjsIcon,
   SassIcon,
   TrelloIcon,
+  WebpackIcon,
 } from "../icons/SkillsIcons";
 
 export default function NewSkills() {
@@ -154,6 +155,15 @@ export default function NewSkills() {
               <p>Figma</p>
             </div>
           </div>
+
+          <div className="tech-icon-cont figma">
+            <div className="logo-cont">
+              <WebpackIcon height={70} width={70} />
+            </div>
+            <div className="logo-name-cont">
+              <p>Webpack</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -178,29 +188,14 @@ export default function NewSkills() {
         <div className="course-item-cont">
           <div className="course-title-cont">
             <Ticked height={80} width={80} fill="none" />
-            <h3 className="skills-courses-subtitle">freeCodeCamp</h3>
-          </div>
-
-          <div className="course-content-cont">
-            <ul>
-              <li className="li__item">+ Basic HTML and HTML5</li>
-              <li className="li__item">+ Basic CSS</li>
-              <li className="li__item">+ Applied Visual Design</li>
-              <li className="li__item">+ Applied Accessibility</li>
-              <li className="li__item">+ CSS Flexbox</li>
-              <li className="li__item">+ Basic JavaScript</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="course-item-cont">
-          <div className="course-title-cont">
-            <Ticked height={80} width={80} fill="none" />
             <h3 className="skills-courses-subtitle">Udemy</h3>
           </div>
 
           <div className="course-content-cont">
             <ul>
+              <li className="li__item">
+                + Microfrontends with React: A Complete Developer's Guide
+              </li>
               <li className="li__item">
                 + Complete Web Design: from Figma to Webflow
               </li>
@@ -212,6 +207,24 @@ export default function NewSkills() {
                 + React 18 Tutorial and Projects Course (2023)
               </li>
             </ul>
+          </div>
+
+          <div className="course-item-cont">
+            <div className="course-title-cont">
+              <Ticked height={80} width={80} fill="none" />
+              <h3 className="skills-courses-subtitle">freeCodeCamp</h3>
+            </div>
+
+            <div className="course-content-cont">
+              <ul>
+                <li className="li__item">+ HTML5</li>
+                <li className="li__item">+ CSS</li>
+                <li className="li__item">+ Applied Visual Design</li>
+                <li className="li__item">+ Applied Accessibility</li>
+                <li className="li__item">+ CSS Flexbox</li>
+                <li className="li__item">+ JavaScript</li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -225,6 +238,7 @@ export default function NewSkills() {
               <li className="li__item">
                 + Build Websites with React &#038; Firebase
               </li>
+              <li className="li__item">+ Bootstrap 5</li>
             </ul>
           </div>
         </div>

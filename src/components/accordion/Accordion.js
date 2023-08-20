@@ -12,8 +12,8 @@ const Accordion = ({ id, title, tech, description, github, live }) => {
         className="accordion__subtitle"
         onClick={() => setIsActive(!isActive)}
       >
-        <h2 className="acc__subtitle">{title}</h2>
-        <h4 className="tech__title">{tech}</h4>
+        <h4 className="acc__subtitle">{title}</h4>
+        <h5 className="tech__title">{tech}</h5>
         <h2 className="acc__plus">{isActive ? "-" : "+"}</h2>
       </div>
 
@@ -21,27 +21,25 @@ const Accordion = ({ id, title, tech, description, github, live }) => {
         <div className="accordion__content">
           <p className="acc__body">{description}</p> <br />
           <br />
-          {github && (
-            <div className="acc__link">
+          <div className="acc__link">
+            {github && (
               <div className="acc__body source">
                 <Github fill="black" width={30} height={30} />
                 <a href={github} target="_blank" rel="noreferrer">
-                  {github}
+                  <button className="btn btn-info">See Code</button>
                 </a>
               </div>
-            </div>
-          )}
-          <br />
-          {live && (
-            <div className="acc__link">
+            )}
+
+            {live && (
               <div className="acc__body source">
                 <Linking fill="black" width={30} height={30} />
                 <a href={live} target="_blank" rel="noreferrer">
-                  {live}
+                  <button className="btn btn-info"> See Live</button>
                 </a>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       )}
     </div>

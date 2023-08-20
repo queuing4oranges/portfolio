@@ -82,10 +82,10 @@ const Navbar = () => {
           <button className="navbar__button">
             <a
               className="navbar__link"
-              href="KatjaZenkerCV2022.pdf"
+              href="KatjaZenkerCV.pdf"
               target="_blank"
               rel="noreferrer"
-              download="KatjaZenkerCV2022.pdf"
+              download="KatjaZenkerCV.pdf"
             >
               Download CV
             </a>
