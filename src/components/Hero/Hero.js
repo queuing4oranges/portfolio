@@ -1,6 +1,8 @@
 import  { useState } from "react";
 import ContactModal from "./ContactModal";
 
+import "./hero.scss";
+
 const Hero = () => {
 	const [openModal, setOpenModal] = useState(false);
 
