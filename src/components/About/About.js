@@ -25,7 +25,7 @@ const About = () => {
 			</h1>
 			<br />
 
-			<div className="about-content flex flex-col md:flex-row">
+			<div className="flex flex-col md:flex-row">
 				<div className="flex-1 md:pr-4">
 					<h3>About me</h3>
 					<br />
