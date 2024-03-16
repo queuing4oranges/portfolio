@@ -10,7 +10,6 @@ https://www.itisgoodtohave.me
 
 - JavaScript (React)
 - SASS
-- Bootstrap
 - EmailJS
 - FontAwesome
 - React-Router

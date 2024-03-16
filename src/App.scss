@@ -2,11 +2,10 @@
 @import "./scss/hero.scss";
 @import "./scss/bouncybutton.scss";
 @import "./scss/modal.scss";
-@import "./scss/about.scss";
+// @import "./scss/about.scss";
 @import "./scss/footer.scss";
 @import "./components/accordion/accordion.scss";
 @import "./scss/newskills.scss";
-// @import "./scss/projectsalt.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
@@ -19,15 +18,37 @@ $rose: #feb9c6;
 $darkrose: #b96b85;
 $blackish: #021e20;
 
-.App {
-  // font-family: "Titillium Web", Arial, Helvetica, sans-serif;
-  font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
-  width: 100%;
-  margin: auto;
-  background-color: $darkblue;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.app__cont {
-  width: 80%;
-  margin: auto;
+.App {
+	// font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+	font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+	width: 100%;
+	margin: auto;
+	background-color: $darkblue;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
 }
