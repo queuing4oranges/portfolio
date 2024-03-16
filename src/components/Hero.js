@@ -1,43 +1,29 @@
-import Modal from "./Modal";
-import { useState } from "react";
+import  { useState } from "react";
+import ContactModal from "./ContactModal";
 
 const Hero = () => {
-  const [openModal, setOpenModal] = useState(false);
+	const [openModal, setOpenModal] = useState(false);
 
-  const showModal = () => {
-    setOpenModal(true);
-  };
+	return (
+	<section
+		className="hero-container relative w-full h-400 overflow-hidden"
+		id="home">
+			<div className="hero-image h-full w-full flex flex-col items-center justify-center text-center">
+				<h1 className="hero-title text-light">Hi, I'm Katja</h1>
+				<h2 className="hero-text text-light">a Prague based Web Developer</h2>
+				<button
+					type="button"
+					onClick={() => setOpenModal(!openModal)}
+					className="bg-accent text-dark text-xl py-4 px-8 mt-10 rounded-full hover:bg-hover hover:text-accent"
+				>
+				Get in touch
+				</button>
+			</div>
 
-  const hideModal = () => {
-    setOpenModal(false);
-  };
-
-  return (
-    <>
-      {openModal && <Modal hideModal={hideModal} />}
-      <div className={openModal ? "blurry" : "hero__image"} id="home">
-        <div className="hero__text">
-          <div className="hero__title">
-            <h1>Hi, I'm Katja</h1>
-          </div>
-
-          <div className="hero__par">
-            <p>a Prague based Web Developer</p>
-          </div>
-
-          <button
-            type="button"
-            className="button bouncy"
-            onClick={() => showModal()}
-          >
-            Get in touch
-          </button>
-        </div>
-
-        <form action="post"></form>
-      </div>
-    </>
-  );
+			{openModal &&
+				<ContactModal setOpenModal={setOpenModal} />}
+	</section>
+	);
 };
 
 export default Hero;
