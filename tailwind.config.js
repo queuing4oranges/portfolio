@@ -9,8 +9,10 @@ module.exports = {
 				'h3': '2rem'
 			},
 			colors: {
-				dark: '#01101d', // Used for dark background
-				light: '#ebd2c1', // Used for light color				
+				dark: '#01101d', // Dark background
+				light: '#ebd2c1', // Light color
+				accent: '#00C59B', // Accent
+				hover: '#236073' // Hover
 			}
 		},
 	},
