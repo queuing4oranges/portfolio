@@ -70,7 +70,7 @@ function ContactModal({ setOpenModal }) {
 						<label className="flex flex-col mb-4">
 							<span>My message to you *</span>
 							<textarea
-								className="modal__input border border-accent focus:border-transparent px-2 py-2"
+								className="modal__input border border-accent resize-none focus:border-transparent px-2 py-2"
 								type="text"
 								cols="30"
 								rows="10"

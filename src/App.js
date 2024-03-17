@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 //components:
 import About from "../src/components/About/About";
 import Footer from "../src/components/Footer/Footer";
-import Navbar from "./components/Navbar";
+import Navbar from "../src/components/Navbar/Navbar";
 import Hero from "../src/components/Hero/Hero";
 import ProjectsAccordion from "../src/components/accordion/ProjectsAccordion";
 import NewSkills from "./components/NewSkills";
