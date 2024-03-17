@@ -42,7 +42,6 @@ const About = () => {
 				
 				<div 
 					ref={myRef} 
-					// className="flex-1 flex justify-center items-center md:pl-4 md:pr-4 mt-4 md:mt-0 m-4"
 					className={`flex-1 flex justify-center items-center md:pl-4 md:pr-4 mt-4 md:mt-0 m-4 ${picAnimation ? "scale-up" : ""}`}
 
 					>
