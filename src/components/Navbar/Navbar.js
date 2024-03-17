@@ -81,10 +81,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// {/* <div>
-// 					{/* this is the linke to the top */}
-// <Link to="home" smooth={true} spy={true}>
-// 	{/* <BsFillHouseFill color="#ebd2c1" size={30}/> */}
-// </Link>
-// 				</div >
