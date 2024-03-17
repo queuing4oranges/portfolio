@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { FaHamburger } from "react-icons/fa";
+import { BsChevronDoubleUp } from "react-icons/bs";
 
 import "./navbar.scss";
 
@@ -30,6 +31,19 @@ const Navbar = () => {
 							Download CV
 						</a>
 					</button>
+					{isOpen ?
+						<Link
+							to="home"
+							smooth={true}
+							spy={true}
+							activeClass="active"
+							className={`flex items-center ml-8 hover:text-accent ${isOpen ? "text-xl ml-0 px-3" : "" }`}
+							onClick={() => setIsOpen(false)}>
+							<BsChevronDoubleUp size={30} />
+						</Link>
+					: null
+					}
+
 					<Link 
 						to="projects" 
 						smooth={true} 
