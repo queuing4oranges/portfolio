@@ -17,6 +17,50 @@
 		background-color: #00C59B;
 		border-radius: 50%;
 	}
+
+	transition: transform 0.5s ease;
+
+	.nav-content.collapsed {
+		transform: rotate(-90deg) translateY(-100%);
+	}
+
+	.animated {
+		border: 2px greenyellow solid;
+		position: absolute;
+		margin-top: 10rem;
+		margin-right: -2rem;
+		top: 0;
+		right: 0;
+
+		-webkit-animation: animated 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		animation: animated 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+		p {
+			display: none;
+		}
+		}
+
+	@-webkit-keyframes animated {
+		0% {
+			-webkit-transform: rotate(0);
+			transform: rotate(0);
+		}
+		100% {
+			-webkit-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+		}
+	}
+
+	@keyframes animated {
+		0% {
+			-webkit-transform: rotate(0);
+			transform: rotate(0);
+		}
+		100% {
+			-webkit-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+		}
+	}
 }
 
 @media (max-width: 600px) {
