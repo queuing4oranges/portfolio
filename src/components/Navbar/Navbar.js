@@ -15,7 +15,7 @@ const links = [
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [isWindowSizeSmall, setIsWindowSizeSmall] = useState(false);
-	const [isAnimated, setIsAnimated] = useState(true);
+	const [isAnimated, setIsAnimated] = useState(false);
 
 	useEffect(() => {
 		function handleResize() {
@@ -32,18 +32,13 @@ const Navbar = () => {
 	}, [window.innerWidth])
 	
 	useEffect(() => {
-		// Change navbar to symbols when scrolling
-		const navbar = document.querySelector(".nav-content")
-
 		function handleScroll() {
 			const atTop = window.scrollY === 0;
 
 			if (!isWindowSizeSmall) {
 				if (atTop) {
-					navbar.classList.remove("animated");
 					setIsAnimated(false);
 				} else {
-					navbar.classList.add("animated");
 					setIsAnimated(true);
 				}
 			}
@@ -62,7 +57,7 @@ const Navbar = () => {
 	}
 
 	return (
-		<nav className="nav-container fixed top-0 z-50 w-full bg-transparent text-light py-4 px-6 md:px-40">
+		<nav className="nav-container fixed top-0 z-50 w-full bg-transparent text-light md:px-20">
 			<div className="flex justify-end items-center">
 				{/* Show hamburger menu, when small, hide on desktop */}
 				<div className="block md:hidden">
@@ -71,8 +66,11 @@ const Navbar = () => {
 					</button>
 				</div>
 				{/* Show menu on toggle */}
-				<div className={`nav-content md:flex ${isOpen ? 'mt-12 flex-col md:flex-row bg-dark rounded-md' : 'hidden'}`}>
-					<button className="cv-download bg-transparent text-accent text-xs py-2 px-4 rounded-full hover:bg-hover hover:text-accent">
+				<div className={`nav-content md:flex
+					${isOpen ? 'flex-col w-full md:flex-row bg-dark rounded-md' : 'hidden'}
+					${!isWindowSizeSmall && isAnimated ? 'animated' : '' }
+				`}>
+					<button className="cv-download bg-transparent text-accent text-xs py-2 px-4 rounded-md hover:bg-hover hover:text-accent">
 						<a
 							href="KatjaZenkerCV.pdf"
 							target="_blank"
@@ -82,14 +80,14 @@ const Navbar = () => {
 							<p>Download CV</p>
 						</a>
 					</button>
-					{/* Display Chevron when toggle is open and go back up */}
+					{/* Display Chevron only when toggle is open and go back up */}
 					{isOpen ?
 						<Link
 							to="home"
 							smooth={true}
 							spy={true}
 							activeClass="active"
-							className={`flex items-center ml-8 hover:text-accent ${isOpen ? "text-xl ml-0 px-3" : "" }`}
+							className={`flex items-center ml-2 py-2 hover:text-accent ${isOpen ? "text-xl ml-0 px-3" : "" }`}
 							onClick={() => setIsOpen(false)}>
 							<BsChevronDoubleUp size={30} />
 						</Link>
@@ -102,10 +100,11 @@ const Navbar = () => {
 							to={link.to}
 							smooth={true}
 							spy={true}
+							title={isAnimated ? link.label : ""}
 							activeClass="active"
-							className={`flex items-center ml-8 hover:text-accent ${isOpen ? "text-xl ml-0 px-3" : "" }`}
+							className={`flex items-center ml-2 py-2 hover:text-accent ${isOpen ? "text-xl ml-0 px-3" : "" }`}
 							onClick={() => setIsOpen(false)}>
-							<p>{link.label}</p>
+								{link.label}
 						</Link>
 					))}
 					
