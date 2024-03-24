@@ -18,19 +18,83 @@
 		border-radius: 50%;
 	}
 
-	transition: transform 0.5s ease;
-
-	.nav-content.collapsed {
-		transform: rotate(-90deg) translateY(-100%);
+	// Tilt navbar content 90 degrees
+	.animated {
+		// border: 2px greenyellow solid;
+		color: white;
+		button {
+			display: none;
+		}
+	}
+	.animated {
+		-webkit-animation: animated 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		animation: animated 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	}
 
-	.animated {
-		border: 2px greenyellow solid;
-		color: white;
-
-
+	@-webkit-keyframes animated {
+		0% {
+			-webkit-transform: rotate(0);
+			transform: rotate(0);
+			-webkit-transform-origin: right;
+			transform-origin: right;
 		}
+		100% {
+			-webkit-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+			-webkit-transform-origin: right;
+			transform-origin: right;
+		}
+	}
 
+	@keyframes animated {
+		0% {
+			-webkit-transform: rotate(0);
+			transform: rotate(0);
+			-webkit-transform-origin: right;
+			transform-origin: right;
+		}
+		100% {
+			-webkit-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+			-webkit-transform-origin: right;
+			transform-origin: right;
+		}
+	}
+
+	// Rotate nav-links 90 degrees
+	.rotate-90 {
+		-webkit-animation: rotate-90 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		animation: rotate-90 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	}
+
+	@-webkit-keyframes rotate-90 {
+		0% {
+			-webkit-transform: rotate(0);
+			transform: rotate(0);
+			-webkit-transform-origin: top right;
+			transform-origin: top right;
+		}
+		100% {
+			-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+			-webkit-transform-origin: top right;
+			transform-origin: top right;
+		}
+		}
+	@keyframes rotate-90 {
+		0% {
+			-webkit-transform: rotate(0);
+			transform: rotate(0);
+			-webkit-transform-origin: top right;
+			transform-origin: top right;
+		}
+		100% {
+			-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+			-webkit-transform-origin: top right;
+			transform-origin: top right;
+		}
+	}
 }
 
 @media (max-width: 600px) {

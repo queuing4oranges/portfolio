@@ -7,9 +7,9 @@ import { GoPerson, GoRocket, GoTools } from "react-icons/go";
 import "./navbar.scss";
 
 const links = [
-	{ to: "projects", label: "Projects", icon: <GoRocket size={40} color="#00C59B" /> },
-	{ to: "skills", label: "Skills", icon: <GoTools size={40} color="#00C59B" /> },
-	{ to: "about", label: "About", icon: <GoPerson size={40} color="#00C59B" /> }
+	{ to: "projects", label: "Projects", icon: <GoRocket size={20} color="#00C59B" /> },
+	{ to: "skills", label: "Skills", icon: <GoTools size={20} color="#00C59B" /> },
+	{ to: "about", label: "About", icon: <GoPerson size={20} color="#00C59B" /> }
 ]
 
 const Navbar = () => {
@@ -102,9 +102,12 @@ const Navbar = () => {
 							spy={true}
 							title={isAnimated ? link.label : ""}
 							activeClass="active"
-							className={`flex items-center ml-2 py-2 md:px-4 hover:text-accent ${isOpen ? "text-xl ml-0 px-3" : "" }`}
+							className={`flex items-center ml-2 py-2 md:px-4 hover:text-accent
+								${isOpen ? "text-xl ml-0 px-3" : "" }
+								${!isWindowSizeSmall && isAnimated ? 'rotate-90' : ''}`
+							}
 							onClick={() => setIsOpen(false)}>
-								{link.label}
+							{!isWindowSizeSmall && isAnimated ? <p className="rounded-full border border-accent p-3">{link.icon}</p> : <p>{link.label}</p>}
 						</Link>
 					))}
 					
