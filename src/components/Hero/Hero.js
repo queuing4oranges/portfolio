@@ -16,7 +16,7 @@ const Hero = () => {
 				<button
 					type="button"
 					onClick={() => setOpenModal(!openModal)}
-					className="bg-accent text-dark text-xl py-4 px-8 mt-10 rounded-full hover:bg-hover hover:text-accent"
+					className="bg-accent text-dark text-xl py-4 px-8 mt-10 rounded-md hover:bg-hover hover:text-accent"
 				>
 				Get in touch
 				</button>
