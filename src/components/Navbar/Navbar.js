@@ -66,7 +66,7 @@ const Navbar = () => {
 					</button>
 				</div>
 				{/* Show menu on toggle */}
-				<div className={`nav-content md:flex
+				<div className={`nav-content md:flex md:mt-4
 					${isOpen ? 'flex-col w-full md:flex-row bg-dark rounded-md' : 'hidden'}
 					${!isWindowSizeSmall && isAnimated ? 'animated' : '' }
 				`}>
@@ -102,7 +102,7 @@ const Navbar = () => {
 							spy={true}
 							title={isAnimated ? link.label : ""}
 							activeClass="active"
-							className={`flex items-center ml-2 py-2 hover:text-accent ${isOpen ? "text-xl ml-0 px-3" : "" }`}
+							className={`flex items-center ml-2 py-2 md:px-4 hover:text-accent ${isOpen ? "text-xl ml-0 px-3" : "" }`}
 							onClick={() => setIsOpen(false)}>
 								{link.label}
 						</Link>
