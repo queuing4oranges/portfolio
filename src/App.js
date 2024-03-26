@@ -10,6 +10,7 @@ import Navbar from "../src/components/Navbar/Navbar";
 import Hero from "../src/components/Hero/Hero";
 import ProjectsAccordion from "../src/components/accordion/ProjectsAccordion";
 import NewSkills from "./components/NewSkills";
+import Courses from "./components/Courses/Courses";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
 						<Hero />
 						<ProjectsAccordion />
 						<NewSkills />
+						<Courses />
 						<About />
 						<Footer />
 					</Route>

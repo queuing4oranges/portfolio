@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { FaHamburger } from "react-icons/fa";
 import { BsChevronDoubleUp } from "react-icons/bs";
-import { GoPerson, GoRocket, GoTools } from "react-icons/go";
+import { GoPerson, GoRocket, GoTools, GoMortarBoard } from "react-icons/go";
 
 import "./navbar.scss";
 
 const links = [
 	{ to: "projects", label: "Projects", icon: <GoRocket size={20} color="#00C59B" /> },
 	{ to: "skills", label: "Skills", icon: <GoTools size={20} color="#00C59B" /> },
+	{ to: "courses", label: "Courses", icon: <GoMortarBoard size={20} color="#00C59B" /> },
 	{ to: "about", label: "About", icon: <GoPerson size={20} color="#00C59B" /> }
 ]
 
@@ -107,7 +108,7 @@ const Navbar = () => {
 								${!isWindowSizeSmall && isAnimated ? 'rotate-90' : ''}`
 							}
 							onClick={() => setIsOpen(false)}>
-							{!isWindowSizeSmall && isAnimated ? <p className="rounded-full border border-accent p-3">{link.icon}</p> : <p>{link.label}</p>}
+							{!isWindowSizeSmall && isAnimated ? <p className="rounded-full border border-4 border-accent p-3">{link.icon}</p> : <p>{link.label}</p>}
 						</Link>
 					))}
 					

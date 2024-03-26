@@ -1,6 +1,5 @@
 import React from "react";
-import Certificat from "../icons/Certificat";
-import Ticked from "../icons/Ticked";
+
 import {
   BootstrapIcon,
   CssIcon,
@@ -26,7 +25,7 @@ export default function NewSkills() {
         Skills
       </h1>
 
-      <div className="tech-cont">
+      {/* <div className="tech-cont">
         <h2 className="skills-tech skills-subtitle">Tech Stack</h2>
 
         <div className="skills-tech-icon-cont">
@@ -165,93 +164,9 @@ export default function NewSkills() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="courses-cont">
-        <h2 className="skills-courses skills-subtitle">Courses</h2>
-
-        <div className="course-item-cont">
-          <div className="course-title-cont">
-            <Certificat height={80} width={80} fill="none" />
-            <h3 className="skills-courses-subtitle">Coding Bootcamp Praha</h3>
-          </div>
-          <div className="course-content-cont">
-            <ul>
-              <li className="li__item">
-                + A fullstack web development coding bootcamp. 12-week fulltime
-                program.
-              </li>
-            </ul>{" "}
-          </div>
-        </div>
-
-        <div className="course-item-cont">
-          <div className="course-title-cont">
-            <Ticked height={80} width={80} fill="none" />
-            <h3 className="skills-courses-subtitle">Udemy</h3>
-          </div>
-
-          <div className="course-content-cont">
-            <ul>
-              <li className="li__item">
-                + Microfrontends with React: A Complete Developer's Guide
-              </li>
-              <li className="li__item">
-                + Complete Web Design: from Figma to Webflow
-              </li>
-              <li className="li__item">+ PHP | Build a Complete API </li>
-              <li className="li__item">
-                + Create a Rest API using PHP with Token Authentication
-              </li>
-              <li className="li__item">
-                + React 18 Tutorial and Projects Course (2023)
-              </li>
-            </ul>
-          </div>
-
-          <div className="course-item-cont">
-            <div className="course-title-cont">
-              <Ticked height={80} width={80} fill="none" />
-              <h3 className="skills-courses-subtitle">freeCodeCamp</h3>
-            </div>
-
-            <div className="course-content-cont">
-              <ul>
-                <li className="li__item">+ HTML5</li>
-                <li className="li__item">+ CSS</li>
-                <li className="li__item">+ Applied Visual Design</li>
-                <li className="li__item">+ Applied Accessibility</li>
-                <li className="li__item">+ CSS Flexbox</li>
-                <li className="li__item">+ JavaScript</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="course-item-cont">
-          <div className="course-title-cont">
-            <Ticked height={80} width={80} fill="none" />
-            <h3 className="skills-courses-subtitle">The Net Ninja</h3>
-          </div>
-          <div className="course-content-cont">
-            <ul>
-              <li className="li__item">
-                + Build Websites with React &#038; Firebase
-              </li>
-              <li className="li__item">+ Bootstrap 5</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="languages-cont">
-        <h2 className="skills-languages skills-subtitle">Languages</h2>
-        <ul>
-          <li className="li__item">
-            German native || English C2 || Czech B2 || French A1
-          </li>
-        </ul>
-      </div>
+     
     </div>
   );
 }
