@@ -16,7 +16,7 @@ import {
   SassIcon,
   TrelloIcon,
   WebpackIcon,
-} from "../icons/SkillsIcons";
+} from "./TechStack/TechStackIcons";
 
 export default function NewSkills() {
   return (

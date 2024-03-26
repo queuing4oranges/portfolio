@@ -2,8 +2,6 @@ import React from 'react';
 import { courses } from './CoursesData';
 import { Certificat, Ticked } from "./CourseIcons";
 
-import "./courses.scss";
-
 export default function Courses() {
   return (
 	  <section className = "courses-container bg-light text-dark px-4 py-10 md:px-40 md:py-20">

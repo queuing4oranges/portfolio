@@ -8,7 +8,7 @@ import "./navbar.scss";
 
 const links = [
 	{ to: "projects", label: "Projects", icon: <GoRocket size={20} color="#00C59B" /> },
-	{ to: "skills", label: "Skills", icon: <GoTools size={20} color="#00C59B" /> },
+	{ to: "tech", label: "Tech Stack", icon: <GoTools size={20} color="#00C59B" /> },
 	{ to: "courses", label: "Courses", icon: <GoMortarBoard size={20} color="#00C59B" /> },
 	{ to: "about", label: "About", icon: <GoPerson size={20} color="#00C59B" /> }
 ]
