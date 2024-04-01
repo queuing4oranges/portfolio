@@ -1,0 +1,9 @@
+.techstack-container {
+	.tech-card {
+		transition: transform 0.3s ease;
+		&:hover {
+			transform: scale(1.5);
+			border: #021e20 1px solid;
+		}
+	}
+}
