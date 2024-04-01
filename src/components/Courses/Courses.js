@@ -20,7 +20,7 @@ export default function Courses() {
 						</h3>
 						<div>
 							{course.info.map((infoItem, idx) => (
-								<div key={idx} className='flex items-start justify-start'>
+								<div key={idx} className='flex items-start justify-start border-l-8 border-accent my-2 p-2 bg-dark bg-opacity-10'>
 									<p className='p-1 text-lg'><Ticked height={20} width={20} fill="none" /></p>
 									<p className='text-lg ml-2 p-0'>{infoItem}</p>
 								</div>
