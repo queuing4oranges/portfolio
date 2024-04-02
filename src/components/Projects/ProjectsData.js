@@ -1,4 +1,4 @@
-import portfolio from "../../../public/assets/portfolio.png"
+import portfolio from "./portfolio.png"
 
 export const projectsData = [
 	{
