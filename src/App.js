@@ -8,7 +8,7 @@ import About from "../src/components/About/About";
 import Footer from "../src/components/Footer/Footer";
 import Navbar from "../src/components/Navbar/Navbar";
 import Hero from "../src/components/Hero/Hero";
-import ProjectsAccordion from "../src/components/accordion/ProjectsAccordion";
+import Projects from "../src/components/Projects/Projects";
 import TechStack from "./components/TechStack/TechStack";
 import Courses from "./components/Courses/Courses";
 
@@ -22,7 +22,7 @@ function App() {
 					<Route exact path="/">
 						<Navbar />
 						<Hero />
-						<ProjectsAccordion />
+						<Projects />
 						<TechStack />
 						<Courses />
 						<About />
