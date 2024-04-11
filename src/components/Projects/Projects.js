@@ -8,12 +8,11 @@ export default function Projects() {
 			Projects
 		</h1>
 		<br />
-		
-		<Carousel />
-		
-		
-		
-		
+		<div>
+					<Carousel />
+		</div>
+
+
 	</section>
   )
 }

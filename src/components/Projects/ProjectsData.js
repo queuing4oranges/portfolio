@@ -23,7 +23,7 @@ export const projectsData = [
 		title: "Lesbotoč.cz",
 		tech: "JavaScript | ReactJS | SCSS | Bootstrap | Figma",
 		description:
-			"The website is the landing page for an organisation dedicated to bringing together queer women in Prague through exciting events. The website shows a calendar with upcoming (and past) events, event details including a sign up function and a function to add the event directly to the user's calendar. It includes also a gallery and some information about the organisation as well as a contact form. The website is an ongoing project and more features will be added in the future.",
+			"The website is the landing page for an organisation dedicated to bringing together queer women in Prague. The website shows a calendar with events, including a sign up and add-to-calendar function. It includes also a gallery and some information about the organisation as well as a contact form.",
 		image: portfolio,
 		github: "https://github.com/queuing4oranges/lesbotoc-website",
 		live: "https://www.lesbotoc.cz/",
@@ -38,7 +38,7 @@ export const projectsData = [
 		live: "https://adminpanel.queuing4oranges.com/",
 	},
 	{
-		title: "PHP API for database communication",
+		title: "PHP APIs for database communication",
 		tech: "PHP | MySQL | Postman",
 		description:
 			"The API endpoints are build for the communication with the database of the Lesbotoc.cz website. The database was created and set up with phpMyAdmin. The endpoints allow the user to execute CRUD operations (with contacts, events, but also upload pictures).",
