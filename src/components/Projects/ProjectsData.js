@@ -11,7 +11,7 @@ export const projectsData = [
 		live: "https://www.queuing4oranges.com/",
 	},
 	{
-		title: "Altira s.r.o",
+		title: "Altira.cz",
 		tech: "JavaScript | ReactJS | SCSS | Figma",
 		description:
 			"The project is the landing page for a start-up in logistics. The design and wireframing was done in Figma. My client asked me to also design a new logo. The CTA section includes a contact form, which will be send to the company with the help of EmailJS. It is responsive for mobile devices.",
@@ -44,7 +44,6 @@ export const projectsData = [
 			"The API endpoints are build for the communication with the database of the Lesbotoc.cz website. The database was created and set up with phpMyAdmin. The endpoints allow the user to execute CRUD operations (with contacts, events, but also upload pictures).",
 		image: portfolio,
 		github: "https://github.com/queuing4oranges/lesbotoc-backend-api",
-		live: "https://apis.queuing4oranges.com/",
 	},
 	{
 		title: "MiniProjects",

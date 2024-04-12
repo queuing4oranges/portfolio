@@ -1,0 +1,57 @@
+.slider-container {
+	.slick-slide {
+		height: 45rem;
+		box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08);
+		display: flex;
+		flex-direction: column;
+
+		button {
+			width: 5rem;
+			height: 5rem;
+			border-radius: 50%;
+			transition: width 0.3s, height 0.3s, border-radius 0.3s, padding 0.3s;
+
+			& span {
+				display: none;
+			}
+
+			&:hover {
+				border-radius: 0;
+
+				& span {
+					display: block;
+				}
+
+				& svg {
+					display: none;
+				}
+			}
+		}
+
+		> div {
+			height: 100%;
+
+			> div {
+
+				display: flex !important;
+				flex-direction: column;
+				justify-content: space-between !important;
+
+			}
+		}
+	}
+
+	svg {
+		font-size: 2rem;
+	}
+}
+
+/* Animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

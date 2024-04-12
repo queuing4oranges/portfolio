@@ -1,93 +1,82 @@
-import React, { useEffect, useState } from 'react';
-
+import React, { useState } from 'react';
+import Slider from 'react-slick';
 import { projectsData } from "./ProjectsData";
+import { FaRegEye, FaCode } from "react-icons/fa";
 
 import "./Carousel.scss";
 
 export default function Carousel() {
 	const [cards, setCards] = useState(projectsData);
-	const [currentCard, setCurrentCard] = useState(0);
-
-	useEffect(() => {
-		let autoslide = setInterval(() => {
-			nextSlide();
-		}, 2000);
-
-		return () => {
-			clearInterval(autoslide);
-		}
-	},[currentCard]);
-
-	const nextSlide = () => {
-		setCurrentCard((oldCard) => {
-			const newCard = (oldCard + 1) % cards.length;
-			return newCard;
-		});
+	const settings = {
+		infinite: true,
+		speed: 500,
+		// autoplay: true,
+		autoplaySpeed: 2000,
+		pauseOnHover: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
 	};
-
-	const prevSlide = () => {
-		setCurrentCard((oldCard) => {
-			const newCard = (oldCard - 1 + cards.length) % cards.length;
-			return newCard;
-		});
-	};
-
 
 	return (
-		<div className="slider-container relative">
-				<div className="relative">
-					<div className="mx-auto grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-						{cards.map((card, index) => (
-							<div key={index} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
-
-								<div className="flex-shrink-0">
-									<img className="h-96 w-full object-cover" src={card.image} alt={card.title} />
-								</div>
-
-								<div className="flex flex-1 flex-col justify-between bg-light p-6">
-									<div className="flex-1">
-										<h3 className='text-accent font-semibold'>{card.title}</h3>
-										<p className="text-sm font-medium text-dark">{card.tech}</p>
-										<a href="#" className="mt-2 block">
-											<p className="text-xl text-gray-900">{card.description}</p>
-											<p className="mt-3 text-base text-gray-500">{card.github}</p>
-										</a>
-									</div>
-								</div>
+		<div className='slider-container'>
+			<Slider {...settings}>
+				{cards.map((card, idx) => (
+					<div key={idx} className="h-full flex flex-col justify-between">
+						<div>
+							<div>
+								<img className="h-full w-full object-cover px-3" src={card.image} alt={card.title} />
 							</div>
-						))}
+
+							<div className="flex flex-col justify-between bg-light p-3 m-5">
+								<h3 className='text-accent font-semibold'>{card.title}</h3>
+								<h4 className="font-medium text-dark my-2">{card.tech}</h4>
+								<p className="">{card.description}</p>
+							</div>
+						</div>
+						<div className='flex justify-center bg-light p-3 m-5'>
+							{card.live &&
+								<a href={card.live} target="_blank" title='See live'>
+									<button className='flex justify-center items-center bg-accent hover:bg-dark text-light font-bold py-2 px-4 m-4 rounded'>
+										<FaRegEye />
+										<span>Live</span>
+									</button></a>
+							}
+							<a href="" target="_blank" title='Look at the Code'>
+								<button className='flex justify-center items-center bg-accent hover:bg-dark text-light font-bold py-2 px-4 m-4 rounded'>
+									<FaCode />
+									<span>Code</span>
+								</button>
+							</a>
+						</div>
 					</div>
-				</div>
-			</div>
-		);
-	};
-
-
-
-		// <div className='slider-container' style={{position: "relative"}}>
-		// 		{cards.map((card, index) => {
-		// 			const { title, tech, description, image, github, live } = card
-
-		// 			return (
-		// 				<article
-		// 					// className='slide'
-		// 					key={index}
-		// 					style={{ transform: `translateX(${100 * (index - currentCard)}%)` }}
-		// 				>
-		// 					{/* <img src={image} alt={title} /> */}
-		// 					<h4>{title}</h4>
-		// 					<h5>{tech}</h5>
-		// 					<p>{description}</p>
-		// 					<button>{github}</button>
-		// 					<button>{live}</button>
-
-		// 				</article>
-		// 			)
-		// 		})}
-
-		// 	<button style={{ position: "absolute" }} onClick={prevSlide} className='prev'></button>
-		// 	<button style={{ position: "absolute" }} onClick={nextSlide} className='next'></button>
-		// </div>
-
-//   	)
-// }
+				))}
+			</Slider>
+		</div>
+	)
+};
