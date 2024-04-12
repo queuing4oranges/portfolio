@@ -10,44 +10,42 @@ export default function Carousel() {
 	const settings = {
 		infinite: true,
 		speed: 500,
-		// autoplay: true,
-		autoplaySpeed: 2000,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		pauseOnHover: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+			{
+				breakpoint: 1024,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+						infinite: true,
+					}
+			},
+			{
+				breakpoint: 600,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+			},
+			{
+				breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					}
+			}
+		]
 	};
 
 	return (
 		<div className='slider-container'>
 			<Slider {...settings}>
 				{cards.map((card, idx) => (
-					<div key={idx} className="h-full flex flex-col justify-between">
+					<div key={idx} className="shadow-lg h-full flex flex-col justify-between">
 						<div>
 							<div>
 								<img className="h-full w-full object-cover px-3" src={card.image} alt={card.title} />
@@ -61,13 +59,13 @@ export default function Carousel() {
 						</div>
 						<div className='flex justify-center bg-light p-3 m-5'>
 							{card.live &&
-								<a href={card.live} target="_blank" title='See live'>
+								<a href={card.live} target="_blank" rel="noreferrer" title='See live'>
 									<button className='flex justify-center items-center bg-accent hover:bg-dark text-light font-bold py-2 px-4 m-4 rounded'>
 										<FaRegEye />
 										<span>Live</span>
 									</button></a>
 							}
-							<a href="" target="_blank" title='Look at the Code'>
+							<a href={card.github} target="_blank" rel="noreferrer" title='Look at the Code'>
 								<button className='flex justify-center items-center bg-accent hover:bg-dark text-light font-bold py-2 px-4 m-4 rounded'>
 									<FaCode />
 									<span>Code</span>

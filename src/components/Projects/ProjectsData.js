@@ -41,7 +41,7 @@ export const projectsData = [
 		github: "https://github.com/queuing4oranges/lesbotoc-admin"
 	},
 	{
-		title: "PHP APIs for database communication",
+		title: "PHP APIs",
 		tech: "PHP | MySQL | Postman",
 		description:
 			"The API endpoints are build for the communication with the database of the Lesbotoc.cz website. The database was created and set up with phpMyAdmin. The endpoints allow the user to execute CRUD operations (with contacts, events, but also upload pictures).",
