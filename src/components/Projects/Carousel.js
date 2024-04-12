@@ -2,8 +2,23 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import { projectsData } from "./ProjectsData";
 import { FaRegEye, FaCode } from "react-icons/fa";
+import { FiChevronsRight, FiChevronsLeft } from "react-icons/fi";
 
 import "./Carousel.scss";
+
+function NextArrow(props) {
+	const { onClick, className } = props;
+	return (
+		<FiChevronsRight onClick={onClick} className={className}/>
+	)
+}
+
+function PrevArrow(props) {
+	const { onClick, className } = props;
+	return (
+		<FiChevronsLeft onClick={onClick} className={className} />
+	)
+}
 
 export default function Carousel() {
 	const [cards, setCards] = useState(projectsData);
@@ -11,10 +26,12 @@ export default function Carousel() {
 		infinite: true,
 		speed: 500,
 		autoplay: true,
-		autoplaySpeed: 3000,
+		autoplaySpeed: 2500,
 		pauseOnHover: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
+		nextArrow: <NextArrow />,
+		prevArrow: <PrevArrow />,
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -28,14 +45,14 @@ export default function Carousel() {
 				breakpoint: 600,
 					settings: {
 						slidesToShow: 2,
-						slidesToScroll: 2,
+						swipeToSlide: 2,
 					}
 			},
 			{
 				breakpoint: 480,
 					settings: {
 						slidesToShow: 1,
-						slidesToScroll: 1,
+						swipesToSlide: 1,
 					}
 			}
 		]
