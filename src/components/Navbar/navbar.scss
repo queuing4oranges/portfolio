@@ -21,7 +21,10 @@
 	// Tilt navbar content 90 degrees
 	.animated {
 		// border: 2px greenyellow solid;
-		color: white;
+		display: flex;
+		flex-direction: row-reverse;
+		margin-right: -6rem;
+
 		button {
 			display: none;
 		}

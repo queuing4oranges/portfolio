@@ -77,13 +77,13 @@ export default function Carousel() {
 						<div className='flex justify-center bg-light p-3 m-5'>
 							{card.live &&
 								<a href={card.live} target="_blank" rel="noreferrer" title='See live'>
-									<button className='flex justify-center items-center bg-accent hover:bg-dark text-light font-bold py-2 px-4 m-4 rounded'>
+									<button className='flex justify-center items-center bg-accent hover:bg-hover text-light font-bold py-2 px-4 m-4 rounded'>
 										<FaRegEye />
 										<span>Live</span>
 									</button></a>
 							}
 							<a href={card.github} target="_blank" rel="noreferrer" title='Look at the Code'>
-								<button className='flex justify-center items-center bg-accent hover:bg-dark text-light font-bold py-2 px-4 m-4 rounded'>
+								<button className='flex justify-center items-center bg-accent hover:bg-hover text-light font-bold py-2 px-4 m-4 rounded'>
 									<FaCode />
 									<span>Code</span>
 								</button>
