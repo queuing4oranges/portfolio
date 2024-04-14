@@ -32,5 +32,20 @@ export const courses = [
 			"Build Websites with React & Firebase",
 			"Bootstrap 5",
 		]
+	},
+	{
+		title: "Formal education",
+		info: [
+			"B.A. in Social Work (HS Zittau-Görlitz)",
+			"Mgr. in Linguistics (Universität Leipzig)"
+		]
+	},
+	{
+		title: "Languages",
+		info: [
+			"German (native)",
+			"English (C1)",
+			"Czech (B2)"
+		]
 	}
 ]

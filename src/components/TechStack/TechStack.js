@@ -5,8 +5,8 @@ import "./techstack.scss";
 
 export default function TechStack() {
   return (
-	  <section className = "bg-dark text-light px-4 py-10 md:px-40 md:py-20">
-		  <h1 id="tech">
+	  <section id="tech" className = "bg-dark text-light px-4 py-10 md:px-40 md:py-20">
+		  <h1>
 			  Tech Stack
 		  </h1>
 		  <br />

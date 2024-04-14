@@ -4,9 +4,9 @@ import { Certificat, Ticked } from "./CourseIcons";
 
 export default function Courses() {
   return (
-	  <section className = "courses-container bg-light text-dark px-4 py-10 md:px-40 md:py-20">
-		<h1 id="courses">
-			Courses
+	  <section id="courses" className = "courses-container bg-light text-dark px-4 py-10 md:px-40 md:py-20">
+		<h1>
+			Education
 		</h1>
 		<br />
 		

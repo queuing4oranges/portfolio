@@ -9,7 +9,7 @@ import "./navbar.scss";
 const links = [
 	{ to: "projects", label: "Projects", icon: <GoRocket size={20} color="#00C59B" /> },
 	{ to: "tech", label: "Tech Stack", icon: <GoTools size={20} color="#00C59B" /> },
-	{ to: "courses", label: "Courses", icon: <GoMortarBoard size={20} color="#00C59B" /> },
+	{ to: "courses", label: "Education", icon: <GoMortarBoard size={20} color="#00C59B" /> },
 	{ to: "about", label: "About", icon: <GoPerson size={20} color="#00C59B" /> }
 ]
 
@@ -69,7 +69,7 @@ const Navbar = () => {
 				{/* Show menu on toggle */}
 				<div className={`nav-content md:flex md:mt-4
 					${isOpen ? 'flex-col w-full md:flex-row bg-dark rounded-md' : 'hidden'}
-					${!isWindowSizeSmall && isAnimated ? 'animated' : '' }
+					${!isWindowSizeSmall && isAnimated ? 'animated hover:text-hover' : '' }
 				`}>
 					<button className="cv-download bg-transparent text-accent text-xs py-2 px-4 rounded-md hover:bg-hover hover:text-accent">
 						<a
@@ -103,12 +103,12 @@ const Navbar = () => {
 							spy={true}
 							title={isAnimated ? link.label : ""}
 							activeClass="active"
-							className={`flex items-center ml-2 py-2 md:px-4 hover:text-accent
+							className={`flex items-center ml-2 py-2 md:px-4 hover:text-hover
 								${isOpen ? "text-xl ml-0 px-3" : "" }
 								${!isWindowSizeSmall && isAnimated ? 'rotate-90' : ''}`
 							}
 							onClick={() => setIsOpen(false)}>
-							{!isWindowSizeSmall && isAnimated ? <p className="rounded-full border border-4 border-accent p-3">{link.icon}</p> : <p>{link.label}</p>}
+							{!isWindowSizeSmall && isAnimated ? <p className="rounded-full border border-4 border-accent p-3 hover:border-hover"activeClass="active">{link.icon}</p> : <p>{link.label}</p>}
 						</Link>
 					))}
 					
