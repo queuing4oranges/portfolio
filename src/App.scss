@@ -3,18 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Lora:wght@400;500;600;700&display=swap");
 
-/* Color Palette #4523*/
-$dark-blue: #005067;
-$lightblue: #048399;
-$rose: #feb9c6;
-$darkrose: #b96b85;
-$blackish: #021e20;
-$greenish: #00C59B;
-
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .App {
