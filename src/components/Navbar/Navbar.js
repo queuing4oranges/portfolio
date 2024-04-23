@@ -71,7 +71,7 @@ const Navbar = () => {
 					${isOpen ? 'flex-col w-full md:flex-row bg-dark rounded-md' : 'hidden'}
 					${!isWindowSizeSmall && isAnimated ? 'animated hover:text-hover' : '' }
 				`}>
-					<button className="cv-download bg-transparent text-accent text-xs py-2 px-4 rounded-md hover:bg-hover hover:text-accent">
+					<button className="cv-download bg-transparent text-accent py-2 px-4 rounded-md hover:bg-hover hover:text-accent">
 						<a
 							href="KatjaZenkerCV.pdf"
 							target="_blank"

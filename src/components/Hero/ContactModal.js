@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { send } from "emailjs-com";
 import { toast } from "react-toastify";
 
+import "./contactmodal.scss";
 
 function ContactModal({ setOpenModal }) {
 	const serviceID = process.env.REACT_APP_SERVICE_ID;
@@ -35,7 +36,7 @@ function ContactModal({ setOpenModal }) {
 
 	return (
 		<div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-			<div className="bg-white p-8 shadow-xl w-full max-w-mod md:w-auto md:max-w-md">
+			<div className="modal-container bg-white shadow-xl p-8 sm:w-4/5">
 				<h2 className="text-2xl mb-4">Hello, there!</h2>
 
 				<form onSubmit={handleSubmit}>
@@ -43,7 +44,7 @@ function ContactModal({ setOpenModal }) {
 						<label className="flex flex-col mb-4">
 							<span className="mb-1">My name is *</span>
 							<input
-								className="modal__input border border-accent focus:border-transparent px-2 py-2"
+								className="border border-accent focus:border-transparent px-2 py-2"
 								type="text"
 								name="namefrom"
 								value={toSend.namefrom}
@@ -56,7 +57,7 @@ function ContactModal({ setOpenModal }) {
 						<label className="flex flex-col mb-4">
 							<span>You can reply to me at *</span>
 							<input
-								className="modal__input border border-accent focus:border-transparent px-2 py-2"
+								className="border border-accent focus:border-transparent px-2 py-2"
 								placeholder="your@email.cz"
 								type="email"
 								name="replyto"
@@ -70,7 +71,7 @@ function ContactModal({ setOpenModal }) {
 						<label className="flex flex-col mb-4">
 							<span>My message to you *</span>
 							<textarea
-								className="modal__input border border-accent resize-none focus:border-transparent px-2 py-2"
+								className="border border-accent resize-none focus:border-transparent px-2 py-2"
 								type="text"
 								cols="30"
 								rows="10"

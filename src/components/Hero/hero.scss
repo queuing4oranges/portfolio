@@ -3,7 +3,7 @@
 		background-image: url("../../images/hero-starry.png");
 		background-size: cover;
 		min-height: 900px;
-		background-position-y: bottom;
+		background-position-y: center;
 	}
 
 	.hero-title {
@@ -43,5 +43,15 @@
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+@media (max-width: 600px) {
+	.hero-title {
+		font-size: 4rem !important;
+	}
+
+	.hero-text {
+		font-size: 2rem !important;
 	}
 }

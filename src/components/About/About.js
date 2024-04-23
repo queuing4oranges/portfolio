@@ -27,8 +27,6 @@ const About = () => {
 
 			<div className="flex flex-col md:flex-row">
 				<div className="flex-1 md:pr-4">
-					<h3>About me</h3>
-					<br />
 					<p>Hi there! I am a creative individual who likes to be busy creating and continuously learning.
 					</p>		
 					<br />
@@ -48,8 +46,6 @@ const About = () => {
 				</div>
 				
 				<div className="flex-1 md:pl-4">
-					<h3>My time off</h3>
-					<br />
 					<p>	In my free time, I enjoy being outdoors and the company of my friends and family. I like crafting things and learning new skills. I'm also interested in analogue and digital fotography.</p>
 					<br />
 					<p>	In contrast to that and to keep physically healthy, I lift weights in the gym.</p>
