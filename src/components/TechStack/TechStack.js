@@ -25,29 +25,29 @@ export default function TechStack() {
 
 	useEffect(() => {
 		const techCards = document.querySelectorAll(".tech-card");
+		if(!isMobile) {
+			techCards.forEach(card => {
+				const onMouseOver = () => {
+					card.classList.add("hovered");
+					setTimeout(() => {
+						card.classList.remove("hovered");
+					}, 1000); // Hover effect lasts for 1 second
+				};
 
-		techCards.forEach(card => {
-			const onMouseOver = () => {
-				card.classList.add("hovered");
-				setTimeout(() => {
+				const onMouseOut = () => {
 					card.classList.remove("hovered");
-				}, 1000); // Hover effect lasts for 1 second
-			};
+				};
 
-			const onMouseOut = () => {
-				card.classList.remove("hovered");
-			};
+				card.addEventListener("mouseover", onMouseOver);
+				card.addEventListener("mouseout", onMouseOut);
 
-			card.addEventListener("mouseover", onMouseOver);
-			card.addEventListener("mouseout", onMouseOut);
-
-			// Clean up listeners when the component unmounts
-			return () => {
-				card.removeEventListener("mouseover", onMouseOver);
-				card.removeEventListener("mouseout", onMouseOut);
-			};
-		});
-
+				// Clean up listeners when the component unmounts
+				return () => {
+					card.removeEventListener("mouseover", onMouseOver);
+					card.removeEventListener("mouseout", onMouseOut);
+				};
+			});
+		}
 	}, []);
 
 	return (

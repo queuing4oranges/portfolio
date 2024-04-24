@@ -46,6 +46,7 @@ export default function Carousel() {
 					settings: {
 						slidesToShow: 1,
 						swipeToSlide: 2,
+						arrows: false
 					}
 			},
 			{
@@ -53,6 +54,7 @@ export default function Carousel() {
 					settings: {
 						slidesToShow: 1,
 						swipesToSlide: 1,
+						arrows: false
 					}
 			}
 		]
