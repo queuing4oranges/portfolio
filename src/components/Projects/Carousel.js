@@ -65,28 +65,26 @@ export default function Carousel() {
 	return (
 		<Slider {...settings}>
 			{cards.map((card, idx) => (
-				<div key={idx} className="cards-container shadow-lg flex flex-col items-center h-96 relative">
-					<div className='flex-grow'>
-						<div>
-							<img className="w-full object-cover px-3" src={card.image} alt={card.title} />
-						</div>
-
-						<div className="flex flex-col justify-between bg-light [padding:2rem]">
-							<h3 className='text-accent font-semibold text-2xl'>{card.title}</h3>
-							<h4 className="font-medium text-dark my-2 flex items-base text-md h-24">{card.tech}</h4>
-							<p className="flex-grow">{card.description}</p>
-						</div>
+				<div key={idx} className="cards-container">
+					<div className='image-content'>
+						<img className="w-full object-cover px-3" src={card.image} alt={card.title} />
 					</div>
-					<div className='flex justify-center bg-light p-3 m-5 absolute [bottom:0.5rem]'>
+
+					<div className="description-content">
+						<h3 className='text-accent font-semibold text-2xl'>{card.title}</h3>
+						<h4 className="font-medium text-dark text-md h-24">{card.tech}</h4>
+						<p className="">{card.description}</p>
+					</div>
+					<div className='button-content'>
 						{card.live &&
 							<a href={card.live} target="_blank" rel="noreferrer" title='See live'>
-								<button className='flex justify-center items-center bg-accent hover:bg-hover text-light font-bold py-2 px-4 m-4 rounded'>
+								<button className='bg-accent hover:bg-hover text-light font-bold rounded'>
 									<FaRegEye />
 									<span>Live</span>
 								</button></a>
 						}
 						<a href={card.github} target="_blank" rel="noreferrer" title='Look at the Code'>
-							<button className='flex justify-center items-center bg-accent hover:bg-hover text-light font-bold py-2 px-4 m-4 rounded'>
+							<button className='bg-accent hover:bg-hover text-light font-bold rounded'>
 								<FaCode />
 								<span>Code</span>
 							</button>
