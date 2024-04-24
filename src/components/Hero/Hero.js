@@ -11,12 +11,12 @@ const Hero = () => {
 		className="hero-container relative w-full h-400 overflow-hidden"
 		id="home">
 			<div className="hero-image h-full w-full flex flex-col items-center justify-center text-center">
-				<h1 className="hero-title text-light text-3xl sm:p-4">Hi, I'm Katja</h1>
-				<h2 className="hero-text text-light text-2xl sm:p-4">a Prague based Web Developer</h2>
+				<h1 className="hero-title text-light text-xl md:text-3xl sm:p-4">Hi, I'm Katja</h1>
+				<h2 className="hero-text text-light text-xl md:text-2xl sm:p-4">a Prague based Web Developer</h2>
 				<button
 					type="button"
 					onClick={() => setOpenModal(!openModal)}
-					className="bg-accent text-dark text-xl py-4 px-8 mt-10 rounded-md hover:bg-hover hover:text-accent"
+					className="bg-accent text-dark text-md md:text-xl py-4 px-8 mt-10 rounded-md hover:bg-hover hover:text-accent"
 				>
 				Get in touch
 				</button>

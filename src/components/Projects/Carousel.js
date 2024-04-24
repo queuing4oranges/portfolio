@@ -69,8 +69,8 @@ export default function Carousel() {
 							</div>
 
 							<div className="flex flex-col justify-between bg-light p-3 m-5">
-								<h3 className='text-accent text-xl font-semibold'>{card.title}</h3>
-								<h4 className="font-medium text-dark text-md my-2">{card.tech}</h4>
+								<h3 className='text-accent text-md md:text-xl font-semibold'>{card.title}</h3>
+								<h4 className="font-medium text-dark text-sm md:text-md my-2">{card.tech}</h4>
 								<p className="">{card.description}</p>
 							</div>
 						</div>

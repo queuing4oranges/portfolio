@@ -37,7 +37,7 @@ function ContactModal({ setOpenModal }) {
 	return (
 		<div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
 			<div className="modal-container bg-white shadow-xl p-8">
-				<h2 className="text-2xl mb-4">Hello, there!</h2>
+				<h2 className="text-xl md:text-2xl mb-4">Hello, there!</h2>
 
 				<form onSubmit={handleSubmit}>
 					<div className="text-gray-700 mb-4">
