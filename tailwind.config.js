@@ -4,10 +4,11 @@ module.exports = {
 	theme: {
 		extend: {
 			fontSize: {
-				'h1': '3rem',
-				'h2': '2.5rem',
-				'h3': '2rem',
-				'h4': '1.5rem'
+				'3xl': '3rem', // Make custom utility class names
+				'2xl': '2.5rem',
+				'xl': '2rem',
+				'md': '1.5rem',
+				'sm': '0.75rem'
 			},
 			colors: {
 				dark: '#01101d', // Dark background

@@ -20,7 +20,7 @@ const About = () => {
 
 	return (
 		<section id="about" className="about-container bg-dark text-light px-4 py-10 md:px-40 md:py-20">
-			<h1>
+			<h1 className="text-3xl">
 				About
 			</h1>
 			<br />

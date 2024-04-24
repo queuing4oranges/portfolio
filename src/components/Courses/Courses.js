@@ -5,7 +5,7 @@ import { Ticked } from "./CourseIcons";
 export default function Courses() {
   return (
 	  <section id="courses" className = "courses-container bg-light text-dark px-4 py-10 md:px-40 md:py-20">
-		<h1>
+		<h1 className='text-3xl'>
 			Education
 		</h1>
 		<br />
@@ -14,7 +14,7 @@ export default function Courses() {
 			{courses && 
 				courses.map((course, idx) => (
 					<div key={idx} className="rounded-lg shadow-lg p-4 md:p-10 hover:shadow-xl transition duration-300" >
-						<h3 className='flex items-center mb-4'>
+						<h3 className='flex items-center text-xl mb-4'>
 							<p>{course.title}</p>
 						</h3>
 						<div>
