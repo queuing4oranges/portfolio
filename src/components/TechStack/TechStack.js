@@ -7,7 +7,7 @@ export default function TechStack() {
 	const [windowSize, setWindowSize] = useState(window.innerWidth);
 	const [isMobile, setIsMobile] = useState(windowSize <= 600);
 
-
+	// Handle styling for mobile devices
 	useEffect(() => {
 		const handleResize = () => {
 			const newWidth = (window.innerWidth); // Prevent race condition
@@ -21,7 +21,34 @@ export default function TechStack() {
 
 		return () => window.removeEventListener('resize', handleResize);
 
-	},[windowSize]);
+	},[]);
+
+	useEffect(() => {
+		const techCards = document.querySelectorAll(".tech-card");
+
+		techCards.forEach(card => {
+			const onMouseOver = () => {
+				card.classList.add("hovered");
+				setTimeout(() => {
+					card.classList.remove("hovered");
+				}, 1000); // Hover effect lasts for 1 second
+			};
+
+			const onMouseOut = () => {
+				card.classList.remove("hovered");
+			};
+
+			card.addEventListener("mouseover", onMouseOver);
+			card.addEventListener("mouseout", onMouseOut);
+
+			// Clean up listeners when the component unmounts
+			return () => {
+				card.removeEventListener("mouseover", onMouseOver);
+				card.removeEventListener("mouseout", onMouseOut);
+			};
+		});
+
+	}, []);
 
 	return (
 		<section id="tech" className = "bg-dark text-light px-4 py-10 md:px-40 md:py-20">
