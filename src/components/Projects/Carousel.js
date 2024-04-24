@@ -44,7 +44,7 @@ export default function Carousel() {
 			{
 				breakpoint: 600,
 					settings: {
-						slidesToShow: 2,
+						slidesToShow: 1,
 						swipeToSlide: 2,
 					}
 			},

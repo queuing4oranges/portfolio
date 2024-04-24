@@ -10,12 +10,12 @@ export default function Courses() {
 		</h1>
 		<br />
 		
-		<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+		<div className="grid grid-cols-1 gap-4">
 			{courses && 
 				courses.map((course, idx) => (
 					<div key={idx} className="rounded-lg shadow-lg p-4 md:p-10 hover:shadow-xl transition duration-300" >
 						<h3 className='flex items-center mb-4'>
-							<p className='pr-4'><Certificat height={40} width={40} fill="none" /></p>
+							{/* <p className='pr-4'><Certificat height={40} width={40} fill="none" /></p> */}
 							<p>{course.title}</p>
 						</h3>
 						<div>

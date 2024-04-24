@@ -11,7 +11,7 @@ export default function TechStack() {
 		  </h1>
 		  <br />
 		  
-		  <div className="techstack-container grid grid-cols-2 md:grid-cols-6 gap-4 justify-items-center">
+		  <div className="techstack-container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-items-center">
 			{technologies.map((tech, idx) => (
 				<div key={idx} className="tech-card w-32 h-44 flex flex-col items-center pt-5 pb-5 justify-between bg-light rounded-md">
 						<tech.icon height={80} width={80}/>

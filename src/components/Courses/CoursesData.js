@@ -15,17 +15,17 @@ export const courses = [
 			"React 18 Tutorial and Projects Course (2023)",
 		]
 	},
-	{
-		title: "freeCodeCamp",
-		info: [
-			"HTML5",
-			"CSS",
-			"Applied Visual Design",
-			"Applied Accessibility",
-			"CSS Flexbox",
-			"JavaScript",
-		]
-	},
+	// {
+	// 	title: "freeCodeCamp",
+	// 	info: [
+	// 		"HTML5",
+	// 		"CSS",
+	// 		"Applied Visual Design",
+	// 		"Applied Accessibility",
+	// 		"CSS Flexbox",
+	// 		"JavaScript",
+	// 	]
+	// },
 	{
 		title: "The Net Ninja",
 		info: [
