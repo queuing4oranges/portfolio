@@ -103,8 +103,8 @@ const Navbar = () => {
 							spy={true}
 							title={isAnimated ? link.label : ""}
 							activeClass="active"
-							className={`flex items-center ml-2 py-2 md:px-4 hover:text-hover
-								${isOpen ? "text-xl ml-0 px-3" : "" }
+							className={`flex items-center py-2 md:px-4 hover:text-hover
+								${isOpen ? "sm:text-md md:text-xl ml-0 px-3" : "" }
 								${!isWindowSizeSmall && isAnimated ? 'rotate-90' : ''}`
 							}
 							onClick={() => setIsOpen(false)}>
