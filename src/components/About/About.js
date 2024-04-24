@@ -26,6 +26,15 @@ const About = () => {
 			<br />
 
 			<div className="flex flex-col md:flex-row">
+
+				<div
+					ref={myRef}
+					className={`flex-1 flex justify-start justify-center sm:items-center md:pl-4 md:pr-4 mt-4 md:mt-0 m-4 ${picAnimation ? "scale-up" : ""}`}
+
+				>
+					<img src={katja} alt="" title="Yep, that's me!" />
+				</div>
+
 				<div className="flex-1 md:pr-4">
 					<p>Hi there! I am a creative individual who likes to be busy creating and continuously learning.
 					</p>		
@@ -34,15 +43,6 @@ const About = () => {
 					<br />
 					<p>With a background in education, I bring well-developed soft and organizational skills to the table, along with a collaborative mindset to thrive in team environments.
 					</p>
-				</div>
-				
-				<div 
-					ref={myRef} 
-					className={`flex-1 flex justify-center items-center md:pl-4 md:pr-4 mt-4 md:mt-0 m-4 ${picAnimation ? "scale-up" : ""}`}
-
-					>
-					<img src={katja} alt="" title="Yep, that's me!" />
-
 				</div>
 				
 				<div className="flex-1 md:pl-4">
