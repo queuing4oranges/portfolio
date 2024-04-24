@@ -1,0 +1,75 @@
+// .slider-container {
+	.cards-container {
+		height: 100% !important;
+	}
+	.slick-slide {
+		height: 50rem;
+		display: flex;
+		flex-direction: column;
+
+		button {
+			width: 5rem;
+			height: 5rem;
+			border-radius: 50%;
+			transition: width 0.3s, height 0.3s, border-radius 0.3s, padding 0.3s;
+
+			& span {
+				display: none;
+			}
+
+			&:hover {
+				border-radius: 0;
+
+				& span {
+					display: block;
+				}
+
+				& svg {
+					display: none;
+				}
+			}
+		}
+
+		> div {
+			height: 100%;
+
+			> div {
+
+				display: flex !important;
+				flex-direction: column;
+				justify-content: space-between !important;
+
+			}
+		}
+	}
+
+	svg {
+		font-size: 2rem;
+	}
+
+	img {
+		height: 15rem;
+	}
+
+	.slick-next, .slick-prev {
+		top: 50vh;
+		color: #01101d;
+	}
+// }
+
+/* Animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 600px) {
+	.slick-slide button {
+		width: 4rem !important;
+		height: 4rem !important;
+	}
+}
