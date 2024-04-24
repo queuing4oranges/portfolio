@@ -4,7 +4,7 @@ import { projectsData } from "./ProjectsData";
 import { FaRegEye, FaCode } from "react-icons/fa";
 import { FiChevronsRight, FiChevronsLeft } from "react-icons/fi";
 
-import "./Carousel.scss";
+import "./carousel.scss";
 
 function NextArrow(props) {
 	const { onClick, className } = props;
@@ -46,7 +46,8 @@ export default function Carousel() {
 					settings: {
 						slidesToShow: 1,
 						swipeToSlide: 2,
-						arrows: false
+						arrows: false,
+						speed: 1000,
 					}
 			},
 			{
@@ -54,46 +55,45 @@ export default function Carousel() {
 					settings: {
 						slidesToShow: 1,
 						swipesToSlide: 1,
-						arrows: false
+						arrows: false,
+						speed: 1000,
 					}
 			}
 		]
 	};
 
 	return (
-		<div className='slider-container'>
-			<Slider {...settings}>
-				{cards.map((card, idx) => (
-					<div key={idx} className="shadow-lg h-full flex flex-col justify-between">
+		<Slider {...settings}>
+			{cards.map((card, idx) => (
+				<div key={idx} className="cards-container shadow-lg flex flex-col items-center h-96 relative">
+					<div className='flex-grow'>
 						<div>
-							<div>
-								<img className="h-full w-full object-cover px-3" src={card.image} alt={card.title} />
-							</div>
-
-							<div className="flex flex-col justify-between bg-light p-3 m-5">
-								<h3 className='text-accent text-md md:text-xl font-semibold'>{card.title}</h3>
-								<h4 className="font-medium text-dark text-sm md:text-md my-2">{card.tech}</h4>
-								<p className="">{card.description}</p>
-							</div>
+							<img className="w-full object-cover px-3" src={card.image} alt={card.title} />
 						</div>
-						<div className='flex justify-center bg-light p-3 m-5'>
-							{card.live &&
-								<a href={card.live} target="_blank" rel="noreferrer" title='See live'>
-									<button className='flex justify-center items-center bg-accent hover:bg-hover text-light font-bold py-2 px-4 m-4 rounded'>
-										<FaRegEye />
-										<span>Live</span>
-									</button></a>
-							}
-							<a href={card.github} target="_blank" rel="noreferrer" title='Look at the Code'>
-								<button className='flex justify-center items-center bg-accent hover:bg-hover text-light font-bold py-2 px-4 m-4 rounded'>
-									<FaCode />
-									<span>Code</span>
-								</button>
-							</a>
+
+						<div className="flex flex-col justify-between bg-light [padding:2rem]">
+							<h3 className='text-accent font-semibold text-2xl'>{card.title}</h3>
+							<h4 className="font-medium text-dark my-2 flex items-base text-md h-24">{card.tech}</h4>
+							<p className="flex-grow">{card.description}</p>
 						</div>
 					</div>
-				))}
-			</Slider>
-		</div>
+					<div className='flex justify-center bg-light p-3 m-5 absolute [bottom:0.5rem]'>
+						{card.live &&
+							<a href={card.live} target="_blank" rel="noreferrer" title='See live'>
+								<button className='flex justify-center items-center bg-accent hover:bg-hover text-light font-bold py-2 px-4 m-4 rounded'>
+									<FaRegEye />
+									<span>Live</span>
+								</button></a>
+						}
+						<a href={card.github} target="_blank" rel="noreferrer" title='Look at the Code'>
+							<button className='flex justify-center items-center bg-accent hover:bg-hover text-light font-bold py-2 px-4 m-4 rounded'>
+								<FaCode />
+								<span>Code</span>
+							</button>
+						</a>
+					</div>
+				</div>
+			))}
+		</Slider>
 	)
 };
