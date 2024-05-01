@@ -36,7 +36,7 @@ const About = () => {
 				</div>
 
 				<div className="flex-1 md:pr-4">
-					<p>Hi there! I am a creative individual who likes to be busy creating and continuously learning.
+					<p>Hi there! I am an individual who thrives on creativity, staying busy with projects and always eager to learn.
 					</p>		
 					<br />
 					<p>In 2022, I completed a 12-week (420 hours) Bootcamp in Prague, which provided me with a foundation in web development. After that, I've built projects for a logistics start-up and an organization for queer women in Prague. Since June 2023 I am working full-time as a JavaScript developer in the Frontend Team of TeskaLabs.</p>

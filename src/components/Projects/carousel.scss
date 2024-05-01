@@ -1,34 +1,42 @@
 .cards-container {
-	height: 50rem;
+	height: 45rem;
 	display: flex !important;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 
 	.image-content {
-		height: 16rem;
-	}
-
-	.description-content {
-		height: 25rem;
-		padding:  1rem 3rem 0;
-		overflow-y: hidden;
-
-		& p {
-			margin-top: 2rem;
+		height: 30%;
+		img {
+			height: 15rem;
 		}
 	}
 
+	.title-content {
+		height: 20%;
+		width: 100%;
+		padding: 1.5rem 1.5rem 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.description-content {
+		height: 30%;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
 	.button-content {
+		height: 10%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding-bottom: 3rem;
-		margin-top: 4rem;
 
 		button {
-			width: 5rem;
-			height: 5rem;
+			width: 3.5rem;
+			height: 3.5rem;
 			border-radius: 50%;
 			display: flex;
 			justify-content: center;
@@ -59,9 +67,7 @@
 	}
 }
 
-img {
-	height: 15rem;
-}
+
 
 .slick-next, .slick-prev {
 	top: 50vh;
@@ -81,20 +87,19 @@ img {
 
 @media (max-width: 600px) {
 	.slick-slide button {
-		width: 4rem !important;
-		height: 4rem !important;
+		// width: 3rem !important;
+		// height: 4rem !important;
 	}
 
-	.cards-container {
-		height: 50rem;
+	.title-content {
+		h4 {
+			font-size: 1.2rem;
+			line-height: 1 !important;
+		}
 	}
 
 	.description-content {
-		padding: 0.5rem !important;
-
-		& p {
-			margin-top: 0.5rem !important;
-		}
+		height: 40% !important;
 	}
 
 	.button-content {

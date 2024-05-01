@@ -70,11 +70,15 @@ export default function Carousel() {
 						<img className="w-full object-cover px-3" src={card.image} alt={card.title} />
 					</div>
 
-					<div className="description-content">
+					<div className="title-content">
 						<h3 className='text-accent font-semibold text-2xl'>{card.title}</h3>
-						<h4 className="font-medium text-dark text-md h-24">{card.tech}</h4>
-						<p className="">{card.description}</p>
+						<h4 className="font-medium text-dark text-md">{card.tech}</h4>
 					</div>
+
+					<div className="description-content">
+						<p>{card.description}</p>
+					</div>
+
 					<div className='button-content'>
 						{card.live &&
 							<a href={card.live} target="_blank" rel="noreferrer" title='See live'>
