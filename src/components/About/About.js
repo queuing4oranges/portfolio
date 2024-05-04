@@ -32,7 +32,7 @@ const About = () => {
 					className={`flex-1 flex justify-start justify-center sm:items-center md:pl-4 md:pr-4 mt-4 md:mt-0 m-4 ${picAnimation ? "scale-up" : ""}`}
 
 				>
-					<img src={katja} alt="" title="Yep, that's me!" />
+					<img src={katja} alt="katja" title="Yep, that's me!" />
 				</div>
 
 				<div className="flex-1 md:pr-4">

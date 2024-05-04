@@ -32,3 +32,10 @@
 		transform: scale(1);
 	}
 }
+
+@media (max-width: 600px) {
+	.about-container img {
+		width: 15rem;
+		height: 15rem;
+	}
+}
