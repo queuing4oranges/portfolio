@@ -44,14 +44,6 @@ const About = () => {
 					<p>With a background in education, I bring well-developed soft and organizational skills to the table, along with a collaborative mindset to thrive in team environments.
 					</p>
 				</div>
-				
-				<div className="flex-1 md:pl-4">
-					<p>	In my free time, I enjoy being outdoors and the company of my friends and family. I like crafting things and learning new skills. I'm also interested in analogue and digital fotography.</p>
-					<br />
-					<p>	In contrast to that and to keep physically healthy, I lift weights in the gym.</p>
-					<br />
-					<p>My friends value my empathy and sense of humour.</p>
-				</div>
 			</div>
 		</section>
 	);
