@@ -16,8 +16,15 @@ export const courses = [
 		]
 	},
 	{
+		title: 'ReactGirls',
+		info: [
+			'Akademie TypeScript'
+		]
+	},
+	{
 		title: 'The Net Ninja',
 		info: [
+			'TypeScript Masterclass',
 			'Build Websites with React & Firebase',
 			'Bootstrap 5',
 		]

@@ -15,7 +15,8 @@ import {
 	WebpackIcon,
 	TailwindIcon,
 	GitlabIcon,
-	DockerIcon
+	DockerIcon,
+	TypeScriptIcon
 } from './TechStackIcons';
 
 export const technologies = [
@@ -101,5 +102,9 @@ export const technologies = [
 	{
 		title: 'Docker',
 		icon: DockerIcon
+	},
+	{
+		title: 'TypeScript',
+		icon: TypeScriptIcon
 	}
 ]
