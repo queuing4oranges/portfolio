@@ -1,13 +1,13 @@
 .hero-container {
 	.hero-image {
-		background-image: url("../../images/hero-starry.png");
+		background-image: url('../../images/hero-starry.png');
 		background-size: cover;
 		min-height: 900px;
 		background-position-y: center;
 	}
 
 	.hero-title {
-		font-family: "Lora", serif, Arial, Helvetica, sans-serif;
+		font-family: 'Lora', serif, Arial, Helvetica, sans-serif;
 		font-size: 5rem;
 	}
 }

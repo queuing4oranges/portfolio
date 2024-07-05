@@ -1,7 +1,7 @@
 /* styles.scss */
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Lora:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Lora:wght@400;500;600;700&display=swap');
 
 *,
 *::before,
@@ -10,7 +10,7 @@
 }
 
 .App {
-	font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+	font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
 	width: 100%;
 	margin: auto;
 	background-color: #01101d;

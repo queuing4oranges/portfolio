@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { technologies } from "./TechStackData";
+import { technologies } from './TechStackData';
 
-import "./techstack.scss";
+import './techstack.scss';
 
 export default function TechStack() {
 	const [windowSize, setWindowSize] = useState(window.innerWidth);
@@ -24,47 +24,47 @@ export default function TechStack() {
 	},[]);
 
 	useEffect(() => {
-		const techCards = document.querySelectorAll(".tech-card");
+		const techCards = document.querySelectorAll('.tech-card');
 		if(!isMobile) {
 			techCards.forEach(card => {
 				const onMouseOver = () => {
-					card.classList.add("hovered");
+					card.classList.add('hovered');
 					setTimeout(() => {
-						card.classList.remove("hovered");
+						card.classList.remove('hovered');
 					}, 1000); // Hover effect lasts for 1 second
 				};
 
 				const onMouseOut = () => {
-					card.classList.remove("hovered");
+					card.classList.remove('hovered');
 				};
 
-				card.addEventListener("mouseover", onMouseOver);
-				card.addEventListener("mouseout", onMouseOut);
+				card.addEventListener('mouseover', onMouseOver);
+				card.addEventListener('mouseout', onMouseOut);
 
 				// Clean up listeners when the component unmounts
 				return () => {
-					card.removeEventListener("mouseover", onMouseOver);
-					card.removeEventListener("mouseout", onMouseOut);
+					card.removeEventListener('mouseover', onMouseOver);
+					card.removeEventListener('mouseout', onMouseOut);
 				};
 			});
 		}
 	}, []);
 
 	return (
-		<section id="tech" className = "bg-dark text-light px-4 py-10 md:px-40 md:py-20">
+		<section id='tech' className = 'bg-dark text-light px-4 py-10 md:px-40 md:py-20'>
 			<h1 className='text-xl md:text-3xl'>
 				Tech Stack
 			</h1>
 			<br />
 
-			<div className="techstack-container grid grid-cols-3 md:grid-cols-6 gap-4 justify-items-center">
+			<div className='techstack-container grid grid-cols-3 md:grid-cols-6 gap-4 justify-items-center'>
 				{technologies.map((tech, idx) => (
-					<div key={idx} className={`tech-card sm:w-28 sm:h-38 md:w-32 md:h-44  flex flex-col items-center p-5 justify-between bg-light rounded-md ${isMobile ? "p-5" : "pt-5 pb-5" }`}>
+					<div key={idx} className={`tech-card sm:w-28 sm:h-38 md:w-32 md:h-44  flex flex-col items-center p-5 justify-between bg-light rounded-md ${isMobile ? 'p-5' : 'pt-5 pb-5' }`}>
 						<tech.icon
 							height={isMobile ? 70 : 80}
 							width={isMobile ? 70 : 80}
 						/>
-					<p className={`text-center text-dark ${isMobile ? "text-sm mt-3" : ""}`}>{tech.title}</p>
+					<p className={`text-center text-dark ${isMobile ? 'text-sm mt-3' : ''}`}>{tech.title}</p>
 					</div>
 				))}
 			</div>

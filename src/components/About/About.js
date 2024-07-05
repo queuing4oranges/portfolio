@@ -1,7 +1,7 @@
-import { useRef, useEffect, useState } from "react";
-import katja from "../../images/katja_cv.jpg"
+import { useRef, useEffect, useState } from 'react';
+import katja from '../../images/katja_cv.jpg'
 
-import "./about.scss"
+import './about.scss'
 
 const About = () => {
 	const myRef = useRef();
@@ -19,23 +19,23 @@ const About = () => {
 	}, []);
 
 	return (
-		<section id="about" className="about-container bg-dark text-light px-4 py-10 md:px-40 md:py-20">
-			<h1 className="text-xl md:text-3xl">
+		<section id='about' className='about-container bg-dark text-light px-4 py-10 md:px-40 md:py-20'>
+			<h1 className='text-xl md:text-3xl'>
 				About
 			</h1>
 			<br />
 
-			<div className="flex flex-col md:flex-row">
+			<div className='flex flex-col md:flex-row'>
 
 				<div
 					ref={myRef}
-					className={`flex-1 flex justify-start justify-center sm:items-center md:pl-4 md:pr-4 mt-4 md:mt-0 m-4 ${picAnimation ? "scale-up" : ""}`}
+					className={`flex-1 flex justify-start justify-center sm:items-center md:pl-4 md:pr-4 mt-4 md:mt-0 m-4 ${picAnimation ? 'scale-up' : ''}`}
 
 				>
-					<img src={katja} alt="katja" title="Yep, that's me!" />
+					<img src={katja} alt='katja' title={`Yep, that's me!`} />
 				</div>
 
-				<div className="flex-1 md:pr-4">
+				<div className='flex-1 md:pr-4'>
 					<p>Hi there! I am an individual who thrives on creativity, staying busy with projects and always eager to learn.
 					</p>		
 					<br />

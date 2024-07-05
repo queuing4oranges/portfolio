@@ -1,16 +1,16 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-scroll";
-import { FaHamburger } from "react-icons/fa";
-import { BsChevronDoubleUp } from "react-icons/bs";
-import { GoPerson, GoRocket, GoTools, GoMortarBoard } from "react-icons/go";
+import { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
+import { FaHamburger } from 'react-icons/fa';
+import { BsChevronDoubleUp } from 'react-icons/bs';
+import { GoPerson, GoRocket, GoTools, GoMortarBoard } from 'react-icons/go';
 
-import "./navbar.scss";
+import './navbar.scss';
 
 const links = [
-	{ to: "projects", label: "Projects", icon: <GoRocket size={20} color="#00C59B" /> },
-	{ to: "tech", label: "Tech Stack", icon: <GoTools size={20} color="#00C59B" /> },
-	{ to: "courses", label: "Education", icon: <GoMortarBoard size={20} color="#00C59B" /> },
-	{ to: "about", label: "About", icon: <GoPerson size={20} color="#00C59B" /> }
+	{ to: 'projects', label: 'Projects', icon: <GoRocket size={20} color='#00C59B' /> },
+	{ to: 'tech', label: 'Tech Stack', icon: <GoTools size={20} color='#00C59B' /> },
+	{ to: 'courses', label: 'Education', icon: <GoMortarBoard size={20} color='#00C59B' /> },
+	{ to: 'about', label: 'About', icon: <GoPerson size={20} color='#00C59B' /> }
 ]
 
 const Navbar = () => {
@@ -58,12 +58,12 @@ const Navbar = () => {
 	}
 
 	return (
-		<nav className="nav-container fixed top-0 z-50 w-full bg-transparent text-light md:px-20">
-			<div className="flex justify-end items-center">
+		<nav className='nav-container fixed top-0 z-50 w-full bg-transparent text-light md:px-20'>
+			<div className='flex justify-end items-center'>
 				{/* Show hamburger menu, when small, hide on desktop */}
-				<div className="block md:hidden">
-					<button onClick={toggleMenu} className="hamburger-menu text-white focus:outline-none absolute right-4 top-4 p-2">
-						<FaHamburger color="#ebd2c1" size={30} />
+				<div className='block md:hidden'>
+					<button onClick={toggleMenu} className='hamburger-menu text-white focus:outline-none absolute right-4 top-4 p-2'>
+						<FaHamburger color='#ebd2c1' size={30} />
 					</button>
 				</div>
 				{/* Show menu on toggle */}
@@ -71,12 +71,12 @@ const Navbar = () => {
 					${isOpen ? 'flex-col w-full md:flex-row bg-dark rounded-md' : 'hidden'}
 					${!isWindowSizeSmall && isAnimated ? 'animated hover:text-hover' : '' }
 				`}>
-					<button className="cv-download bg-transparent text-accent py-2 px-4 rounded-md hover:bg-hover hover:text-accent">
+					<button className='cv-download bg-transparent text-accent py-2 px-4 rounded-md hover:bg-hover hover:text-accent'>
 						<a
-							href="KatjaZenkerCV.pdf"
-							target="_blank"
-							rel="noreferrer"
-							download="KatjaZenkerCV.pdf"
+							href='KatjaZenkerCV.pdf'
+							target='_blank'
+							rel='noreferrer'
+							download='KatjaZenkerCV.pdf'
 						>
 							<p>Download CV</p>
 						</a>
@@ -84,11 +84,11 @@ const Navbar = () => {
 					{/* Display Chevron only when toggle is open and go back up */}
 					{isOpen ?
 						<Link
-							to="home"
+							to='home'
 							smooth={true}
 							spy={true}
-							activeClass="active"
-							className={`flex items-center ml-2 py-2 hover:text-accent ${isOpen ? "text-xl ml-0 px-3" : "" }`}
+							activeClass='active'
+							className={`flex items-center ml-2 py-2 hover:text-accent ${isOpen ? 'text-xl ml-0 px-3' : '' }`}
 							onClick={() => setIsOpen(false)}>
 							<BsChevronDoubleUp size={30} />
 						</Link>
@@ -101,14 +101,14 @@ const Navbar = () => {
 							to={link.to}
 							smooth={true}
 							spy={true}
-							title={isAnimated ? link.label : ""}
-							activeClass="active"
+							title={isAnimated ? link.label : ''}
+							activeClass='active'
 							className={`flex items-center py-2 md:px-4 hover:text-hover
-								${isOpen ? "sm:text-md md:text-xl ml-0 px-3" : "" }
+								${isOpen ? 'sm:text-md md:text-xl ml-0 px-3' : '' }
 								${!isWindowSizeSmall && isAnimated ? 'rotate-90' : ''}`
 							}
 							onClick={() => setIsOpen(false)}>
-							{!isWindowSizeSmall && isAnimated ? <p className="rounded-full border border-4 border-accent p-3 hover:border-hover"activeClass="active">{link.icon}</p> : <p>{link.label}</p>}
+							{!isWindowSizeSmall && isAnimated ? <p className='rounded-full border border-4 border-accent p-3 hover:border-hover'activeClass='active'>{link.icon}</p> : <p>{link.label}</p>}
 						</Link>
 					))}
 					

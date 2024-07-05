@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-import { projectsData } from "./ProjectsData";
-import { FaRegEye, FaCode } from "react-icons/fa";
-import { FiChevronsRight, FiChevronsLeft } from "react-icons/fi";
+import { projectsData } from './ProjectsData';
+import { FaRegEye, FaCode } from 'react-icons/fa';
+import { FiChevronsRight, FiChevronsLeft } from 'react-icons/fi';
 
-import "./carousel.scss";
+import './carousel.scss';
 
 function NextArrow(props) {
 	const { onClick, className } = props;
@@ -65,29 +65,29 @@ export default function Carousel() {
 	return (
 		<Slider {...settings}>
 			{cards.map((card, idx) => (
-				<div key={idx} className="cards-container">
+				<div key={idx} className='cards-container'>
 					<div className='image-content'>
-						<img className="w-full object-cover px-3" src={card.image} alt={card.title} />
+						<img className='w-full object-cover px-3' src={card.image} alt={card.title} />
 					</div>
 
-					<div className="title-content">
+					<div className='title-content'>
 						<h3 className='text-accent font-semibold text-2xl'>{card.title}</h3>
-						<h4 className="font-medium text-dark text-md">{card.tech}</h4>
+						<h4 className='font-medium text-dark text-md'>{card.tech}</h4>
 					</div>
 
-					<div className="description-content">
+					<div className='description-content'>
 						<p>{card.description}</p>
 					</div>
 
 					<div className='button-content'>
 						{card.live &&
-							<a href={card.live} target="_blank" rel="noreferrer" title='See live'>
+							<a href={card.live} target='_blank' rel='noreferrer' title='See live'>
 								<button className='bg-accent hover:bg-hover text-light font-bold rounded'>
 									<FaRegEye />
 									<span>Live</span>
 								</button></a>
 						}
-						<a href={card.github} target="_blank" rel="noreferrer" title='Look at the Code'>
+						<a href={card.github} target='_blank' rel='noreferrer' title='Look at the Code'>
 							<button className='bg-accent hover:bg-hover text-light font-bold rounded'>
 								<FaCode />
 								<span>Code</span>

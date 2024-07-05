@@ -16,91 +16,90 @@ import {
 	TailwindIcon,
 	GitlabIcon,
 	DockerIcon
-} from "./TechStackIcons";
+} from './TechStackIcons';
 
 export const technologies = [
 	{
-		title: "HTML",
+		title: 'HTML',
 		icon: HtmlIcon
 	},
 
 	{
-		title: "CSS",
+		title: 'CSS',
 		icon: CssIcon
 	},
 
 	{
-		title: "SASS",
+		title: 'SASS',
 		icon: SassIcon
 	},
 
 	{
-		title: "JavaScript",
+		title: 'JavaScript',
 		icon: JavascriptIcon
 	},
 
 	{
-		title: "ReactJS",
+		title: 'ReactJS',
 		icon: ReactjsIcon
 	},
 
 	{
-		title: "Bootstrap",
+		title: 'Bootstrap',
 		icon: BootstrapIcon
 	},
 
 	{
-		title: "Git",
+		title: 'Git',
 		icon: GitIcon		
 	},
 
 	{
-		title: "PHP",
+		title: 'PHP',
 		icon: PhpIcon,
 	},
 
 	{
-		title: "Laravel",
+		title: 'Laravel',
 		icon: LaravelIcon
 	},
 
 	{
-		title: "MySQL",
+		title: 'MySQL',
 		icon: MysqlIcon
 	},
 
 	{
-		title: "Postman",
+		title: 'Postman',
 		icon: PostmanIcon
 	},
 
 	{
-		title: "Trello",
+		title: 'Trello',
 		icon: TrelloIcon
 	},
 
 	{
-		title: "Figma",
+		title: 'Figma',
 		icon: FigmaIcon
 	},
 
 	{
-		title: "Webpack",
+		title: 'Webpack',
 		icon: WebpackIcon
 	},
 
 	
 	{
-		title: "Tailwind",
+		title: 'Tailwind',
 		icon: TailwindIcon
 	},	
 	{
-		title: "GitLab",
+		title: 'GitLab',
 		icon: GitlabIcon
 	},
 	{
-		title: "Docker",
+		title: 'Docker',
 		icon: DockerIcon
 	}
-	
 ]
