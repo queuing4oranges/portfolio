@@ -10,17 +10,10 @@ https://www.queuing4oranges.com
 
 ## Tech Stack
 
-### Frameworks & Libraries
-
-- **React**: Your project is based on React, a popular library for building user interfaces.
-- **React Router**: You're using React Router for client-side routing/navigation.
+- **React**: A popular library for building user interfaces.
+- **React Router**: For client-side routing/navigation.
 - **Tailwind CSS**: For utility-first CSS styling.
 - **Sass/SCSS**: For extended CSS capabilities.
-
-## Tools & Utilities
-
-- **React Scripts**: For building and managing React applications.
-- **PostCSS/Autoprefixer**: To process and autoprefix CSS for better browser support.
 - **EmailJS**: For sending emails from your application.
 - **React Slick**: A React component library for carousels/sliders.
 - **React Toastify**: For creating toast notifications in React.
