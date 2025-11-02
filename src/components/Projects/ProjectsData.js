@@ -3,6 +3,7 @@ import lesbotoc from './images/lesbotoc.png';
 import altira from './images/altira.png';
 import adminpanel from './images/adminpanel.png';
 import apis from './images/apis.png';
+import dacapo from './images/dacapo.webp';
 
 export const projectsData = [
 	{
@@ -24,10 +25,10 @@ export const projectsData = [
 	{
 		title: 'Lesbotoč.cz',
 		tech: 'JavaScript | ReactJS | SCSS | Bootstrap | Figma',
-		description: 'The website is the landing page for an organisation dedicated to bringing together queer women in Prague. The website shows a calendar with events, including a sign up and add-to-calendar function. It includes also a gallery and some information about the organisation as well as a contact form.',
+		description: 'The website is the landing page for an organisation dedicated to bringing together queer women in Prague. The website shows a calendar with events, including a sign up and add-to-calendar function. It includes also a gallery and some information about the organisation as well as a contact form. The organisation will be rebranded in the near future and the preserve and showcase my work the website is currently hosted on a subdomain.',
 		image: lesbotoc,
 		github: 'https://github.com/queuing4oranges/lesbotoc-website',
-		live: 'https://www.lesbotoc.cz/',
+		live: 'https://lesbotoc.queuing4oranges.com/',
 	},
 	{
 		title: 'Admin Panel',
@@ -43,12 +44,12 @@ export const projectsData = [
 		image: apis,
 		github: 'https://github.com/queuing4oranges/lesbotoc-backend-api',
 	},
-	// {
-	// 	title: 'MiniProjects',
-	// 	tech: 'ReactJS | JavaScript | SCSS | APIs',
-	// 	description: 'The MiniProjects is a collection of cute little exercises and small projects, mostly built in ReactJS.',
-	// 	image: portfolio,
-	// 	github: 'https://github.com/queuing4oranges/miniprojects',
-	// 	live: 'https://miniprojects.queuing4oranges.com/',
-	// },
+	{
+		title: 'dacapo-chor.de',
+		tech: 'VueJS | JavaScript | SCSS | Vite',
+		description: 'A public-facing website for the "da capo" choir. This project presents the choir, their repertoire, and performances to the community.',
+		image: dacapo,
+		github: 'https://github.com/queuing4oranges/dacapo-chor',
+		live: 'https://www.dacapo-chor.de/',
+	},
 ];
