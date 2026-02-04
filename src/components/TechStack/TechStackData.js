@@ -16,7 +16,10 @@ import {
 	TailwindIcon,
 	GitlabIcon,
 	DockerIcon,
-	TypeScriptIcon
+	VueIcon,
+	JiraIcon,
+	GithubIcon,
+	i18Icon
 } from './TechStackIcons';
 
 export const technologies = [
@@ -54,6 +57,16 @@ export const technologies = [
 		title: 'Git',
 		icon: GitIcon		
 	},
+	
+	{
+		title: 'GitHub',
+		icon: GithubIcon
+	},
+	
+	{
+		title: 'GitLab',
+		icon: GitlabIcon
+	},
 
 	{
 		title: 'PHP',
@@ -90,21 +103,25 @@ export const technologies = [
 		icon: WebpackIcon
 	},
 
-	
 	{
 		title: 'Tailwind',
 		icon: TailwindIcon
 	},	
-	{
-		title: 'GitLab',
-		icon: GitlabIcon
-	},
+
 	{
 		title: 'Docker',
 		icon: DockerIcon
 	},
 	{
-		title: 'TypeScript',
-		icon: TypeScriptIcon
+		title: 'VueJS',
+		icon: VueIcon
+	},
+	{
+		title: 'i18next',
+		icon: i18Icon
+	},
+	{
+		title: 'Jira',
+		icon: JiraIcon
 	}
 ]

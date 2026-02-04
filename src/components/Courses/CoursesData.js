@@ -9,7 +9,7 @@ export const courses = [
 	{
 		title: 'Courses',
 		info: [
-			'A fullstack web development coding bootcamp. 12-week fulltime program.HTML, CSS, JavaScript, ReactJS, PHP, MySQL, Laravel, Git (Coding Bootcamp Praha)',
+			'A fullstack web development coding bootcamp. 12-week fulltime program. HTML, CSS, JavaScript, ReactJS, PHP, MySQL, Laravel, Git (Coding Bootcamp Praha)',
 			'Microfrontends with React: A Complete Developer\'s Guide (Udemy)',
 			'Complete Web Design: from Figma to Webflow (Udemy)',
 			'PHP | Build a Complete API (Udemy)',

@@ -4,6 +4,7 @@ import altira from './images/altira.png';
 import adminpanel from './images/adminpanel.png';
 import apis from './images/apis.png';
 import dacapo from './images/dacapo.webp';
+import kvirt2 from './images/kvirt2.webp';
 
 export const projectsData = [
 	{
@@ -25,10 +26,18 @@ export const projectsData = [
 	{
 		title: 'Lesbotoč.cz',
 		tech: 'JavaScript | ReactJS | SCSS | Bootstrap | Figma',
-		description: 'The website is the landing page for an organisation dedicated to bringing together queer women in Prague. The website shows a calendar with events, including a sign up and add-to-calendar function. It includes also a gallery and some information about the organisation as well as a contact form. The organisation will be rebranded in the near future and the preserve and showcase my work the website is currently hosted on a subdomain.',
+		description: 'The website is the landing page for an organisation dedicated to bringing together queer women in Prague. The website shows a calendar with events, including a sign up, a gallery, about section and contact form. The organisation will be rebranded in the near future, therefore the website is currently hosted on a subdomain.',
 		image: lesbotoc,
 		github: 'https://github.com/queuing4oranges/lesbotoc-website',
-		live: 'https://lesbotoc.queuing4oranges.com/',
+		live: 'https://tb01.queuing4oranges.com/',
+	},
+	{
+		title: 'Kvirtivity.cz',
+		tech: 'JavaScript | ReactJS | SCSS | Bootstrap | i18next',
+		description: 'New landing page for a small group of women organising events for queer women in Prague. The website is currently a work in progress and will be launched soon.',
+		image: kvirt2,
+		github: 'https://github.com/queuing4oranges/kvirtivity-website',
+		live: 'https://test-cat.queuing4oranges.com/',
 	},
 	{
 		title: 'Admin Panel',

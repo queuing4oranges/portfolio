@@ -2,6 +2,7 @@
 	.tech-card {
 		transition: transform 0.3s ease;
 		transform: scale(1);
+		min-width: 100%;
 
 		&.hovered {
 			border: #021e20 1px solid;

@@ -71,23 +71,13 @@ const Navbar = () => {
 					${isOpen ? 'flex-col w-full md:flex-row bg-dark rounded-md' : 'hidden'}
 					${!isWindowSizeSmall && isAnimated ? 'animated hover:text-hover' : '' }
 				`}>
-					<button className='cv-download bg-transparent text-accent py-2 px-4 rounded-md hover:bg-hover hover:text-accent'>
-						<a
-							href='KatjaZenkerCV.pdf'
-							target='_blank'
-							rel='noreferrer'
-							download='KatjaZenkerCV.pdf'
-						>
-							<p>Download CV</p>
-						</a>
-					</button>
 					{/* Display Chevron only when toggle is open and go back up */}
 					{isOpen ?
 						<Link
 							to='home'
 							smooth={true}
 							spy={true}
-							activeClass='active'
+							activeclass='active'
 							className={`flex items-center ml-2 py-2 hover:text-accent ${isOpen ? 'text-xl ml-0 px-3' : '' }`}
 							onClick={() => setIsOpen(false)}>
 							<BsChevronDoubleUp size={30} />
@@ -102,13 +92,13 @@ const Navbar = () => {
 							smooth={true}
 							spy={true}
 							title={isAnimated ? link.label : ''}
-							activeClass='active'
+							activeclass='active'
 							className={`flex items-center py-2 md:px-4 hover:text-hover
 								${isOpen ? 'sm:text-md md:text-xl ml-0 px-3' : '' }
 								${!isWindowSizeSmall && isAnimated ? 'rotate-90' : ''}`
 							}
 							onClick={() => setIsOpen(false)}>
-							{!isWindowSizeSmall && isAnimated ? <p className='rounded-full border border-4 border-accent p-3 hover:border-hover'activeClass='active'>{link.icon}</p> : <p>{link.label}</p>}
+							{!isWindowSizeSmall && isAnimated ? <p className='rounded-full border border-4 border-accent p-3 hover:border-hover'activeclass='active'>{link.icon}</p> : <p>{link.label}</p>}
 						</Link>
 					))}
 					

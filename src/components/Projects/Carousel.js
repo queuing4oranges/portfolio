@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
 import Slider from 'react-slick';
-import { projectsData } from './ProjectsData';
+import { projectsData as cards } from './ProjectsData';
 import { FaRegEye, FaCode } from 'react-icons/fa';
 import { FiChevronsRight, FiChevronsLeft } from 'react-icons/fi';
 
@@ -21,32 +20,39 @@ function PrevArrow(props) {
 }
 
 export default function Carousel() {
-	const [cards, setCards] = useState(projectsData);
 	const settings = {
 		infinite: true,
 		speed: 500,
-		autoplay: true,
-		autoplaySpeed: 2500,
+		// autoplay: true,
+		autoplaySpeed: 4000,
 		pauseOnHover: true,
+		arrows: true,
 		slidesToShow: 3,
-		slidesToScroll: 1,
+		slidesToScroll: 2,
 		nextArrow: <NextArrow />,
 		prevArrow: <PrevArrow />,
 		responsive: [
 			{
-				breakpoint: 1024,
+				breakpoint: 1280,
 					settings: {
-						slidesToShow: 3,
-						slidesToScroll: 3,
-						infinite: true,
+						slidesToShow: 2,
+						slidesToScroll: 2,
+						// infinite: true,
 					}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					// infinite: true,
+				}
+			},
+			{
+				breakpoint: 768,
 					settings: {
 						slidesToShow: 1,
-						swipeToSlide: 2,
-						arrows: false,
+						swipeToSlide: 1,
 						speed: 1000,
 					}
 			},
@@ -55,7 +61,6 @@ export default function Carousel() {
 					settings: {
 						slidesToShow: 1,
 						swipesToSlide: 1,
-						arrows: false,
 						speed: 1000,
 					}
 			}
@@ -66,20 +71,20 @@ export default function Carousel() {
 		<Slider {...settings}>
 			{cards.map((card, idx) => (
 				<div key={idx} className='cards-container'>
-					<div className='image-content'>
+					<div className='card-image'>
 						<img className='w-full object-cover px-3' src={card.image} alt={card.title} />
 					</div>
 
-					<div className='title-content'>
-						<h3 className='text-accent font-semibold text-2xl'>{card.title}</h3>
-						<h4 className='font-medium text-dark text-md'>{card.tech}</h4>
+					<div className='card-title'>
+						<h4 className='text-accent font-semibold text-xl'>{card.title}</h4>
+						<h5 className='font-medium text-dark'>{card.tech}</h5>
 					</div>
 
-					<div className='description-content'>
+					<div className='card-description'>
 						<p>{card.description}</p>
 					</div>
 
-					<div className='button-content'>
+					<div className='card-buttons'>
 						{card.live &&
 							<a href={card.live} target='_blank' rel='noreferrer' title='See live'>
 								<button className='bg-accent hover:bg-hover text-light font-bold rounded'>
