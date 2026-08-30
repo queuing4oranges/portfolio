@@ -1,111 +1,73 @@
-import { useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
-import { FaHamburger } from 'react-icons/fa';
-import { BsChevronDoubleUp } from 'react-icons/bs';
-import { GoPerson, GoRocket, GoTools, GoMortarBoard } from 'react-icons/go';
+import React, { useState } from 'react'
 
-import './navbar.scss';
+export default function NavbarNeu() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-const links = [
-	{ to: 'projects', label: 'Projects', icon: <GoRocket size={20} color='#00C59B' /> },
-	{ to: 'tech', label: 'Tech Stack', icon: <GoTools size={20} color='#00C59B' /> },
-	{ to: 'courses', label: 'Education', icon: <GoMortarBoard size={20} color='#00C59B' /> },
-	{ to: 'about', label: 'About', icon: <GoPerson size={20} color='#00C59B' /> }
-]
+  const links = [
+    { to: 'projects', label: 'Projects' },
+    { to: 'stack', label: 'Stack' },
+    { to: 'education', label: 'Education' },
+    { to: 'about', label: 'About' }
+  ]
 
-const Navbar = () => {
-	const [isOpen, setIsOpen] = useState(false);
-	const [isWindowSizeSmall, setIsWindowSizeSmall] = useState(false);
-	const [isAnimated, setIsAnimated] = useState(false);
+  const closeMenu = () => setMenuOpen(false)
 
-	useEffect(() => {
-		function handleResize() {
-			setIsWindowSizeSmall(window.innerWidth < 768);
-		}
-
-		handleResize();
-		window.addEventListener('resize', handleResize);
-
-		// Clean up function
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		}
-	}, [window.innerWidth])
-	
-	useEffect(() => {
-		function handleScroll() {
-			const atTop = window.scrollY === 0;
-
-			if (!isWindowSizeSmall) {
-				if (atTop) {
-					setIsAnimated(false);
-				} else {
-					setIsAnimated(true);
-				}
-			}
-		}
-
-		window.addEventListener('scroll', handleScroll);
-
-		// Clean up on unmount
-		return () => {
-			window.removeEventListener('scroll', handleScroll)
-		};
-	},[]);
-
-	const toggleMenu = () => {
-		setIsOpen(!isOpen);
-	}
-
-	return (
-		<nav className='nav-container fixed top-0 z-50 w-full bg-transparent text-light md:px-20'>
-			<div className='flex justify-end items-center'>
-				{/* Show hamburger menu, when small, hide on desktop */}
-				<div className='block md:hidden'>
-					<button onClick={toggleMenu} className='hamburger-menu text-white focus:outline-none absolute right-4 top-4 p-2'>
-						<FaHamburger color='#ebd2c1' size={30} />
-					</button>
-				</div>
-				{/* Show menu on toggle */}
-				<div className={`nav-content md:flex md:mt-4
-					${isOpen ? 'flex-col w-full md:flex-row bg-dark rounded-md' : 'hidden'}
-					${!isWindowSizeSmall && isAnimated ? 'animated hover:text-hover' : '' }
-				`}>
-					{/* Display Chevron only when toggle is open and go back up */}
-					{isOpen ?
-						<Link
-							to='home'
-							smooth={true}
-							spy={true}
-							activeclass='active'
-							className={`flex items-center ml-2 py-2 hover:text-accent ${isOpen ? 'text-xl ml-0 px-3' : '' }`}
-							onClick={() => setIsOpen(false)}>
-							<BsChevronDoubleUp size={30} />
-						</Link>
-					: null
-					}
-					{/* Map through nav links */}
-					{links.map((link, index) => (
-						<Link
-							key={index}
-							to={link.to}
-							smooth={true}
-							spy={true}
-							title={isAnimated ? link.label : ''}
-							activeclass='active'
-							className={`flex items-center py-2 md:px-4 hover:text-hover
-								${isOpen ? 'sm:text-md md:text-xl ml-0 px-3' : '' }
-								${!isWindowSizeSmall && isAnimated ? 'rotate-90' : ''}`
-							}
-							onClick={() => setIsOpen(false)}>
-							{!isWindowSizeSmall && isAnimated ? <p className='rounded-full border border-4 border-accent p-3 hover:border-hover'activeclass='active'>{link.icon}</p> : <p>{link.label}</p>}
-						</Link>
-					))}
-					
-				</div>
-			</div>
-		</nav>
-	);
-};
-
-export default Navbar;
+  return (
+    <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-[#0b1220]/75 border-b border-white/10" data-testid="site-nav" x-file-name="App" x-line-number="196" x-column="4" x-component="header" x-id="App_196_4" x-dynamic="true" x-source-type="computed" x-source-editable="false">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+        <a href="#top" className="font-mono text-sm tracking-tight flex items-center gap-2 text-[#c8ccd8] hover:text-[#ff6b00]" >
+          <span className="inline-block w-2 h-2 rounded-full bg-[#ff6b00]">
+          </span>queuing4oranges<span className="text-[#ff6b00]">
+            /
+            </span>katja
+        </a>
+        {/* Desktop navigation */}
+        <nav className="hidden md:flex items-center gap-9">
+          {links.map((link) => (
+            <a key={link.to} href={`#${link.to}`} className="font-mono text-[12px] tracking-[0.14em] uppercase text-[#c8ccd8] hover:text-[#ff6b00] transition-colors">
+              {link.label}
+            </a>
+          ))}
+        </nav>
+        {/* Mobile navigation */}
+        <button
+          type="button"
+          className="md:hidden p-2 -mr-2 text-[#c8ccd8] hover:text-[#ff6b00] transition-colors"
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)} >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            {menuOpen ? (
+              <>
+                <path d="M6 6l12 12" />
+                <path d="M18 6l-12 12" />
+              </>
+              ) : (
+              <>
+                <path d="M4 6h16" />
+                <path d="M4 12h16" />
+                <path d="M4 18h16" />
+              </>
+              )}
+            </svg>
+          </button>
+      </div>
+      {/* Mobile navigation */}
+      {menuOpen && (
+        <nav className="md:hidden border-t border-white/10 bg-[#0b1220]/95 px-6 py-5">
+          <div className="flex flex-col gap-5">
+            {links.map((link) => (
+              <a
+                key={link.to}
+                href={`#${link.to}`}
+                onClick={closeMenu}
+                className="font-mono text-[12px] tracking-[0.14em] uppercase text-[#c8ccd8] hover:text-[#ff6b00] transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </nav>
+      )}
+    </header>
+  )
+}
