@@ -51,7 +51,7 @@ export default function TechStack() {
 	}, []);
 
 	return (
-		<section id='tech' className = 'bg-dark text-light px-4 py-10 md:px-40 md:py-20'>
+		<section id='stack' className = 'bg-dark text-light px-4 py-10 md:px-40 md:py-20'>
 			<h1 className='text-xl md:text-3xl'>
 				Tech Stack
 			</h1>
