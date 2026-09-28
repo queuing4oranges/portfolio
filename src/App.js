@@ -11,6 +11,7 @@ import Hero from '../src/components/Hero/Hero';
 import Projects from '../src/components/Projects/Projects';
 import TechStack from './components/TechStack/TechStack';
 import Courses from './components/Courses/Courses';
+import HeroNew from './components/Hero/HeroNew';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
 				<Switch>
 					<Route exact path='/'>
 						<Navbar />
-						<Hero />
+						<HeroNew />
 						<Projects />
 						<TechStack />
 						<Courses />
