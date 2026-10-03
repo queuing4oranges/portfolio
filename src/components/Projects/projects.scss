@@ -1,0 +1,13 @@
+#projects {
+  article img {
+    filter: grayscale(1) contrast(0.98);
+    transition: filter 0.5s ease, transform 0.6s ease;
+    object-fit: cover;
+    object-position: left;
+    
+    &:hover {
+      filter: grayscale(0) contrast(0.98);
+      transform: scale(1.1);
+    }
+  }
+}
