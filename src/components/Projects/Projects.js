@@ -42,7 +42,7 @@ export default function Projects() {
 							</p>
 								<div className="mt-6 pt-5 border-t border-white/10 flex items-center gap-6">
 									{card.github &&
-									<a href={card.github} target='_blank' rel='noreferrer' title='Look at the code' className="inline-flex gap-2 font-mono text-xs tracking-[0.18em] uppercase link-underline text-[#9aa3b8]">
+									<a href={card.github} target='_blank' rel='noreferrer' title='Look at the code' className="inline-flex gap-2 font-mono text-xs tracking-[0.18em] uppercase link-underline text-[#9aa3b8] hover:text-[#ff6b00]">
 											<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-xml" aria-hidden="true">
 												<path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path>
 											<path d="m14.5 4-5 16"></path>
@@ -51,7 +51,7 @@ export default function Projects() {
 										</a>
 									}
 									{card.live &&
-									<a href={card.live} target='_blank' rel='noreferrer' title='See live' className="inline-flex gap-2 font-mono text-xs tracking-[0.18em] uppercase link-underline text-[#9aa3b8]">
+									<a href={card.live} target='_blank' rel='noreferrer' title='See live' className="inline-flex gap-2 font-mono text-xs tracking-[0.18em] uppercase link-underline text-[#9aa3b8] hover:text-[#ff6b00]">
 										<FaRegEye />
 											Live
 										</a>
