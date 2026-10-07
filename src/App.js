@@ -7,9 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import About from '../src/components/About/About';
 import Footer from '../src/components/Footer/Footer';
 import Navbar from '../src/components/Navbar/Navbar';
-import Hero from '../src/components/Hero/Hero';
 import Projects from '../src/components/Projects/Projects';
-import TechStack from './components/TechStack/TechStack';
+import TechStackNew from './components/TechStack/TechStack-new';
 import Courses from './components/Courses/Courses';
 import HeroNew from './components/Hero/HeroNew';
 
@@ -24,7 +23,7 @@ function App() {
 						<Navbar />
 						<HeroNew />
 						<Projects />
-						<TechStack />
+						<TechStackNew />
 						<Courses />
 						<About />
 						<Footer />
