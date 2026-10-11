@@ -6,7 +6,7 @@ export default function TechStackNew() {
       <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28 bg-[#060a13]">
         <div className="grid grid-cols-12 gap-6 md:gap-10 mb-14">
           <div className="col-span-12 md:col-span-6">
-            <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-[#9aa3b8] !text-[#9aa3b8]">
+            <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-[#ff6b00]">
               Tech Stack
             </span>
             <h2 className="mt-3 font-display text-5xl md:text-7xl font-black tracking-tighter leading-none">

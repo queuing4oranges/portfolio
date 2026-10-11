@@ -9,7 +9,7 @@ import Footer from '../src/components/Footer/Footer';
 import Navbar from '../src/components/Navbar/Navbar';
 import Projects from '../src/components/Projects/Projects';
 import TechStackNew from './components/TechStack/TechStack-new';
-import Courses from './components/Courses/Courses';
+import CoursesNew from './components/Courses/CoursesNew';
 import HeroNew from './components/Hero/HeroNew';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
 						<HeroNew />
 						<Projects />
 						<TechStackNew />
-						<Courses />
+						<CoursesNew />
 						<About />
 						<Footer />
 					</Route>

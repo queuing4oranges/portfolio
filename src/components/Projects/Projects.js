@@ -8,7 +8,7 @@ export default function Projects() {
 		<div id='projects' className="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28">
 			<div className="grid grid-cols-12 gap-6 md:gap-10 mb-14">
 				<div className="col-span-12 md:col-span-4">
-					<span className="font-mono text-[11px] tracking-[0.18em] uppercase text-[#9aa3b8]">
+					<span className="font-mono text-[11px] tracking-[0.18em] uppercase text-[#ff6b00]">
 						Selected Work
 					</span>
 					<h2 className="mt-3 font-display text-5xl md:text-7xl font-black tracking-tighter leading-none text-[#e8e6dc]">
@@ -26,9 +26,11 @@ export default function Projects() {
 									0{idx + 1} / {card.type}
 								</span>
 							</div>
-							<div className="absolute top-4 right-4 bg-[#e8e6dc] text-[#0b1220] px-2 py-1 font-mono text-[10px] tracking-widest uppercase">
-								{card.year}
-							</div>
+							{card.year && card.year !== "" &&
+								<div className="absolute top-4 right-4 bg-[#e8e6dc] text-[#0b1220] px-2 py-1 font-mono text-[10px] tracking-widest uppercase">
+									{card.year}
+								</div>
+							}
 						</div>
 						<div className="p-6 md:p-8 flex-1 flex flex-col">
 							<h3 className="font-display text-2xl md:text-3xl font-bold tracking-tight text-[#e8e6dc]">

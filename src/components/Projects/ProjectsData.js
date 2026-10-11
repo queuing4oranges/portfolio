@@ -9,16 +9,6 @@ import archive from './images/analog-archives.webp';
 
 export const projectsData = [
 	{
-		title: 'Portfolio',
-		year: '2026',
-		type: 'React · Personal',
-		tech: 'JavaScript | React | SCSS | Tailwind',
-		description: 'The Portfolio Landing Page is my ongoing work in progress. I want to use it to add more projects and to showcase my learning process. It also displays the final project from the Web Development Bootcamp I joined in 2022, as well as projects I finished on my own, projects from video tutorials, or results from other resources of study.',
-		image: portfolio,
-		github: 'https://github.com/queuing4oranges/portfolio',
-		live: 'https://www.queuing4oranges.com/',
-	},
-	{
 		title: 'Analog Archives',
 		year: '2026',
 		type: 'Next · Personal',
@@ -86,4 +76,14 @@ export const projectsData = [
 		image: apis,
 		github: 'https://github.com/queuing4oranges/lesbotoc-backend-api',
 	},
+	{
+		title: 'Portfolio',
+		year: '',
+		type: 'React · Personal',
+		tech: 'JavaScript | React | SCSS | Tailwind',
+		description: 'The Portfolio Landing Page is my ongoing work in progress. I want to use it to add more projects and to showcase my learning process. It also displays the final project from the Web Development Bootcamp I joined in 2022, as well as projects I finished on my own, projects from video tutorials, or results from other resources of study.',
+		image: portfolio,
+		github: 'https://github.com/queuing4oranges/portfolio',
+		live: 'https://www.queuing4oranges.com/',
+	}
 ];
