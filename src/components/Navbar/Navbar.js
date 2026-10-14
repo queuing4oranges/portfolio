@@ -28,6 +28,13 @@ export default function NavbarNeu() {
               {link.label}
             </a>
           ))}
+          <a href="#contact" className="inline-flex items-center gap-2 bg-[#ff6b00] text-white px-4 py-2 font-mono text-[12px] tracking-[0.14em] uppercase hover:bg-[#e65c00] transition-colors" >
+            Get in touch
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-up-right" aria-hidden="true">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </a>
         </nav>
         {/* Mobile navigation */}
         <button
@@ -65,6 +72,9 @@ export default function NavbarNeu() {
                 {link.label}
               </a>
             ))}
+            <a href="#contact" className="bg-[#ff6b00] text-white px-4 py-3 font-mono text-sm uppercase text-center" >
+              Get in touch →
+            </a>
           </div>
         </nav>
       )}
