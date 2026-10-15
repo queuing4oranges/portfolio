@@ -34,19 +34,13 @@ export default function Footer() {
 						</div>
 						<ul className="mt-3 space-y-2 font-mono text-sm">
 							<li>
-									<a href="#" className="link-underline-orange" style={{ backgroundImage: "linear-gradient(#ffffff, #ffffff)" }}>
+								<a href="https://github.com/queuing4oranges" className="link-underline-orange" style={{ backgroundImage: "linear-gradient(#ffffff, #ffffff)" }}>
 									github/queuing4oranges
 								</a>
 							</li>
 							<li>
-									<a href="#" className="link-underline-orange" style={{ backgroundImage: "linear-gradient(#ffffff, #ffffff)" }}>
+								<a href="https://www.linkedin.com/in/katja-zenker/" className="link-underline-orange" style={{ backgroundImage: "linear-gradient(#ffffff, #ffffff)" }}>
 									linkedin/katja-zenker
-								</a>
-							</li>
-							<li>
-									<a href="#" className="link-underline-orange" style={{ backgroundImage: "linear-gradient(#ffffff, #ffffff)" }}
-								>
-									are.na/queuing4oranges
 								</a>
 							</li>
 						</ul>
