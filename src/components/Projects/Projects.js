@@ -20,7 +20,13 @@ export default function Projects() {
 				{cards.map((card, idx) => (
 					<article key={idx} className="group col-span-12 md:col-span-6 border border-[#e8e6dc] bg-[#131b2d] flex flex-col">
 						<div className="relative overflow-hidden h-64 md:h-[340px] border-b border-[#e8e6dc]">
-							<img alt="Admin Panel" className="proj-img w-full h-full object-cover" src={card.image} />
+							<img
+								alt={card.imageAlt}
+								className="proj-img w-full h-full object-cover"
+								loading="lazy"
+								decoding="async"
+								src={card.image}
+							/>
 							<div className="absolute top-4 left-4 bg-[#0b1220] border border-[#e8e6dc] px-2 py-1">
 								<span className="font-mono text-[11px] tracking-[0.18em] uppercase text-[#9aa3b8] !text-[#e8e6dc]">
 									0{idx + 1} / {card.type}

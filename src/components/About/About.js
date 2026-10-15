@@ -11,7 +11,13 @@ const About = () => {
 							<div className="absolute -top-4 -left-4 md:-top-6 md:-left-6 w-full h-full bg-[#ff6b00]">
 							</div>
 							<div className="relative border border-[#e8e6dc] overflow-hidden">
-								<img alt="Katja portrait placeholder" className="w-full h-[420px] md:h-[520px] object-cover grayscale grayscale-0 transition-all duration-700" src={katja}/>
+								<img
+									alt="Portrait of Katja Zenker outdoors."
+									className="w-full h-[420px] md:h-[520px] object-cover grayscale grayscale-0 transition-all duration-700"
+									loading="lazy"
+									decoding="async"
+									src={katja}
+								/>
 							</div>
 							<div className="absolute -bottom-3 -right-3 bg-[#e8e6dc] text-[#0b1220] px-3 py-2 font-mono text-[11px] tracking-widest uppercase">
 								Katja · IRL
