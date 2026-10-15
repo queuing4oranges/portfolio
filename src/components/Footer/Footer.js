@@ -1,9 +1,4 @@
 
-import React from 'react';
-import { FaLinkedinIn, FaRegEnvelope, FaGithubSquare }from 'react-icons/fa';
-
-import './footer.scss';
-
 export default function Footer() {
 
 	const date = new Date();

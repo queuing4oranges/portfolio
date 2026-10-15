@@ -1,4 +1,4 @@
-import React from 'react'
+import heroImage from "./hero-starry.png";
 
 export default function HeroNew() {
   
@@ -11,8 +11,8 @@ export default function HeroNew() {
       className="relative pt-32 md:pt-40 pb-16 md:pb-24 border-b border-[#e8e6dc]"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-12 gap-6 md:gap-10">
-        <div className="col-span-12 md:col-span-8 rise">
-
+        {/* text section */}
+        <div className="col-span-12 md:col-span-7 rise">
           <div className="flex items-center gap-3 mb-6">
             <span className="w-8 h-px bg-[#e8e6dc]"></span>
             <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-[#9aa3b8]">
@@ -52,8 +52,23 @@ export default function HeroNew() {
               </svg>
               Prague, CZ
             </div>
+          </div>
         </div>
-      </div>
+
+        {/* image section */}
+        <div className="col-span-12 md:col-span-5 relative min-h-[380px] md:min-h-[500px]">
+          <div className="absolute inset-0 border border-[#e8e6dc] grain overflow-hidden bg-[#131b2d]" style={{ backgroundImage: `url(${heroImage})`, backgroundPosition: "-100px -400px" }}>
+            <div className="orange-blob absolute inset-0 opacity-90"></div>
+            <svg viewBox="0 0 200 300" preserveAspectRatio="xMidYMid meet" className="absolute inset-0 w-full h-full" aria-hidden="true">
+              <defs>
+                <pattern id="grid-lines" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#0a0a0a" strokeOpacity="0.08" strokeWidth="0.5"></path>
+                </pattern>
+              </defs>
+              <rect width="200" height="300" fill="url(#grid-lines)"></rect>
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
   )

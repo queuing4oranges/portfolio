@@ -1,6 +1,5 @@
 import { projectsData as cards } from './ProjectsData';
 import { FaRegEye } from 'react-icons/fa';
-import './projects.scss';
 
 export default function Projects() {
 
