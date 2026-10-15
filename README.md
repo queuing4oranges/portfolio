@@ -14,9 +14,6 @@ https://www.queuing4oranges.com
 - **React Router**: For client-side routing/navigation.
 - **Tailwind CSS**: For utility-first CSS styling.
 - **Sass/SCSS**: For extended CSS capabilities.
-- **EmailJS**: For sending emails from your application.
-- **React Slick**: A React component library for carousels/sliders.
-- **React Toastify**: For creating toast notifications in React.
 
 ## How to run the project
 
