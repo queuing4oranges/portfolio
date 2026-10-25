@@ -1,6 +1,8 @@
 import { projectsData as cards } from './ProjectsData';
 import { FaRegEye } from 'react-icons/fa';
 
+import "./project.scss";
+
 export default function Projects() {
 
   return (
@@ -21,7 +23,7 @@ export default function Projects() {
 						<a href={card.live} target='_blank' rel='noreferrer' className="relative overflow-hidden h-64 md:h-[340px] border-b border-[#e8e6dc]">
 							<img
 								alt={card.imageAlt}
-								className="proj-img w-full h-full object-cover object-left"
+								className="proj-img w-full h-full object-cover object-left project-img"
 								loading="lazy"
 								decoding="async"
 								src={card.image}
