@@ -18,10 +18,10 @@ export default function Projects() {
 			<div className="grid grid-cols-12 gap-6 md:gap-8">
 				{cards.map((card, idx) => (
 					<article key={idx} className="group col-span-12 md:col-span-6 border border-[#e8e6dc] bg-[#131b2d] flex flex-col">
-						<div className="relative overflow-hidden h-64 md:h-[340px] border-b border-[#e8e6dc]">
+						<a href={card.live} target='_blank' rel='noreferrer' className="relative overflow-hidden h-64 md:h-[340px] border-b border-[#e8e6dc]">
 							<img
 								alt={card.imageAlt}
-								className="proj-img w-full h-full object-cover"
+								className="proj-img w-full h-full object-cover object-left"
 								loading="lazy"
 								decoding="async"
 								src={card.image}
@@ -36,11 +36,13 @@ export default function Projects() {
 									{card.year}
 								</div>
 							}
-						</div>
+						</a>
 						<div className="p-6 md:p-8 flex-1 flex flex-col">
-							<h3 className="font-display text-2xl md:text-3xl font-bold tracking-tight text-[#e8e6dc]">
-								{card.title}
-							</h3>
+							<a href={card.live} target='_blank' rel='noreferrer'>
+								<h3 className="font-display text-2xl md:text-3xl font-bold tracking-tight text-[#e8e6dc]">
+									{card.title}
+								</h3>
+							</a>
 							<span className="font-mono text-[11px] tracking-wider uppercase border border-[#e8e6dc]/90 px-2.5 py-1 text-[#e8e6dc]">
 								{card.tech}
 							</span>
